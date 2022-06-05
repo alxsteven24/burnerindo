@@ -1,0 +1,200 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  .stickyNavbar {
+    @apply xl:text-primary fixed top-0 left-0 right-0 z-[99999] shadow-xl xl:shadow-2xl;
+  }
+
+  .changedColor {
+    @apply lg:text-primary;
+  }
+
+  .heroIndex .swiper {
+    width: 65% !important;
+    height: auto;
+    margin: 0 !important;
+  }
+
+  .swiper-3d .swiper-slide-shadow {
+    background: none !important;
+  }
+
+  .heroIndex .swiper-slide {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 18px;
+    font-size: 22px;
+    font-weight: bold;
+    color: #fff;
+  }
+
+  .heroIndex .swiper-pagination {
+    left: 0 !important;
+    bottom: -1rem !important;
+  }
+
+  .heroIndex .swiper-wrapper {
+    width: 0 !important;
+  }
+
+  .gallery-item-1,
+  .gallery-item-2,
+  .gallery-item-3,
+  .gallery-item-4,
+  .gallery-item-5 {
+    width: 100% !important;
+    height: 35rem !important;
+    border-radius: 35px !important;
+  }
+
+  .gallery-controls {
+    margin: 7rem 0 30px 0 !important;
+  }
+
+  .fas::before {
+    font-size: 24px !important;
+  }
+  .fas.fa-map-marker-alt::before {
+    font-size: 17px !important;
+  }
+
+  .fas.fas-xs::before {
+    font-size: 13px !important;
+  }
+
+  .swiper-pagination-bullet {
+    width: auto !important;
+    height: auto !important;
+  }
+
+  .wrapper-sale .owl-nav,
+  .wrapper-sale .owl-dots {
+    display: none !important;
+  }
+
+  .testimonial-people .owl-nav {
+    display: none !important;
+  }
+
+  .testimonial-people .owl-dots {
+    margin: 20px 0 0 0 !important;
+  }
+
+  .owl-carousel.owl-loaded {
+    display: inline-flex !important;
+    margin: 2rem 0 2rem 0 !important;
+  }
+
+  #demo {
+    height: 171px !important;
+  }
+
+  .hide-scrollbar::-webkit-scrollbar {
+    display: none !important;
+  }
+
+  .data-list {
+    height: 22rem !important;
+    width: 25rem !important;
+    overflow-y: hidden !important;
+    margin-left: 0 !important;
+  }
+
+  .bg-available {
+    color: #fff;
+    padding: 2px 9px 2px 9px;
+    font-size: 8px;
+    text-align: center;
+    width: 5rem;
+    background: linear-gradient(
+      90deg,
+      rgb(0 255 67) 0%,
+      rgb(9 121 23) 75%,
+      rgb(17 111 33) 100%
+    );
+    border-radius: 5px;
+    background: linear-gradient(
+      90deg,
+      rgb(0 255 67) 0%,
+      rgb(9 121 23) 75%,
+      rgb(17 111 33) 100%
+    );
+  }
+
+  .marquee {
+    overflow: hidden;
+  }
+  #buttonAccor1[aria-expanded="true"] {
+    @apply bg-[#fecdbb];
+  }
+
+  html {
+    scroll-behavior: smooth !important;
+  }
+
+  * {
+    scroll-behavior: smooth !important;
+  }
+
+  @media (min-width: 640px) {
+    .swiper-pagination {
+      left: -1rem !important;
+      bottom: -1rem !important;
+    }
+  }
+
+  @media (min-width: 768px) {
+    .heroIndex .swiper {
+      width: 65% !important;
+    }
+
+    .heroIndex .swiper-pagination {
+      bottom: 1rem !important;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .data-list {
+      width: 5rem !important;
+      margin-left: 2rem !important;
+    }
+
+    .heroIndex .swiper-pagination {
+      bottom: 1rem !important;
+    }
+  }
+
+  @media (min-width: 1280px) {
+    .heroIndex .swiper-pagination {
+      bottom: 1rem !important;
+    }
+
+    .swiper-3d .swiper-slide-shadow {
+      display: none !important;
+    }
+
+    .fas::before {
+      font-size: 20px !important;
+    }
+
+    .fas.marker-content.fa-map-marker-alt::before,
+    .fa-phone-alt::before,
+    .fa-envelope.envelope-content::before {
+      font-size: 25px !important;
+    }
+
+    .owl-carousel .owl-item img {
+      @apply h-[7rem]
+    }
+  }
+
+  @media (min-width: 1536px) {
+    .data-list {
+      width: 8rem !important;
+      margin-left: 3rem !important;
+    }
+  }
+}
