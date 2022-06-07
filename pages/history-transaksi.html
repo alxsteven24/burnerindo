@@ -44,7 +44,7 @@
   <body>
     <nav
       id="navbar"
-      class="bg-white px-[2.5rem] py-2.5 md:px-14 xl:bg-transparent xl:px-[5rem]"
+      class="bg-white px-[1.5rem] py-2.5 md:px-14 xl:bg-transparent xl:px-[5rem]"
     >
       <div
         class="container relative z-10 mx-auto flex flex-nowrap items-center justify-between xl:flex-wrap"
@@ -462,18 +462,20 @@
 
         <div
           id="shopNow"
-          class="container-kategori mt-0 px-[0.5rem] pb-[5rem] md:px-14 lg:mt-0 xl:mt-0 xl:px-[10rem] w-full xl:pb-[5rem] 2xl:px-48"
+          class="container-kategori mt-0 px-[1.5rem] pb-[5rem] md:px-14 lg:mt-0 xl:mt-0 xl:px-[10rem] w-full xl:pb-[5rem] 2xl:px-48"
         >
-          <div class="wrapper-kategori relative z-0 mt-8 xl:mt-[4rem]">
+          <div
+            class="wrapper-kategori relative z-0 mt-8 mb-14 xl:mb-0 xl:mt-[4rem]"
+          >
             <div
-              class="tos-navbar text-primary flex flex-wrap justify-evenly space-y-5 text-[14px] font-bold xl:w-auto xl:border-b-[15px] xl:pb-7 border-[#fecdbb] xl:justify-between xl:space-y-10 xl:text-[1.5rem] 2xl:w-auto 2xl:space-y-0"
+              class="tos-navbar text-primary flex flex-wrap justify-center space-y-5 text-[14px] font-bold xl:w-auto xl:border-b-[15px] xl:pb-7 border-[#fecdbb] xl:justify-between xl:space-y-10 xl:text-[1.5rem] 2xl:w-auto 2xl:space-y-0"
             >
               <div
                 class="tentang-kami mt-5 border-r-4 border-[#fecdbb] xl:mt-10 2xl:mt-0"
               >
                 <a href="./tentang-kami.html">
                   <h1
-                    class="xl:pl-auto xl:pr-[3rem] xl:text-[20px] 2xl:mr-12"
+                    class="xl:pl-auto pl-[1rem] pr-[1rem] xl:pr-[3rem] xl:text-[20px] 2xl:mr-12"
                     data-translatable
                   >
                     <span>ALL</span>
@@ -484,7 +486,7 @@
               <div class="tentang-kami border-r-4 border-[#fecdbb]">
                 <a href="./kontak-kami.html">
                   <h1
-                    class="xl:pl-auto xl:pr-[3rem] xl:text-[20px] 2xl:mr-12"
+                    class="xl:pl-auto pl-[1rem] pr-[1rem] xl:pr-[3rem] xl:text-[20px] 2xl:mr-12"
                     data-translatable
                   >
                     <span>NOT YET PAID</span>
@@ -495,7 +497,7 @@
               <div class="tentang-kami border-r-4 border-[#fecdbb]">
                 <a href="./syarat-ketentuan.html">
                   <h1
-                    class="xl:pl-auto xl:pr-[3rem] xl:text-[20px] 2xl:mr-12"
+                    class="xl:pl-auto pl-[1rem] pr-[1rem] xl:pr-[3rem] xl:text-[20px] 2xl:mr-12"
                     data-translatable
                   >
                     <span>PACKED</span>
@@ -506,7 +508,7 @@
               <div class="tentang-kami border-r-4 border-[#fecdbb]">
                 <a href="./privacy-policy.html">
                   <h1
-                    class="xl:pl-auto xl:pr-[3rem] xl:text-[20px] 2xl:mr-12"
+                    class="xl:pl-auto pl-[1rem] pr-[1rem] xl:pr-[3rem] xl:text-[20px] 2xl:mr-12"
                     data-translatable
                   >
                     <span>SENT</span>
@@ -517,7 +519,7 @@
               <div class="tentang-kami border-r-4 border-[#fecdbb]">
                 <a href="./terms-of-service.html">
                   <h1
-                    class="xl:pl-auto xl:pr-[3rem] xl:text-[20px] 2xl:mr-12"
+                    class="xl:pl-auto pl-[1rem] pr-[1rem] xl:pr-[3rem] xl:text-[20px] 2xl:mr-12"
                     data-translatable
                   >
                     <span>DONE</span>
@@ -531,7 +533,7 @@
               <div class="tentang-kami border-r-4 border-[#fecdbb]">
                 <a href="./terms-of-service.html">
                   <h1
-                    class="xl:pl-auto xl:pr-[3rem] xl:text-[20px] 2xl:mr-12"
+                    class="xl:pl-auto pl-[1rem] pr-[1rem] xl:pr-[3rem] xl:text-[20px] 2xl:mr-12"
                     data-translatable
                   >
                     <span>CANCELED</span>
@@ -548,16 +550,18 @@
           <div class="history-wrapper">
             <div class="wrapper-items">
               <div
-                class="history-item__dikemas flex items-center justify-between xl:py-7 border-b-[10px] border-[#fecdbb]"
+                class="history-item__dikemas flex flex-col xl:flex-row items-center justify-between pb-7 xl:py-7 border-b-[10px] border-[#fecdbb]"
               >
-                <div class="item-img flex xl:space-x-5 items-center">
+                <div
+                  class="item-img flex space-x-5 xl:space-x-5 xl:items-center"
+                >
                   <img
-                    class="xl:h-[7rem]"
+                    class="h-[7rem] xl:h-[7rem]"
                     src="./../assets/search/img.jpg"
                     alt=""
                     srcset=""
                   />
-                  <div class="item-text xl:space-y-3">
+                  <div class="item-text space-y-1 xl:space-y-3">
                     <div class="item__produk">
                       <p class="font-bold text-[14px]">Nama Produk</p>
                       <p class="font-bold text-[14px]">2 Baris</p>
@@ -569,26 +573,32 @@
                   </div>
                 </div>
 
-                <div class="item-detail xl:space-y-5">
-                  <div class="detail-top flex justify-end">
-                    <p class="xl:pr-7 text-black font-bold xl:text-[14px]">
+                <div
+                  class="item-detail space-y-5 xl:space-y-5 w-full xl:w-auto"
+                >
+                  <div
+                    class="detail-top flex justify-end mr-3 xl:mr-0 xl:justify-end"
+                  >
+                    <p class="pr-7 xl:pr-7 text-black font-bold xl:text-[14px]">
                       Rp. 156.000,-
                     </p>
                     <p
-                      class="border-l-2 border-primary xl:pl-5 text-primary xl:text-[14px] font-bold"
+                      class="border-l-2 border-primary pl-5 xl:pl-5 text-primary xl:text-[14px] font-bold"
                     >
                       Dikemas
                     </p>
                   </div>
-                  <div class="detail-bottom flex xl:space-x-14">
+                  <div
+                    class="detail-bottom flex justify-around items-center xl:justify-center xl:space-x-14"
+                  >
                     <div class="item-button xl:self-end xl:justify-self-end">
                       <button
-                        class="bg-primary xl:text-[14px] font-bold text-white xl:px-5 xl:py-1 rounded-full"
+                        class="bg-primary text-[14px] xl:text-[14px] font-bold text-white px-5 py-1 xl:px-5 xl:py-1 rounded-full"
                       >
                         BANTUAN
                       </button>
                     </div>
-                    <div class="bottom-text">
+                    <div class="bottom-text space-y-3 xl:space-y-0">
                       <p
                         class="xl:text-[14px] text-right text-gray-500 font-bold"
                       >
@@ -605,30 +615,38 @@
                 class="history-item__dikirim border-b-[10px] border-[#fecdbb]"
               >
                 <div
-                  class="items-first flex items-center justify-between xl:pt-7"
+                  class="items-first flex flex-col xl:flex-row items-center justify-between py-7 xl:py-7"
                 >
-                  <div class="item-img xl:space-x-5 flex items-center">
+                  <div
+                    class="item-img flex space-x-5 xl:space-x-5 xl:items-center"
+                  >
                     <img
-                      class="xl:h-[7rem]"
+                      class="h-[7rem] xl:h-[7rem]"
                       src="./../assets/search/img.jpg"
                       alt=""
                       srcset=""
                     />
-                    <div class="item-text xl:self-start">
+                    <div class="item-text space-y-1 xl:space-y-3">
                       <div class="item__produk">
                         <p class="font-bold text-[14px]">Nama Produk</p>
                         <p class="font-bold text-[14px]">2 Baris</p>
                       </div>
+                      <p class="font-bold text-gray-500 text-[14px]">x1</p>
+                      <p class="font-bold text-gray-500 text-[14px]">
+                        Transaksi 26-07-2022
+                      </p>
                     </div>
                   </div>
 
-                  <div class="item-detail xl:self-start">
-                    <div class="detail-top flex">
-                      <p class="xl:pr-7 text-black font-bold xl:text-[14px]">
+                  <div class="item-detail xl:self-start w-full xl:w-auto">
+                    <div class="detail-top flex justify-end">
+                      <p
+                        class="pr-7 xl:pr-7 text-black font-bold text-[14px] xl:text-[14px]"
+                      >
                         Rp. 156.000,-
                       </p>
                       <p
-                        class="border-l-2 border-primary xl:pl-5 text-primary xl:text-[14px] font-bold"
+                        class="border-l-2 border-primary pl-5 text-[14px] xl:pl-5 text-primary xl:text-[14px] font-bold"
                       >
                         Dikirim
                       </p>
@@ -636,11 +654,13 @@
                   </div>
                 </div>
                 <div
-                  class="items-two flex items-center justify-between xl:py-7"
+                  class="items-two flex flex-col xl:flex-row items-center justify-between pb-7 xl:py-7"
                 >
-                  <div class="item-img xl:space-x-5 flex items-center">
+                  <div
+                    class="item-img space-x-5 xl:space-x-5 flex items-center"
+                  >
                     <img
-                      class="xl:h-[7rem]"
+                      class="h-[7rem] xl:h-[7rem]"
                       src="./../assets/search/img.jpg"
                       alt=""
                       srcset=""
@@ -659,32 +679,38 @@
 
                   <div class="item-detail xl:space-y-5">
                     <div class="detail-top flex justify-end">
-                      <p class="xl:pr-24 text-black font-bold xl:text-[14px]">
+                      <p
+                        class="xl:pr-24 text-black font-bold text-[14px] xl:text-[14px]"
+                      >
                         Rp. 156.000,-
                       </p>
                     </div>
-                    <div class="detail-bottom flex xl:space-x-14">
+                    <div
+                      class="detail-bottom items-center justify-around flex-row flex mt-5 xl:mt-0 xl:space-x-14"
+                    >
                       <div
-                        class="item-button xl:space-x-3 xl:self-end xl:justify-self-end"
+                        class="item-button ml-5 xl:ml-0 space-y-3 xl:space-y-0 xl:space-x-3 xl:self-end xl:justify-self-end"
                       >
                         <button
-                          class="bg-primary xl:text-[14px] font-bold text-white xl:px-5 xl:py-1 rounded-full"
+                          class="bg-primary text-[14px] xl:text-[14px] font-bold text-white xl:px-5 px-5 py-1 xl:py-1 rounded-full"
                         >
                           BELI LAGI
                         </button>
                         <button
-                          class="bg-primary xl:text-[14px] font-bold text-white xl:px-5 xl:py-1 rounded-full"
+                          class="bg-primary text-[14px] xl:text-[14px] font-bold text-white xl:px-5 xl:py-1 px-5 py-1 rounded-full"
                         >
                           BANTUAN
                         </button>
                       </div>
                       <div class="bottom-text">
                         <p
-                          class="xl:text-[14px] text-right text-gray-500 font-bold"
+                          class="text-[14px] xl:text-[14px] text-right text-gray-500 font-bold"
                         >
                           Total
                         </p>
-                        <p class="text-primary font-bold xl:text-[20px]">
+                        <p
+                          class="text-primary text-[14px] font-bold xl:text-[20px]"
+                        >
                           Rp. 156.000.000,-
                         </p>
                       </div>
@@ -693,16 +719,18 @@
                 </div>
               </div>
               <div
-                class="history-item__selesai flex items-center justify-between xl:py-7 border-b-[10px] border-[#fecdbb]"
+                class="history-item__selesai flex flex-col xl:flex-row items-center justify-between py-7 xl:py-7 border-b-[10px] border-[#fecdbb]"
               >
-                <div class="item-img flex xl:space-x-5 items-center">
+                <div
+                  class="item-img flex space-x-5 xl:space-x-5 xl:items-center"
+                >
                   <img
-                    class="xl:h-[7rem]"
+                    class="h-[7rem] xl:h-[7rem]"
                     src="./../assets/search/img.jpg"
                     alt=""
                     srcset=""
                   />
-                  <div class="item-text xl:space-y-3">
+                  <div class="item-text space-y-1 xl:space-y-3">
                     <div class="item__produk">
                       <p class="font-bold text-[14px]">Nama Produk</p>
                       <p class="font-bold text-[14px]">2 Baris</p>
@@ -714,38 +742,44 @@
                   </div>
                 </div>
 
-                <div class="item-detail xl:space-y-5">
-                  <div class="detail-top flex justify-end">
-                    <p class="xl:pr-7 text-black font-bold xl:text-[14px]">
+                <div
+                  class="item-detail space-y-5 xl:space-y-5 w-full xl:w-auto"
+                >
+                  <div
+                    class="detail-top flex justify-end mr-3 xl:mr-0 xl:justify-end"
+                  >
+                    <p class="pr-7 xl:pr-7 text-black font-bold xl:text-[14px]">
                       Rp. 156.000,-
                     </p>
                     <p
-                      class="border-l-2 border-primary xl:pl-5 text-primary xl:text-[14px] font-bold"
+                      class="border-l-2 border-primary pl-5 xl:pl-5 text-primary xl:text-[14px] font-bold"
                     >
                       Selesai
                     </p>
                   </div>
-                  <div class="detail-bottom flex xl:space-x-14">
+                  <div
+                    class="detail-bottom flex justify-around items-center xl:justify-center xl:space-x-14"
+                  >
                     <div
-                      class="item-button xl:space-x-1 xl:self-end xl:justify-self-end"
+                      class="item-button flex flex-col xl:flex-row xl:space-x-3 space-y-3 xl:space-y-0 xl:self-end xl:justify-self-end"
                     >
                       <button
-                        class="bg-primary xl:text-[14px] font-bold text-white xl:px-5 xl:py-1 rounded-full"
+                        class="bg-primary text-[14px] xl:text-[14px] font-bold text-white px-5 py-1 xl:px-5 xl:py-1 rounded-full"
                       >
                         NILAI
                       </button>
                       <button
-                        class="bg-primary xl:text-[14px] font-bold text-white xl:px-5 xl:py-1 rounded-full"
+                        class="bg-primary text-[14px] xl:text-[14px] font-bold text-white px-5 py-1 xl:px-5 xl:py-1 rounded-full"
                       >
                         BELI LAGI
                       </button>
                       <button
-                        class="bg-primary xl:text-[14px] font-bold text-white xl:px-5 xl:py-1 rounded-full"
+                        class="bg-primary text-[14px] xl:text-[14px] font-bold text-white px-5 py-1 xl:px-5 xl:py-1 rounded-full"
                       >
                         BANTUAN
                       </button>
                     </div>
-                    <div class="bottom-text">
+                    <div class="bottom-text space-y-3 xl:space-y-0">
                       <p
                         class="xl:text-[14px] text-right text-gray-500 font-bold"
                       >
@@ -762,30 +796,38 @@
                 class="history-item__dibatalkan border-b-[10px] border-[#fecdbb]"
               >
                 <div
-                  class="items-first flex items-center justify-between xl:pt-7"
+                  class="items-first flex flex-col xl:flex-row items-center justify-between py-7 xl:py-7"
                 >
-                  <div class="item-img xl:space-x-5 flex items-center">
+                  <div
+                    class="item-img flex space-x-5 xl:space-x-5 xl:items-center"
+                  >
                     <img
-                      class="xl:h-[7rem]"
+                      class="h-[7rem] xl:h-[7rem]"
                       src="./../assets/search/img.jpg"
                       alt=""
                       srcset=""
                     />
-                    <div class="item-text xl:self-start">
+                    <div class="item-text space-y-1 xl:space-y-3">
                       <div class="item__produk">
                         <p class="font-bold text-[14px]">Nama Produk</p>
                         <p class="font-bold text-[14px]">2 Baris</p>
                       </div>
+                      <p class="font-bold text-gray-500 text-[14px]">x1</p>
+                      <p class="font-bold text-gray-500 text-[14px]">
+                        Transaksi 26-07-2022
+                      </p>
                     </div>
                   </div>
 
-                  <div class="item-detail xl:self-start">
-                    <div class="detail-top flex">
-                      <p class="xl:pr-7 text-black font-bold xl:text-[14px]">
+                  <div class="item-detail xl:self-start w-full xl:w-auto">
+                    <div class="detail-top flex justify-end">
+                      <p
+                        class="pr-7 xl:pr-7 text-black font-bold text-[14px] xl:text-[14px]"
+                      >
                         Rp. 156.000,-
                       </p>
                       <p
-                        class="border-l-2 border-primary xl:pl-5 text-primary xl:text-[14px] font-bold"
+                        class="border-l-2 border-primary pl-5 text-[14px] xl:pl-5 text-primary xl:text-[14px] font-bold"
                       >
                         Dibatalkan
                       </p>
@@ -793,11 +835,13 @@
                   </div>
                 </div>
                 <div
-                  class="items-two flex items-center justify-between xl:py-7"
+                  class="items-two flex flex-col xl:flex-row items-center justify-between pb-7 xl:py-7"
                 >
-                  <div class="item-img xl:space-x-5 flex items-center">
+                  <div
+                    class="item-img space-x-5 xl:space-x-5 flex items-center"
+                  >
                     <img
-                      class="xl:h-[7rem]"
+                      class="h-[7rem] xl:h-[7rem]"
                       src="./../assets/search/img.jpg"
                       alt=""
                       srcset=""
@@ -816,32 +860,38 @@
 
                   <div class="item-detail xl:space-y-5">
                     <div class="detail-top flex justify-end">
-                      <p class="xl:pr-24 text-black font-bold xl:text-[14px]">
+                      <p
+                        class="xl:pr-24 text-black font-bold text-[14px] xl:text-[14px]"
+                      >
                         Rp. 156.000,-
                       </p>
                     </div>
-                    <div class="detail-bottom flex xl:space-x-14">
+                    <div
+                      class="detail-bottom items-center justify-around flex-row flex mt-5 xl:mt-0 xl:space-x-14"
+                    >
                       <div
-                        class="item-button xl:space-x-3 xl:self-end xl:justify-self-end"
+                        class="item-button ml-5 xl:ml-0 space-y-3 xl:space-y-0 xl:space-x-3 xl:self-end xl:justify-self-end"
                       >
                         <button
-                          class="bg-primary xl:text-[14px] font-bold text-white xl:px-5 xl:py-1 rounded-full"
+                          class="bg-primary text-[14px] xl:text-[14px] font-bold text-white xl:px-5 px-5 py-1 xl:py-1 rounded-full"
                         >
                           BELI LAGI
                         </button>
                         <button
-                          class="bg-primary xl:text-[14px] font-bold text-white xl:px-5 xl:py-1 rounded-full"
+                          class="bg-primary text-[14px] xl:text-[14px] font-bold text-white xl:px-5 xl:py-1 px-5 py-1 rounded-full"
                         >
                           BANTUAN
                         </button>
                       </div>
                       <div class="bottom-text">
                         <p
-                          class="xl:text-[14px] text-right text-gray-500 font-bold"
+                          class="text-[14px] xl:text-[14px] text-right text-gray-500 font-bold"
                         >
                           Total
                         </p>
-                        <p class="text-primary font-bold xl:text-[20px]">
+                        <p
+                          class="text-primary text-[14px] font-bold xl:text-[20px]"
+                        >
                           Rp. 156.000.000,-
                         </p>
                       </div>
@@ -850,16 +900,18 @@
                 </div>
               </div>
               <div
-                class="history-item__belumDibayar flex items-center justify-between xl:py-7 border-b-[10px] border-[#fecdbb]"
+                class="history-item__belumDibayar flex flex-col xl:flex-row items-center justify-between py-7 xl:py-7 border-b-[10px] border-[#fecdbb]"
               >
-                <div class="item-img flex xl:space-x-5 items-center">
+                <div
+                  class="item-img flex space-x-5 xl:space-x-5 xl:items-center"
+                >
                   <img
-                    class="xl:h-[7rem]"
+                    class="h-[7rem] xl:h-[7rem]"
                     src="./../assets/search/img.jpg"
                     alt=""
                     srcset=""
                   />
-                  <div class="item-text xl:space-y-3">
+                  <div class="item-text space-y-1 xl:space-y-3">
                     <div class="item__produk">
                       <p class="font-bold text-[14px]">Nama Produk</p>
                       <p class="font-bold text-[14px]">2 Baris</p>
@@ -871,33 +923,39 @@
                   </div>
                 </div>
 
-                <div class="item-detail xl:space-y-5">
-                  <div class="detail-top flex justify-end">
-                    <p class="xl:pr-7 text-black font-bold xl:text-[14px]">
+                <div
+                  class="item-detail space-y-5 xl:space-y-5 w-full xl:w-auto"
+                >
+                  <div
+                    class="detail-top flex justify-end mr-3 xl:mr-0 xl:justify-end"
+                  >
+                    <p class="pr-7 xl:pr-7 text-black font-bold xl:text-[14px]">
                       Rp. 156.000,-
                     </p>
                     <p
-                      class="border-l-2 border-primary xl:pl-5 text-primary xl:text-[14px] font-bold"
+                      class="border-l-2 border-primary pl-5 xl:pl-5 text-primary xl:text-[14px] font-bold"
                     >
                       Belum Dibayar
                     </p>
                   </div>
-                  <div class="detail-bottom flex xl:space-x-14">
+                  <div
+                    class="detail-bottom flex justify-around items-center xl:justify-center xl:space-x-14"
+                  >
                     <div
-                      class="item-button xl:space-x-1 xl:self-end xl:justify-self-end"
+                      class="item-button flex flex-col xl:flex-row xl:space-x-3 space-y-3 xl:space-y-0 xl:self-end xl:justify-self-end"
                     >
                       <button
-                        class="bg-primary xl:text-[14px] font-bold text-white xl:px-5 xl:py-1 rounded-full"
+                        class="bg-primary text-[14px] xl:text-[14px] font-bold text-white px-5 py-1 xl:px-5 xl:py-1 rounded-full"
                       >
                         BELI LAGI
                       </button>
                       <button
-                        class="bg-primary xl:text-[14px] font-bold text-white xl:px-5 xl:py-1 rounded-full"
+                        class="bg-primary text-[14px] xl:text-[14px] font-bold text-white px-5 py-1 xl:px-5 xl:py-1 rounded-full"
                       >
                         BANTUAN
                       </button>
                     </div>
-                    <div class="bottom-text">
+                    <div class="bottom-text space-y-3 xl:space-y-0">
                       <p
                         class="xl:text-[14px] text-right text-gray-500 font-bold"
                       >
