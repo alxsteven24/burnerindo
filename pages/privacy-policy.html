@@ -64,7 +64,7 @@
           />
           <div
             id="showMenu-mobile"
-            class="list-menus absolute top-[4rem] right-0 hidden max-h-[22rem] mx-auto sm:max-h-[18rem] w-full left-[-1rem] flex-col overflow-y-scroll rounded-xl bg-white text-black shadow-2xl"
+            class="list-menus absolute top-[4rem] right-0 left-[-1rem] mx-auto hidden max-h-[22rem] w-full flex-col overflow-y-scroll rounded-xl bg-white text-black shadow-2xl sm:max-h-[18rem]"
           >
             <div
               class="searchs search-1 flex w-full items-center justify-between border border-b-gray-300 px-[1rem] py-[1rem]"
@@ -325,9 +325,9 @@
                 <span>Tentang Kami</span>
               </a>
             </li>
-            <li>
+            <li class="hover-cart">
               <a
-                href="#"
+                href="./purchase.html"
                 class="block border-b border-gray-100 py-2 pr-4 pl-3 hover:bg-gray-50 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white md:border-0 md:p-0 md:hover:bg-transparent"
                 data-translatable
               >
@@ -336,6 +336,101 @@
                   >Keranjang <i class="fas fa-shopping-cart xl:fa-[12px]"></i
                 ></span>
               </a>
+
+              <div
+                class="cart-hover hidden w-[20rem] bg-white transition-all duration-300 ease-in-out xl:absolute xl:right-10 xl:mt-3 xl:block xl:shadow-2xl"
+              >
+                <div
+                  class="cart-item-scroll xl:h-[15rem] xl:overflow-y-scroll xl:px-4"
+                >
+                  <div
+                    class="cart-item flex items-center xl:justify-between xl:space-x-3"
+                  >
+                    <div class="cart-hover__image">
+                      <img
+                        class="xl:h-[5rem]"
+                        src="./../assets/search/img.jpg"
+                        alt=""
+                        srcset=""
+                      />
+                    </div>
+                    <div class="cart-hover__name text-primary">
+                      <p>Nama Barang</p>
+                      <p class="text-[14px]">Rp. 1.000.000 x 1</p>
+                    </div>
+                  </div>
+                  <div
+                    class="cart-item flex items-center xl:justify-between xl:space-x-3"
+                  >
+                    <div class="cart-hover__image">
+                      <img
+                        class="xl:h-[5rem]"
+                        src="./../assets/search/img.jpg"
+                        alt=""
+                        srcset=""
+                      />
+                    </div>
+                    <div class="cart-hover__name text-primary">
+                      <p>Nama Barang</p>
+                      <p class="text-[14px]">Rp. 1.000.000 x 1</p>
+                    </div>
+                  </div>
+                  <div
+                    class="cart-item flex items-center xl:justify-between xl:space-x-3"
+                  >
+                    <div class="cart-hover__image">
+                      <img
+                        class="xl:h-[5rem]"
+                        src="./../assets/search/img.jpg"
+                        alt=""
+                        srcset=""
+                      />
+                    </div>
+                    <div class="cart-hover__name text-primary">
+                      <p>Nama Barang</p>
+                      <p class="text-[14px]">Rp. 1.000.000 x 1</p>
+                    </div>
+                  </div>
+                  <div
+                    class="cart-item flex items-center xl:justify-between xl:space-x-3"
+                  >
+                    <div class="cart-hover__image">
+                      <img
+                        class="xl:h-[5rem]"
+                        src="./../assets/search/img.jpg"
+                        alt=""
+                        srcset=""
+                      />
+                    </div>
+                    <div class="cart-hover__name text-primary">
+                      <p>Nama Barang</p>
+                      <p class="text-[14px]">Rp. 1.000.000 x 1</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div
+                  class="cart-total text-primary border-grey-200 border-t-2 text-left xl:flex xl:justify-between xl:xl:px-5 xl:py-4"
+                >
+                  <p>Total :</p>
+                  <p>Rp. 5.000.000</p>
+                </div>
+
+                <div
+                  class="cart-button text-primary flex xl:flex-col xl:space-y-3 xl:px-5 xl:pb-3"
+                >
+                  <a
+                    class="hover:border-primary border-2 border-white py-2"
+                    href="./purchase.html"
+                  >
+                    <button>View Card</button>
+                  </a>
+
+                  <a class="bg-primary py-2 text-white" href="./purchase.html">
+                    <button>Checkout</button>
+                  </a>
+                </div>
+              </div>
             </li>
             <li class="flex items-center justify-center">
               <a href="#" class="language mr-5" data-lang-ref="id">
@@ -726,26 +821,21 @@
       class="border-primary mb-0 h-[50rem] border-t-[15px] bg-[#fecdbb] px-6 md:px-14 xl:mb-0 xl:mt-0 xl:h-full"
     >
       <div
-        class="container mx-auto mt-12 flex h-[30rem] flex-col justify-start xl:h-[18rem] xl:flex-row"
+        class="container mx-auto mt-12 flex h-[30rem] flex-col justify-start xl:mt-0 xl:h-[18rem] xl:flex-row"
       >
         <div
           class="slogan flex h-full flex-col items-start justify-center font-bold text-[#4a4e5a] xl:h-auto xl:flex-col xl:items-center xl:justify-evenly"
         >
-          <div class="logoFooter flex flex-col xl:flex-row xl:pr-[5rem]">
+          <div
+            class="logoFooter flex flex-col xl:flex-row xl:items-center xl:pr-[5rem]"
+          >
             <img
               class="h-[6rem] w-[12rem] xl:h-[6rem] xl:w-auto"
               src="./../assets/logo.webp"
               alt=""
               srcset=""
             />
-            <h6 class="font-normal xl:ml-5" data-translatable>
-              <span
-                >Burnerindo.com is an e-commerce service created and managed by
-                PT. Burnerindo Teknik Utama, as one of the online marketing
-                strategy to make it easier for customers / members make a
-                purchase of PT. Main Engineering Burnerindo with effective and
-                efficient</span
-              >
+            <h6 class="font-normal xl:ml-5 xl:text-[14px]" data-translatable>
               <span
                 >Burnerindo.com adalah sebuah layanan e-commerce yang dibuat dan
                 dikelola oleh PT. Burnerindo Teknik Utama, sebagai salah satu
@@ -753,43 +843,53 @@
                 melakukan pembelian produk PT. Burnerindo Teknik Utama dengan
                 efektif dan efisien</span
               >
+              <span
+                >Burnerindo.com is an e-commerce service created and managed by
+                PT. Burnerindo Teknik Utama, as one of the online marketing
+                strategy to make it easier for customers / members make a
+                purchase of PT. Main Engineering Burnerindo with effective and
+                efficient</span
+              >
             </h6>
           </div>
           <div
             class="footer-menu mt-7 flex w-full flex-wrap space-x-5 space-y-5 xl:mt-0 xl:justify-around xl:space-x-0 xl:space-y-0"
           >
-            <h6 class="mt-5 text-black xl:mt-0" data-translatable>
-              <span>TERMS OF USE</span>
+            <h6
+              class="mt-5 text-black xl:mt-0 xl:text-[14px]"
+              data-translatable
+            >
               <span>SYARAT PENGGUNAAN</span>
+              <span>TERMS OF USE</span>
             </h6>
-            <div class="footer-tentangKami">
-              <h6 class="text-black" data-translatable>
-                <span>ABOUT US</span>
+            <div class="footer-tentangKami xl:text-center">
+              <h6 class="text-black xl:text-[14px]" data-translatable>
                 <span>TENTANG KAMI</span>
+                <span>ABOUT US</span>
               </h6>
-              <p data-translatable>
-                <span>ABOUT US</span>
+              <p class="xl:text-[12px]" data-translatable>
                 <span>TENTANG KAMI</span>
+                <span>ABOUT US</span>
               </p>
-              <p data-translatable>
-                <span>WHY US</span>
+              <p class="xl:text-[12px]" data-translatable>
                 <span>MENGAPA KAMI</span>
+                <span>WHY US</span>
               </p>
             </div>
-            <h6 class="text-black" data-translatable>
+            <h6 class="text-black xl:text-[14px]" data-translatable>
               <span>FAQ</span>
               <span>FAQ</span>
             </h6>
-            <h6 class="text-black" data-translatable>
-              <span>TERMS AND CONDITIONS</span>
+            <h6 class="text-black xl:text-[14px]" data-translatable>
               <span>SYARAT DAN KETENTUAN</span>
+              <span>TERMS AND CONDITIONS</span>
             </h6>
           </div>
         </div>
         <div class="subscribe mt-16 flex flex-col space-y-3 self-baseline">
-          <h6 class="font-bold text-gray-600" data-translatable>
-            <span>FIND US</span>
+          <h6 class="font-bold text-gray-600 xl:text-[20px]" data-translatable>
             <span>TEMUKAN KAMI</span>
+            <span>FIND US</span>
           </h6>
           <div class="icon-menu">
             <button
@@ -835,15 +935,15 @@
               </a>
             </button>
           </div>
-          <div class="footer-location font-normal text-black">
+          <div class="footer-location font-normal text-black xl:text-[14px]">
             <p data-translatable>
-              <span
-                >Lindeteves Trade Center Lt. GF2 Block C27 No. 9 Jl. Hayam Wuruk
-                No. 127 Greater Jakarta, Indonesia</span
-              >
               <span
                 >Lindeteves Trade Center Lt. GF2 Blok C27 No. 9 Jl. Hayam Wuruk
                 No. 127 Jakarta Indonesia Raya</span
+              >
+              <span
+                >Lindeteves Trade Center Lt. GF2 Block C27 No. 9 Jl. Hayam Wuruk
+                No. 127 Greater Jakarta, Indonesia</span
               >
             </p>
           </div>
@@ -861,65 +961,65 @@
             <div class="brands-copyright space-y-5">
               <div class="brands-partner flex flex-col xl:w-[30rem]">
                 <h6
-                  class="mb-5 font-bold text-[#4a4e5a] xl:mb-3"
+                  class="mb-5 font-bold text-[#4a4e5a] xl:mb-3 xl:text-[20px]"
                   data-translatable
                 >
-                  <span>BRAND PARTNER</span>
                   <span>MITRA MEREK</span>
+                  <span>BRAND PARTNER</span>
                 </h6>
                 <div
-                  class="footer-brand__brand flex flex-col flex-wrap justify-between space-y-5 xl:flex-row xl:space-y-0"
+                  class="footer-brand__brand flex flex-col flex-wrap justify-between space-y-5 xl:flex-row xl:space-y-5"
                 >
                   <img
-                    class="h-[29px] w-[52px]"
+                    class="h-[40px] w-[85px] xl:mt-5"
                     src="./../assets/brand1.webp"
                     alt=""
                     srcset=""
                   />
                   <img
-                    class="h-[29px] w-[52px]"
+                    class="h-[40px] w-[85px]"
                     src="./../assets/brand2.webp"
                     alt=""
                     srcset=""
                   />
                   <img
-                    class="h-[29px] w-[52px]"
+                    class="h-[40px] w-[85px]"
                     src="./../assets/brand3.webp"
                     alt=""
                     srcset=""
                   />
                   <img
-                    class="h-[29px] w-[52px]"
+                    class="h-[40px] w-[85px]"
                     src="./../assets/brand4.webp"
                     alt=""
                     srcset=""
                   />
                   <img
-                    class="h-[29px] w-[52px]"
+                    class="h-[40px] w-[85px]"
                     src="./../assets/brand5.webp"
                     alt=""
                     srcset=""
                   />
                   <img
-                    class="h-[29px] w-[52px]"
+                    class="h-[40px] w-[85px]"
                     src="./../assets/brand6.webp"
                     alt=""
                     srcset=""
                   />
                   <img
-                    class="h-[29px] w-[52px]"
+                    class="h-[40px] w-[85px]"
                     src="./../assets/brand7.webp"
                     alt=""
                     srcset=""
                   />
                   <img
-                    class="h-[29px] w-[52px]"
+                    class="h-[40px] w-[85px]"
                     src="./../assets/brand8.webp"
                     alt=""
                     srcset=""
                   />
                   <img
-                    class="h-[29px] w-[52px]"
+                    class="h-[40px] w-[85px]"
                     src="./../assets/brand9.webp"
                     alt=""
                     srcset=""
@@ -928,83 +1028,83 @@
               </div>
               <div class="metode-pembayaran flex flex-col xl:w-[30rem]">
                 <h6
-                  class="mt-5 mb-5 font-bold text-[#4a4e5a] xl:mb-3 xl:mt-0"
+                  class="mt-5 mb-5 font-bold text-[#4a4e5a] xl:mb-3 xl:mt-0 xl:text-[20px]"
                   data-translatable
                 >
-                  <span>PAYMENT METHOD</span>
                   <span>METODE PEMBAYARAN</span>
+                  <span>PAYMENT METHOD</span>
                 </h6>
                 <div
-                  class="payment flex flex-col justify-between space-y-7 xl:flex-row xl:space-y-0 xl:space-x-2"
+                  class="payment flex flex-col flex-wrap justify-between space-y-7 xl:mb-[2.5rem] xl:flex-row xl:space-y-5 xl:space-x-5 2xl:justify-start"
                 >
                   <img
-                    class="h-[45px] w-[85px] xl:h-[20px] xl:w-[35px]"
+                    class="h-[45px] w-[85px] xl:mt-5 xl:h-[30px] xl:w-[50px]"
                     src="./../assets/footer/bca.webp"
                     alt=""
                     srcset=""
                   />
                   <img
-                    class="h-[45px] w-[85px] xl:h-[20px] xl:w-[35px]"
+                    class="h-[45px] w-[85px] xl:h-[30px] xl:w-[50px]"
                     src="./../assets/footer/bii.webp"
                     alt=""
                     srcset=""
                   />
                   <img
-                    class="h-[45px] w-[85px] xl:h-[20px] xl:w-[35px]"
+                    class="h-[45px] w-[85px] xl:h-[30px] xl:w-[50px]"
                     src="./../assets/footer/bni.webp"
                     alt=""
                     srcset=""
                   />
                   <img
-                    class="h-[45px] w-[85px] xl:h-[20px] xl:w-[35px]"
+                    class="h-[45px] w-[85px] xl:h-[30px] xl:w-[50px]"
                     src="./../assets/footer/bri.webp"
                     alt=""
                     srcset=""
                   />
                   <img
-                    class="h-[45px] w-[85px] xl:h-[20px] xl:w-[35px]"
+                    class="h-[45px] w-[85px] xl:h-[30px] xl:w-[50px]"
                     src="./../assets/footer/dbs.webp"
                     alt=""
                     srcset=""
                   />
                   <img
-                    class="h-[45px] w-[85px] xl:h-[20px] xl:w-[35px]"
+                    class="h-[45px] w-[85px] xl:h-[30px] xl:w-[50px]"
                     src="./../assets/footer/indodana.webp"
                     alt=""
                     srcset=""
                   />
                   <img
-                    class="h-[45px] w-[85px] xl:h-[20px] xl:w-[35px]"
+                    class="h-[45px] w-[85px] xl:h-[30px] xl:w-[50px]"
                     src="./../assets/footer/kredivo.webp"
                     alt=""
                     srcset=""
                   />
                   <img
-                    class="h-[45px] w-[85px] xl:h-[20px] xl:w-[35px]"
+                    class="h-[45px] w-[85px] xl:h-[30px] xl:w-[50px]"
                     src="./../assets/footer/mandiri.webp"
                     alt=""
                     srcset=""
                   />
                   <img
-                    class="h-[45px] w-[85px] xl:h-[20px] xl:w-[35px]"
+                    class="h-[45px] w-[85px] xl:h-[30px] xl:w-[50px]"
                     src="./../assets/footer/mastercard.webp"
                     alt=""
                     srcset=""
                   />
                   <img
-                    class="h-[45px] w-[85px] xl:h-[20px] xl:w-[35px]"
+                    class="h-[45px] w-[85px] xl:h-[30px] xl:w-[50px]"
                     src="./../assets/footer/ovo.webp"
                     alt=""
                     srcset=""
                   />
                   <img
-                    class="h-[45px] w-[85px] xl:h-[20px] xl:w-[35px]"
+                    class="h-[45px] w-[85px] xl:h-[30px] xl:w-[50px]"
                     src="./../assets/footer/permata.png"
                     alt=""
                     srcset=""
                   />
                   <img
-                    class="h-[45px] w-[85px] xl:h-[20px] xl:w-[35px]"
+                    class="h-[45px] w-[85px] xl:h-[30px] xl:w-[50px]"
                     src="./../assets/footer/visa.webp"
                     alt=""
                     srcset=""
@@ -1035,7 +1135,9 @@
               />
             </div>
           </div>
-          <div class="brands-copyright text-primary pb-12 font-bold xl:pb-0">
+          <div
+            class="brands-copyright text-primary pb-12 font-bold xl:pb-[2.5rem] xl:text-[14px]"
+          >
             <p data-translatable>
               <span>© Copyright 2022 PT. Burnerindo Teknik Utama</span>
               <span>© Copyright 2022 PT. Burnerindo Teknik Utama</span>
@@ -1057,7 +1159,7 @@
       class="floating-sosmed fixed right-8 top-[70%] z-[5] flex h-32 flex-col justify-between lg:top-[48%] lg:h-[7rem] xl:top-[77%] xl:h-32 2xl:top-[74%] 2xl:h-[10rem]"
     >
       <button
-        class="instagram bg-primary h-8 w-8 rounded-full text-white shadow-2xl xl:h-8 xl:w-8 2xl:h-12 2xl:w-12"
+        class="instagram hover:border-primary hover:text-primary bg-primary h-8 w-8 rounded-full border border-transparent text-white shadow-2xl hover:bg-white xl:h-8 xl:w-8 2xl:h-12 2xl:w-12"
         type="submit"
       >
         <a target="_blank" href="https://instagram.com/">
@@ -1065,7 +1167,7 @@
         </a>
       </button>
       <button
-        class="wa bg-primary h-8 w-8 rounded-full text-white shadow-2xl xl:h-8 xl:w-8 2xl:h-12 2xl:w-12"
+        class="wa hover:border-primary hover:text-primary bg-primary h-8 w-8 rounded-full border border-transparent text-white shadow-2xl hover:bg-white xl:h-8 xl:w-8 2xl:h-12 2xl:w-12"
         type="submit"
       >
         <a
@@ -1077,7 +1179,7 @@
       </button>
       <button
         target="_blank"
-        class="message bg-primary h-8 w-8 rounded-full text-white shadow-2xl xl:h-8 xl:w-8 2xl:h-12 2xl:w-12"
+        class="message hover:border-primary hover:text-primary bg-primary h-8 w-8 rounded-full border border-transparent text-white shadow-2xl hover:bg-white xl:h-8 xl:w-8 2xl:h-12 2xl:w-12"
         type="submit"
       >
         <a target="_blank" href="mailto:contoh@gmail.com">

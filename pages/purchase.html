@@ -19,18 +19,26 @@
       Utama
     </title>
     <style>
-      .menu-desk::-webkit-scrollbar {
+      .menu-desk::-webkit-scrollbar,
+      .wrapper-purchase__item::-webkit-scrollbar {
         width: 5px;
       }
 
       /* Track */
-      .menu-desk::-webkit-scrollbar-track {
+      .menu-desk::-webkit-scrollbar-track,
+      .wrapper-purchase__item::-webkit-scrollbar-track {
         background: #f1f1f1;
+        border-radius: 10px;
       }
 
       /* Handle */
       .menu-desk::-webkit-scrollbar-thumb {
         background: grey;
+      }
+
+      .wrapper-purchase__item::-webkit-scrollbar-thumb {
+        background: #cc0000;
+        border-radius: 10px;
       }
 
       /* Handle on hover */
@@ -78,7 +86,7 @@
           />
           <div
             id="showMenu-mobile"
-            class="list-menus absolute top-[4rem] right-0 hidden max-h-[22rem] mx-auto sm:max-h-[18rem] w-full left-[-1rem] flex-col overflow-y-scroll rounded-xl bg-white text-black shadow-2xl"
+            class="list-menus absolute top-[4rem] right-0 left-[-1rem] mx-auto hidden max-h-[22rem] w-full flex-col overflow-y-scroll rounded-xl bg-white text-black shadow-2xl sm:max-h-[18rem]"
           >
             <div
               class="searchs search-1 flex w-full items-center justify-between border border-b-gray-300 px-[1rem] py-[1rem]"
@@ -339,9 +347,9 @@
                 <span>About Us</span>
               </a>
             </li>
-            <li>
+            <li class="hover-cart">
               <a
-                href="#"
+                href="./purchase.html"
                 class="block border-b border-gray-100 py-2 pr-4 pl-3 hover:bg-gray-50 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white md:border-0 md:p-0 md:hover:bg-transparent"
                 data-translatable
               >
@@ -350,6 +358,101 @@
                 ></span>
                 <span>Cart <i class="fas fa-shopping-cart"></i></span>
               </a>
+
+              <div
+                class="cart-hover hidden w-[20rem] bg-white transition-all duration-300 ease-in-out xl:absolute xl:right-10 xl:mt-3 xl:block xl:shadow-2xl"
+              >
+                <div
+                  class="cart-item-scroll xl:h-[15rem] xl:overflow-y-scroll xl:px-4"
+                >
+                  <div
+                    class="cart-item flex items-center xl:justify-between xl:space-x-3"
+                  >
+                    <div class="cart-hover__image">
+                      <img
+                        class="xl:h-[5rem]"
+                        src="./../assets/search/img.jpg"
+                        alt=""
+                        srcset=""
+                      />
+                    </div>
+                    <div class="cart-hover__name text-primary">
+                      <p>Nama Barang</p>
+                      <p class="text-[14px]">Rp. 1.000.000 x 1</p>
+                    </div>
+                  </div>
+                  <div
+                    class="cart-item flex items-center xl:justify-between xl:space-x-3"
+                  >
+                    <div class="cart-hover__image">
+                      <img
+                        class="xl:h-[5rem]"
+                        src="./../assets/search/img.jpg"
+                        alt=""
+                        srcset=""
+                      />
+                    </div>
+                    <div class="cart-hover__name text-primary">
+                      <p>Nama Barang</p>
+                      <p class="text-[14px]">Rp. 1.000.000 x 1</p>
+                    </div>
+                  </div>
+                  <div
+                    class="cart-item flex items-center xl:justify-between xl:space-x-3"
+                  >
+                    <div class="cart-hover__image">
+                      <img
+                        class="xl:h-[5rem]"
+                        src="./../assets/search/img.jpg"
+                        alt=""
+                        srcset=""
+                      />
+                    </div>
+                    <div class="cart-hover__name text-primary">
+                      <p>Nama Barang</p>
+                      <p class="text-[14px]">Rp. 1.000.000 x 1</p>
+                    </div>
+                  </div>
+                  <div
+                    class="cart-item flex items-center xl:justify-between xl:space-x-3"
+                  >
+                    <div class="cart-hover__image">
+                      <img
+                        class="xl:h-[5rem]"
+                        src="./../assets/search/img.jpg"
+                        alt=""
+                        srcset=""
+                      />
+                    </div>
+                    <div class="cart-hover__name text-primary">
+                      <p>Nama Barang</p>
+                      <p class="text-[14px]">Rp. 1.000.000 x 1</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div
+                  class="cart-total text-primary border-grey-200 border-t-2 text-left xl:flex xl:justify-between xl:xl:px-5 xl:py-4"
+                >
+                  <p>Total :</p>
+                  <p>Rp. 5.000.000</p>
+                </div>
+
+                <div
+                  class="cart-button text-primary flex xl:flex-col xl:space-y-3 xl:px-5 xl:pb-3"
+                >
+                  <a
+                    class="hover:border-primary border-2 border-white py-2"
+                    href="./purchase.html"
+                  >
+                    <button>View Card</button>
+                  </a>
+
+                  <a class="bg-primary py-2 text-white" href="./purchase.html">
+                    <button>Checkout</button>
+                  </a>
+                </div>
+              </div>
             </li>
             <li class="flex items-center justify-center">
               <a href="#" class="language mr-5" data-lang-ref="id">
@@ -371,7 +474,7 @@
       >
         <img
           loading="lazy"
-          class="absolute right-0 top-[2rem] -z-[1] ml-auto h-[12rem] sm:top-[4rem] md:z-[-1] sm:left-0 sm:right-0 sm:h-[19rem] md:left-[16.5rem] md:top-0 md:h-[23rem] lg:top-0 lg:left-[14.5rem] lg:z-[-1] lg:h-[28rem] xl:h-[36rem] 2xl:h-[36rem]"
+          class="absolute right-0 top-[2rem] -z-[1] ml-auto h-[12rem] sm:top-[4rem] sm:left-0 sm:right-0 sm:h-[19rem] md:left-[16.5rem] md:top-0 md:z-[-1] md:h-[23rem] lg:top-0 lg:left-[14.5rem] lg:z-[-1] lg:h-[28rem] xl:h-[36rem] 2xl:h-[36rem]"
           src="./../assets/bg-navbar2.webp"
           alt=""
           srcset=""
@@ -379,20 +482,20 @@
 
         <div
           id="shopNow"
-          class="container-kategori mt-0 px-6 pb-[5rem] mx-auto md:px-14 xl:mt-0 xl:pl-[7rem] xl:pr-auto xl:pb-[5rem] 2xl:px-48"
+          class="container-kategori xl:pr-auto mx-auto mt-0 px-6 pb-[5rem] md:px-14 xl:mt-0 xl:pl-[7rem] xl:pb-[5rem] 2xl:px-48"
         >
           <div
             class="wrapper-kategori relative z-0 mt-8 lg:w-[55rem] xl:mt-[7rem] xl:w-[73rem]"
           >
             <div
-              class="purchase-navbar bg-gray-500 text-white xl:py-3 flex flex-wrap justify-start pl-5 py-3 xl:pl-5 xl:justify-around xl:items-center rounded-t-2xl text-[14px] font-bold xl:w-auto xl:justify-flex xl:text-[16px] 2xl:w-auto 2xl:space-y-0"
+              class="purchase-navbar xl:justify-flex flex flex-wrap justify-start rounded-t-2xl bg-gray-500 py-3 pl-5 text-[14px] font-bold text-white xl:w-auto xl:items-center xl:justify-around xl:py-3 xl:pl-5 xl:text-[16px] 2xl:w-auto 2xl:space-y-0"
             >
               <div class="flex items-center xl:text-[20px]">
                 <input
                   id="default-checkbox"
                   type="checkbox"
                   value=""
-                  class="hover:cursor-pointer w-4 h-4 text-red-600 bg-gray-100 rounded-full border-gray-600 focus:ring-red-600"
+                  class="h-4 w-4 rounded-full border-gray-600 bg-gray-100 text-red-600 hover:cursor-pointer focus:ring-red-600"
                 />
                 <label
                   for="default-checkbox"
@@ -403,7 +506,7 @@
                   <span>Choose All</span>
                 </label>
               </div>
-              <p class="hidden xl:block xl:ml-[18rem]" data-translatable>
+              <p class="hidden xl:ml-[18rem] xl:block" data-translatable>
                 <span>Harga Satuan</span>
                 <span>Unit Price</span>
               </p>
@@ -417,21 +520,21 @@
               </p>
             </div>
             <div
-              class="wrapper-purchase__item overflow-y-scroll h-[23rem] xl:h-[22rem]"
+              class="wrapper-purchase__item h-[23rem] overflow-y-scroll xl:h-[22rem]"
             >
               <div
-                class="purchase-items flex-col border-[#fecdbb] border-b-[15px] xl:flex-row flex xl:items-center xl:justify-around"
+                class="purchase-items flex flex-col border-b-[15px] border-[#fecdbb] xl:flex-row xl:items-center xl:justify-around"
               >
                 <div class="item flex xl:ml-[-2rem]">
                   <div
-                    class="item-barang flex items-center space-x-3 xl:space-x-0 xl:items-center px-5"
+                    class="item-barang flex items-center space-x-3 px-5 xl:items-center xl:space-x-0"
                   >
                     <div class="flex items-center xl:text-[20px]">
                       <input
                         id="default-checkbox"
                         type="checkbox"
                         value=""
-                        class="hover:cursor-pointer w-4 h-4 text-red-600 bg-gray-100 rounded-full border-red-600 focus:ring-red-600"
+                        class="h-4 w-4 rounded-full border-red-600 bg-gray-100 text-red-600 hover:cursor-pointer focus:ring-red-600"
                       />
                       <label
                         for="default-checkbox"
@@ -450,7 +553,7 @@
                         <span>Product Name</span>
                       </p>
                       <input
-                        class="w-full xl:w-[16rem] rounded-t-lg"
+                        class="w-full rounded-t-lg xl:w-[16rem]"
                         type="text"
                         name=""
                         id=""
@@ -460,27 +563,27 @@
                   </div>
                 </div>
                 <div
-                  class="show-mobile flex items-center px-5 justify-between pb-5 xl:hidden"
+                  class="show-mobile flex items-center justify-between px-5 pb-5 xl:hidden"
                 >
                   <div
-                    class="item-harga xl:space-y-1 text-[12px] xl:text-[16px]"
+                    class="item-harga text-[12px] xl:space-y-1 xl:text-[16px]"
                   >
                     <p class="text-gray-400 line-through">Rp. 4.xxx.xxx</p>
                     <p class="font-bold text-black">Rp. 5.000.000</p>
                   </div>
                   <div
-                    class="item-jumlah flex space-x-1 items-center xl:space-x-3"
+                    class="item-jumlah flex items-center space-x-1 xl:space-x-3"
                   >
                     <button
-                      class="bg-red-600 w-6 h-6 rounded-full text-white font-bold text-[20px] flex justify-center items-center"
+                      class="flex h-6 w-6 items-center justify-center rounded-full bg-red-600 text-[20px] font-bold text-white"
                     >
                       <i class="fas fa-minus"></i>
                     </button>
-                    <p class="font-bold text-black text-[12px] xl:text-[16px]">
+                    <p class="text-[12px] font-bold text-black xl:text-[16px]">
                       12
                     </p>
                     <button
-                      class="bg-red-600 w-6 h-6 rounded-full text-white font-bold flex justify-center items-center"
+                      class="flex h-6 w-6 items-center justify-center rounded-full bg-red-600 font-bold text-white"
                       data-modal-toggle="popup-modal"
                     >
                       <i class="fas fa-plus"></i>
@@ -489,11 +592,11 @@
                   <div
                     class="item-total flex items-center space-x-1 xl:space-x-3"
                   >
-                    <p class="font-bold text-black text-[12px] xl:text-[16px]">
+                    <p class="text-[12px] font-bold text-black xl:text-[16px]">
                       Rp. 100.000
                     </p>
                     <button
-                      class="bg-red-600 w-6 h-6 rounded-full text-white font-bold flex justify-center items-center"
+                      class="flex h-6 w-6 items-center justify-center rounded-full bg-red-600 font-bold text-white"
                       data-modal-toggle="popup-modal"
                     >
                       <i class="fas fa-trash"></i>
@@ -501,20 +604,20 @@
                   </div>
                 </div>
                 <div
-                  class="item-harga hidden xl:block px-5 xl:space-y-1 xl:text-[16px]"
+                  class="item-harga hidden px-5 xl:block xl:space-y-1 xl:text-[16px]"
                 >
                   <p class="text-gray-400 line-through">Rp. 4.xxx.xxx</p>
                   <p class="font-bold text-black">Rp. 5.000.000</p>
                 </div>
                 <div class="item-jumlah hidden xl:flex xl:space-x-3">
                   <button
-                    class="bg-red-600 w-7 h-7 rounded-full text-white font-bold text-[20px] flex justify-center items-center"
+                    class="flex h-7 w-7 items-center justify-center rounded-full bg-red-600 text-[20px] font-bold text-white"
                   >
                     <i class="fas fa-minus"></i>
                   </button>
                   <p class="font-bold text-black xl:text-[16px]">12</p>
                   <button
-                    class="bg-red-600 w-7 h-7 rounded-full text-white font-bold flex justify-center items-center"
+                    class="flex h-7 w-7 items-center justify-center rounded-full bg-red-600 font-bold text-white"
                   >
                     <i class="fas fa-plus"></i>
                   </button>
@@ -522,7 +625,7 @@
                 <div class="item-total hidden xl:flex xl:space-x-3">
                   <p class="font-bold text-black xl:text-[16px]">Rp. 100.000</p>
                   <button
-                    class="bg-red-600 w-7 h-7 rounded-full text-white font-bold flex justify-center items-center"
+                    class="flex h-7 w-7 items-center justify-center rounded-full bg-red-600 font-bold text-white"
                     data-modal-toggle="popup-modal"
                   >
                     <i class="fas fa-trash"></i>
@@ -530,18 +633,18 @@
                 </div>
               </div>
               <div
-                class="purchase-items flex-col border-[#fecdbb] border-b-[15px] xl:flex-row flex xl:items-center xl:justify-around"
+                class="purchase-items flex flex-col border-b-[15px] border-[#fecdbb] xl:flex-row xl:items-center xl:justify-around"
               >
                 <div class="item flex xl:ml-[-2rem]">
                   <div
-                    class="item-barang flex items-center space-x-3 xl:space-x-0 xl:items-center px-5"
+                    class="item-barang flex items-center space-x-3 px-5 xl:items-center xl:space-x-0"
                   >
                     <div class="flex items-center xl:text-[20px]">
                       <input
                         id="default-checkbox"
                         type="checkbox"
                         value=""
-                        class="hover:cursor-pointer w-4 h-4 text-red-600 bg-gray-100 rounded-full border-red-600 focus:ring-red-600"
+                        class="h-4 w-4 rounded-full border-red-600 bg-gray-100 text-red-600 hover:cursor-pointer focus:ring-red-600"
                       />
                       <label
                         for="default-checkbox"
@@ -560,7 +663,7 @@
                         <span>Product Name</span>
                       </p>
                       <input
-                        class="w-full xl:w-[16rem] rounded-t-lg"
+                        class="w-full rounded-t-lg xl:w-[16rem]"
                         type="text"
                         name=""
                         id=""
@@ -570,27 +673,27 @@
                   </div>
                 </div>
                 <div
-                  class="show-mobile flex items-center px-5 justify-between pb-5 xl:hidden"
+                  class="show-mobile flex items-center justify-between px-5 pb-5 xl:hidden"
                 >
                   <div
-                    class="item-harga xl:space-y-1 text-[12px] xl:text-[16px]"
+                    class="item-harga text-[12px] xl:space-y-1 xl:text-[16px]"
                   >
                     <p class="text-gray-400 line-through">Rp. 4.xxx.xxx</p>
                     <p class="font-bold text-black">Rp. 5.000.000</p>
                   </div>
                   <div
-                    class="item-jumlah flex space-x-1 items-center xl:space-x-3"
+                    class="item-jumlah flex items-center space-x-1 xl:space-x-3"
                   >
                     <button
-                      class="bg-red-600 w-6 h-6 rounded-full text-white font-bold text-[20px] flex justify-center items-center"
+                      class="flex h-6 w-6 items-center justify-center rounded-full bg-red-600 text-[20px] font-bold text-white"
                     >
                       <i class="fas fa-minus"></i>
                     </button>
-                    <p class="font-bold text-black text-[12px] xl:text-[16px]">
+                    <p class="text-[12px] font-bold text-black xl:text-[16px]">
                       12
                     </p>
                     <button
-                      class="bg-red-600 w-6 h-6 rounded-full text-white font-bold flex justify-center items-center"
+                      class="flex h-6 w-6 items-center justify-center rounded-full bg-red-600 font-bold text-white"
                     >
                       <i class="fas fa-plus"></i>
                     </button>
@@ -598,11 +701,11 @@
                   <div
                     class="item-total flex items-center space-x-1 xl:space-x-3"
                   >
-                    <p class="font-bold text-black text-[12px] xl:text-[16px]">
+                    <p class="text-[12px] font-bold text-black xl:text-[16px]">
                       Rp. 100.000
                     </p>
                     <button
-                      class="bg-red-600 w-6 h-6 rounded-full text-white font-bold flex justify-center items-center"
+                      class="flex h-6 w-6 items-center justify-center rounded-full bg-red-600 font-bold text-white"
                       data-modal-toggle="popup-modal"
                     >
                       <i class="fas fa-trash"></i>
@@ -610,20 +713,20 @@
                   </div>
                 </div>
                 <div
-                  class="item-harga hidden xl:block px-5 xl:space-y-1 xl:text-[16px]"
+                  class="item-harga hidden px-5 xl:block xl:space-y-1 xl:text-[16px]"
                 >
                   <p class="text-gray-400 line-through">Rp. 4.xxx.xxx</p>
                   <p class="font-bold text-black">Rp. 5.000.000</p>
                 </div>
                 <div class="item-jumlah hidden xl:flex xl:space-x-3">
                   <button
-                    class="bg-red-600 w-7 h-7 rounded-full text-white font-bold text-[20px] flex justify-center items-center"
+                    class="flex h-7 w-7 items-center justify-center rounded-full bg-red-600 text-[20px] font-bold text-white"
                   >
                     <i class="fas fa-minus"></i>
                   </button>
                   <p class="font-bold text-black xl:text-[16px]">12</p>
                   <button
-                    class="bg-red-600 w-7 h-7 rounded-full text-white font-bold flex justify-center items-center"
+                    class="flex h-7 w-7 items-center justify-center rounded-full bg-red-600 font-bold text-white"
                   >
                     <i class="fas fa-plus"></i>
                   </button>
@@ -631,7 +734,7 @@
                 <div class="item-total hidden xl:flex xl:space-x-3">
                   <p class="font-bold text-black xl:text-[16px]">Rp. 100.000</p>
                   <button
-                    class="bg-red-600 w-7 h-7 rounded-full text-white font-bold flex justify-center items-center"
+                    class="flex h-7 w-7 items-center justify-center rounded-full bg-red-600 font-bold text-white"
                     data-modal-toggle="popup-modal"
                   >
                     <i class="fas fa-trash"></i>
@@ -639,18 +742,18 @@
                 </div>
               </div>
               <div
-                class="purchase-items flex-col border-[#fecdbb] border-b-[15px] xl:flex-row flex xl:items-center xl:justify-around"
+                class="purchase-items flex flex-col border-b-[15px] border-[#fecdbb] xl:flex-row xl:items-center xl:justify-around"
               >
                 <div class="item flex xl:ml-[-2rem]">
                   <div
-                    class="item-barang flex items-center space-x-3 xl:space-x-0 xl:items-center px-5"
+                    class="item-barang flex items-center space-x-3 px-5 xl:items-center xl:space-x-0"
                   >
                     <div class="flex items-center xl:text-[20px]">
                       <input
                         id="default-checkbox"
                         type="checkbox"
                         value=""
-                        class="hover:cursor-pointer w-4 h-4 text-red-600 bg-gray-100 rounded-full border-red-600 focus:ring-red-600"
+                        class="h-4 w-4 rounded-full border-red-600 bg-gray-100 text-red-600 hover:cursor-pointer focus:ring-red-600"
                       />
                       <label
                         for="default-checkbox"
@@ -669,7 +772,7 @@
                         <span>Product Name</span>
                       </p>
                       <input
-                        class="w-full xl:w-[16rem] rounded-t-lg"
+                        class="w-full rounded-t-lg xl:w-[16rem]"
                         type="text"
                         name=""
                         id=""
@@ -679,27 +782,27 @@
                   </div>
                 </div>
                 <div
-                  class="show-mobile flex items-center px-5 justify-between pb-5 xl:hidden"
+                  class="show-mobile flex items-center justify-between px-5 pb-5 xl:hidden"
                 >
                   <div
-                    class="item-harga xl:space-y-1 text-[12px] xl:text-[16px]"
+                    class="item-harga text-[12px] xl:space-y-1 xl:text-[16px]"
                   >
                     <p class="text-gray-400 line-through">Rp. 4.xxx.xxx</p>
                     <p class="font-bold text-black">Rp. 5.000.000</p>
                   </div>
                   <div
-                    class="item-jumlah flex space-x-1 items-center xl:space-x-3"
+                    class="item-jumlah flex items-center space-x-1 xl:space-x-3"
                   >
                     <button
-                      class="bg-red-600 w-6 h-6 rounded-full text-white font-bold text-[20px] flex justify-center items-center"
+                      class="flex h-6 w-6 items-center justify-center rounded-full bg-red-600 text-[20px] font-bold text-white"
                     >
                       <i class="fas fa-minus"></i>
                     </button>
-                    <p class="font-bold text-black text-[12px] xl:text-[16px]">
+                    <p class="text-[12px] font-bold text-black xl:text-[16px]">
                       12
                     </p>
                     <button
-                      class="bg-red-600 w-6 h-6 rounded-full text-white font-bold flex justify-center items-center"
+                      class="flex h-6 w-6 items-center justify-center rounded-full bg-red-600 font-bold text-white"
                     >
                       <i class="fas fa-plus"></i>
                     </button>
@@ -707,11 +810,11 @@
                   <div
                     class="item-total flex items-center space-x-1 xl:space-x-3"
                   >
-                    <p class="font-bold text-black text-[12px] xl:text-[16px]">
+                    <p class="text-[12px] font-bold text-black xl:text-[16px]">
                       Rp. 100.000
                     </p>
                     <button
-                      class="bg-red-600 w-6 h-6 rounded-full text-white font-bold flex justify-center items-center"
+                      class="flex h-6 w-6 items-center justify-center rounded-full bg-red-600 font-bold text-white"
                       data-modal-toggle="popup-modal"
                     >
                       <i class="fas fa-trash"></i>
@@ -719,20 +822,20 @@
                   </div>
                 </div>
                 <div
-                  class="item-harga hidden xl:block px-5 xl:space-y-1 xl:text-[16px]"
+                  class="item-harga hidden px-5 xl:block xl:space-y-1 xl:text-[16px]"
                 >
                   <p class="text-gray-400 line-through">Rp. 4.xxx.xxx</p>
                   <p class="font-bold text-black">Rp. 5.000.000</p>
                 </div>
                 <div class="item-jumlah hidden xl:flex xl:space-x-3">
                   <button
-                    class="bg-red-600 w-7 h-7 rounded-full text-white font-bold text-[20px] flex justify-center items-center"
+                    class="flex h-7 w-7 items-center justify-center rounded-full bg-red-600 text-[20px] font-bold text-white"
                   >
                     <i class="fas fa-minus"></i>
                   </button>
                   <p class="font-bold text-black xl:text-[16px]">12</p>
                   <button
-                    class="bg-red-600 w-7 h-7 rounded-full text-white font-bold flex justify-center items-center"
+                    class="flex h-7 w-7 items-center justify-center rounded-full bg-red-600 font-bold text-white"
                   >
                     <i class="fas fa-plus"></i>
                   </button>
@@ -740,7 +843,7 @@
                 <div class="item-total hidden xl:flex xl:space-x-3">
                   <p class="font-bold text-black xl:text-[16px]">Rp. 100.000</p>
                   <button
-                    class="bg-red-600 w-7 h-7 rounded-full text-white font-bold flex justify-center items-center"
+                    class="flex h-7 w-7 items-center justify-center rounded-full bg-red-600 font-bold text-white"
                     data-modal-toggle="popup-modal"
                   >
                     <i class="fas fa-trash"></i>
@@ -749,43 +852,59 @@
               </div>
             </div>
             <div
-              class="purchase-footer bg-gray-500 text-white py-3 xl:py-3 flex flex-wrap justify-around xl:items-center sm:space-x-5 sm:px-3 sm:items-center rounded-b-2xl text-[14px] xl:w-auto xl:justify-flex xl:text-[16px] 2xl:w-auto 2xl:space-y-0"
+              class="purchase-footer xl:justify-flex flex flex-wrap justify-around rounded-b-2xl bg-gray-500 py-3 text-[14px] text-white sm:items-center sm:space-x-5 sm:px-3 xl:w-auto xl:items-center xl:py-3 xl:text-[16px] 2xl:w-auto 2xl:space-y-0"
             >
-              <div class="flex items-center xl:text-[20px]">
+              <div class="relative flex items-center xl:text-[20px]">
                 <input
-                  class="w-[8rem] xl:w-[16rem] rounded-t-lg"
+                  class="w-[8rem] rounded-t-lg pr-10 text-gray-500 xl:w-[16rem] xl:pr-10"
                   type="text"
                   name=""
                   id=""
                   placeholder="Gunakan kode promo"
                 />
+                <div
+                  class="pointer-events-none absolute inset-y-0 right-0 flex items-center pr-3"
+                >
+                  <svg
+                    class="h-5 w-5 text-gray-500"
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z"
+                      clip-rule="evenodd"
+                    ></path>
+                  </svg>
+                </div>
               </div>
               <button
                 type="submit"
-                class="hidden xl:block xl:px-2 xl:py-2 transition-all ease-in-out rounded-2xl border-2 xl:text-[20px] border-transparent hover:border-red-600 hover:text-white"
+                class="hidden rounded-2xl border-2 border-transparent transition-all ease-in-out hover:border-red-600 hover:text-white xl:block xl:px-2 xl:py-2 xl:text-[20px]"
                 data-translatable
               >
                 <span>Hapus Produk Kosong</span>
                 <span>Delete Empty Product</span>
               </button>
-              <p class="font-bold mt-3 sm:mt-0 sm:order-2" data-translatable>
+              <p class="mt-3 font-bold sm:order-2 sm:mt-0" data-translatable>
                 <span>Total 36 produk</span>
                 <span>Total 36 products</span>
               </p>
               <button
                 type="submit"
-                class="block sm:order-1 xl:hidden xl:px-2 xl:py-2 transition-all ease-in-out rounded-2xl border-2 xl:text-[20px] border-transparent hover:border-red-600 hover:text-white"
+                class="block rounded-2xl border-2 border-transparent transition-all ease-in-out hover:border-red-600 hover:text-white sm:order-1 xl:hidden xl:px-2 xl:py-2 xl:text-[20px]"
                 data-translatable
               >
                 <span>Hapus Produk Kosong</span>
                 <span>Delete Empty Product</span>
               </button>
               <div
-                class="footer-total space-y-2 mt-5 xl:mt-0 sm:order-3 xl:space-y-3"
+                class="footer-total mt-5 space-y-2 sm:order-3 xl:mt-0 xl:space-y-3"
               >
                 <p>Rp. 156.000.000.000,-</p>
                 <button
-                  class="bg-red-600 text-white w-full rounded-full py-1 xl:py-1"
+                  class="w-full rounded-full bg-red-600 py-1 text-white xl:py-1"
                   type="submit"
                 >
                   checkout
@@ -801,17 +920,17 @@
     <div
       id="popup-modal"
       tabindex="-1"
-      class="hidden overflow-y-auto overflow-x-hidden fixed top-[20%] xl:top-0 right-0 left-0 z-50 md:inset-0 h-modal md:h-full"
+      class="h-modal fixed top-[20%] right-0 left-0 z-50 hidden overflow-y-auto overflow-x-hidden md:inset-0 md:h-full xl:top-0"
     >
-      <div class="relative p-4 w-full max-w-md h-full md:h-auto">
-        <div class="relative bg-white rounded-lg shadow dark:bg-gray-700">
+      <div class="relative h-full w-full max-w-md p-4 md:h-auto">
+        <div class="relative rounded-lg bg-white shadow dark:bg-gray-700">
           <button
             type="button"
-            class="absolute top-3 right-2.5 text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm p-1.5 ml-auto inline-flex items-center dark:hover:bg-gray-800 dark:hover:text-white"
+            class="absolute top-3 right-2.5 ml-auto inline-flex items-center rounded-lg bg-transparent p-1.5 text-sm text-gray-400 hover:bg-gray-200 hover:text-gray-900 dark:hover:bg-gray-800 dark:hover:text-white"
             data-modal-toggle="popup-modal"
           >
             <svg
-              class="w-5 h-5"
+              class="h-5 w-5"
               fill="currentColor"
               viewBox="0 0 20 20"
               xmlns="http://www.w3.org/2000/svg"
@@ -825,7 +944,7 @@
           </button>
           <div class="p-6 text-center">
             <svg
-              class="mx-auto mb-4 w-14 h-14 text-gray-400 dark:text-gray-200"
+              class="mx-auto mb-4 h-14 w-14 text-gray-400 dark:text-gray-200"
               fill="none"
               stroke="currentColor"
               viewBox="0 0 24 24"
@@ -846,7 +965,7 @@
               <span>Sure want to delete the cart?</span>
             </h3>
             <h3
-              class="mb-3 text-left text-[14px] font-bold ml-[1.5rem] text-black"
+              class="mb-3 ml-[1.5rem] text-left text-[14px] font-bold text-black"
               data-translatable
             >
               <span>Nama Produk</span>
@@ -855,7 +974,7 @@
             <button
               data-modal-toggle="popup-modal"
               type="button"
-              class="text-white bg-red-600 hover:bg-red-800 focus:ring-4 w-[6rem] focus:outline-none focus:ring-red-300 dark:focus:ring-red-800 font-medium rounded-full text-sm px-5 py-2.5 mr-2"
+              class="mr-2 w-[6rem] rounded-full bg-red-600 px-5 py-2.5 text-sm font-medium text-white hover:bg-red-800 focus:outline-none focus:ring-4 focus:ring-red-300 dark:focus:ring-red-800"
               data-translatable
             >
               <span>Ya</span>
@@ -864,7 +983,7 @@
             <button
               data-modal-toggle="popup-modal"
               type="button"
-              class="text-gray-500 bg-white hover:bg-gray-100 focus:ring-4 focus:outline-none focus:ring-gray-200 rounded-full border border-gray-200 text-sm font-medium w-[6rem] px-5 py-2.5 hover:text-gray-900 focus:z-10 dark:bg-gray-700 dark:text-gray-300 dark:border-gray-500 dark:hover:text-white dark:hover:bg-gray-600 dark:focus:ring-gray-600"
+              class="w-[6rem] rounded-full border border-gray-200 bg-white px-5 py-2.5 text-sm font-medium text-gray-500 hover:bg-gray-100 hover:text-gray-900 focus:z-10 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:border-gray-500 dark:bg-gray-700 dark:text-gray-300 dark:hover:bg-gray-600 dark:hover:text-white dark:focus:ring-gray-600"
               data-translatable
             >
               <span>Tidak</span>
@@ -879,19 +998,21 @@
       class="border-primary mb-0 h-[50rem] border-t-[15px] bg-[#fecdbb] px-6 md:px-14 xl:mb-0 xl:mt-0 xl:h-full"
     >
       <div
-        class="container mx-auto mt-12 flex h-[30rem] flex-col justify-start xl:h-[18rem] xl:flex-row"
+        class="container mx-auto mt-12 flex h-[30rem] flex-col justify-start xl:mt-0 xl:h-[18rem] xl:flex-row"
       >
         <div
           class="slogan flex h-full flex-col items-start justify-center font-bold text-[#4a4e5a] xl:h-auto xl:flex-col xl:items-center xl:justify-evenly"
         >
-          <div class="logoFooter flex flex-col xl:flex-row xl:pr-[5rem]">
+          <div
+            class="logoFooter flex flex-col xl:flex-row xl:items-center xl:pr-[5rem]"
+          >
             <img
               class="h-[6rem] w-[12rem] xl:h-[6rem] xl:w-auto"
               src="./../assets/logo.webp"
               alt=""
               srcset=""
             />
-            <h6 class="font-normal xl:ml-5" data-translatable>
+            <h6 class="font-normal xl:ml-5 xl:text-[14px]" data-translatable>
               <span
                 >Burnerindo.com adalah sebuah layanan e-commerce yang dibuat dan
                 dikelola oleh PT. Burnerindo Teknik Utama, sebagai salah satu
@@ -911,36 +1032,39 @@
           <div
             class="footer-menu mt-7 flex w-full flex-wrap space-x-5 space-y-5 xl:mt-0 xl:justify-around xl:space-x-0 xl:space-y-0"
           >
-            <h6 class="mt-5 text-black xl:mt-0" data-translatable>
+            <h6
+              class="mt-5 text-black xl:mt-0 xl:text-[14px]"
+              data-translatable
+            >
               <span>SYARAT PENGGUNAAN</span>
               <span>TERMS OF USE</span>
             </h6>
-            <div class="footer-tentangKami">
-              <h6 class="text-black" data-translatable>
+            <div class="footer-tentangKami xl:text-center">
+              <h6 class="text-black xl:text-[14px]" data-translatable>
                 <span>TENTANG KAMI</span>
                 <span>ABOUT US</span>
               </h6>
-              <p data-translatable>
+              <p class="xl:text-[12px]" data-translatable>
                 <span>TENTANG KAMI</span>
                 <span>ABOUT US</span>
               </p>
-              <p data-translatable>
+              <p class="xl:text-[12px]" data-translatable>
                 <span>MENGAPA KAMI</span>
                 <span>WHY US</span>
               </p>
             </div>
-            <h6 class="text-black" data-translatable>
+            <h6 class="text-black xl:text-[14px]" data-translatable>
               <span>FAQ</span>
               <span>FAQ</span>
             </h6>
-            <h6 class="text-black" data-translatable>
+            <h6 class="text-black xl:text-[14px]" data-translatable>
               <span>SYARAT DAN KETENTUAN</span>
               <span>TERMS AND CONDITIONS</span>
             </h6>
           </div>
         </div>
         <div class="subscribe mt-16 flex flex-col space-y-3 self-baseline">
-          <h6 class="font-bold text-gray-600" data-translatable>
+          <h6 class="font-bold text-gray-600 xl:text-[20px]" data-translatable>
             <span>TEMUKAN KAMI</span>
             <span>FIND US</span>
           </h6>
@@ -988,7 +1112,7 @@
               </a>
             </button>
           </div>
-          <div class="footer-location font-normal text-black">
+          <div class="footer-location font-normal text-black xl:text-[14px]">
             <p data-translatable>
               <span
                 >Lindeteves Trade Center Lt. GF2 Blok C27 No. 9 Jl. Hayam Wuruk
@@ -1014,65 +1138,65 @@
             <div class="brands-copyright space-y-5">
               <div class="brands-partner flex flex-col xl:w-[30rem]">
                 <h6
-                  class="mb-5 font-bold text-[#4a4e5a] xl:mb-3"
+                  class="mb-5 font-bold text-[#4a4e5a] xl:mb-3 xl:text-[20px]"
                   data-translatable
                 >
                   <span>MITRA MEREK</span>
                   <span>BRAND PARTNER</span>
                 </h6>
                 <div
-                  class="footer-brand__brand flex flex-col flex-wrap justify-between space-y-5 xl:flex-row xl:space-y-0"
+                  class="footer-brand__brand flex flex-col flex-wrap justify-between space-y-5 xl:flex-row xl:space-y-5"
                 >
                   <img
-                    class="h-[29px] w-[52px]"
+                    class="h-[40px] w-[85px] xl:mt-5"
                     src="./../assets/brand1.webp"
                     alt=""
                     srcset=""
                   />
                   <img
-                    class="h-[29px] w-[52px]"
+                    class="h-[40px] w-[85px]"
                     src="./../assets/brand2.webp"
                     alt=""
                     srcset=""
                   />
                   <img
-                    class="h-[29px] w-[52px]"
+                    class="h-[40px] w-[85px]"
                     src="./../assets/brand3.webp"
                     alt=""
                     srcset=""
                   />
                   <img
-                    class="h-[29px] w-[52px]"
+                    class="h-[40px] w-[85px]"
                     src="./../assets/brand4.webp"
                     alt=""
                     srcset=""
                   />
                   <img
-                    class="h-[29px] w-[52px]"
+                    class="h-[40px] w-[85px]"
                     src="./../assets/brand5.webp"
                     alt=""
                     srcset=""
                   />
                   <img
-                    class="h-[29px] w-[52px]"
+                    class="h-[40px] w-[85px]"
                     src="./../assets/brand6.webp"
                     alt=""
                     srcset=""
                   />
                   <img
-                    class="h-[29px] w-[52px]"
+                    class="h-[40px] w-[85px]"
                     src="./../assets/brand7.webp"
                     alt=""
                     srcset=""
                   />
                   <img
-                    class="h-[29px] w-[52px]"
+                    class="h-[40px] w-[85px]"
                     src="./../assets/brand8.webp"
                     alt=""
                     srcset=""
                   />
                   <img
-                    class="h-[29px] w-[52px]"
+                    class="h-[40px] w-[85px]"
                     src="./../assets/brand9.webp"
                     alt=""
                     srcset=""
@@ -1081,83 +1205,83 @@
               </div>
               <div class="metode-pembayaran flex flex-col xl:w-[30rem]">
                 <h6
-                  class="mt-5 mb-5 font-bold text-[#4a4e5a] xl:mb-3 xl:mt-0"
+                  class="mt-5 mb-5 font-bold text-[#4a4e5a] xl:mb-3 xl:mt-0 xl:text-[20px]"
                   data-translatable
                 >
                   <span>METODE PEMBAYARAN</span>
                   <span>PAYMENT METHOD</span>
                 </h6>
                 <div
-                  class="payment flex flex-col justify-between space-y-7 xl:flex-row xl:space-y-0 xl:space-x-2"
+                  class="payment flex flex-col flex-wrap justify-between space-y-7 xl:mb-[2.5rem] xl:flex-row xl:space-y-5 xl:space-x-5 2xl:justify-start"
                 >
                   <img
-                    class="h-[45px] w-[85px] xl:h-[20px] xl:w-[35px]"
+                    class="h-[45px] w-[85px] xl:mt-5 xl:h-[30px] xl:w-[50px]"
                     src="./../assets/footer/bca.webp"
                     alt=""
                     srcset=""
                   />
                   <img
-                    class="h-[45px] w-[85px] xl:h-[20px] xl:w-[35px]"
+                    class="h-[45px] w-[85px] xl:h-[30px] xl:w-[50px]"
                     src="./../assets/footer/bii.webp"
                     alt=""
                     srcset=""
                   />
                   <img
-                    class="h-[45px] w-[85px] xl:h-[20px] xl:w-[35px]"
+                    class="h-[45px] w-[85px] xl:h-[30px] xl:w-[50px]"
                     src="./../assets/footer/bni.webp"
                     alt=""
                     srcset=""
                   />
                   <img
-                    class="h-[45px] w-[85px] xl:h-[20px] xl:w-[35px]"
+                    class="h-[45px] w-[85px] xl:h-[30px] xl:w-[50px]"
                     src="./../assets/footer/bri.webp"
                     alt=""
                     srcset=""
                   />
                   <img
-                    class="h-[45px] w-[85px] xl:h-[20px] xl:w-[35px]"
+                    class="h-[45px] w-[85px] xl:h-[30px] xl:w-[50px]"
                     src="./../assets/footer/dbs.webp"
                     alt=""
                     srcset=""
                   />
                   <img
-                    class="h-[45px] w-[85px] xl:h-[20px] xl:w-[35px]"
+                    class="h-[45px] w-[85px] xl:h-[30px] xl:w-[50px]"
                     src="./../assets/footer/indodana.webp"
                     alt=""
                     srcset=""
                   />
                   <img
-                    class="h-[45px] w-[85px] xl:h-[20px] xl:w-[35px]"
+                    class="h-[45px] w-[85px] xl:h-[30px] xl:w-[50px]"
                     src="./../assets/footer/kredivo.webp"
                     alt=""
                     srcset=""
                   />
                   <img
-                    class="h-[45px] w-[85px] xl:h-[20px] xl:w-[35px]"
+                    class="h-[45px] w-[85px] xl:h-[30px] xl:w-[50px]"
                     src="./../assets/footer/mandiri.webp"
                     alt=""
                     srcset=""
                   />
                   <img
-                    class="h-[45px] w-[85px] xl:h-[20px] xl:w-[35px]"
+                    class="h-[45px] w-[85px] xl:h-[30px] xl:w-[50px]"
                     src="./../assets/footer/mastercard.webp"
                     alt=""
                     srcset=""
                   />
                   <img
-                    class="h-[45px] w-[85px] xl:h-[20px] xl:w-[35px]"
+                    class="h-[45px] w-[85px] xl:h-[30px] xl:w-[50px]"
                     src="./../assets/footer/ovo.webp"
                     alt=""
                     srcset=""
                   />
                   <img
-                    class="h-[45px] w-[85px] xl:h-[20px] xl:w-[35px]"
+                    class="h-[45px] w-[85px] xl:h-[30px] xl:w-[50px]"
                     src="./../assets/footer/permata.png"
                     alt=""
                     srcset=""
                   />
                   <img
-                    class="h-[45px] w-[85px] xl:h-[20px] xl:w-[35px]"
+                    class="h-[45px] w-[85px] xl:h-[30px] xl:w-[50px]"
                     src="./../assets/footer/visa.webp"
                     alt=""
                     srcset=""
@@ -1188,7 +1312,9 @@
               />
             </div>
           </div>
-          <div class="brands-copyright text-primary pb-12 font-bold xl:pb-0">
+          <div
+            class="brands-copyright text-primary pb-12 font-bold xl:pb-[2.5rem] xl:text-[14px]"
+          >
             <p data-translatable>
               <span>© Copyright 2022 PT. Burnerindo Teknik Utama</span>
               <span>© Copyright 2022 PT. Burnerindo Teknik Utama</span>
@@ -1210,7 +1336,7 @@
       class="floating-sosmed fixed right-8 top-[70%] z-[5] flex h-32 flex-col justify-between lg:top-[48%] lg:h-[7rem] xl:top-[77%] xl:h-32 2xl:top-[74%] 2xl:h-[10rem]"
     >
       <button
-        class="instagram bg-primary h-8 w-8 rounded-full text-white shadow-2xl xl:h-8 xl:w-8 2xl:h-12 2xl:w-12"
+        class="instagram hover:border-primary hover:text-primary bg-primary h-8 w-8 rounded-full border border-transparent text-white shadow-2xl hover:bg-white xl:h-8 xl:w-8 2xl:h-12 2xl:w-12"
         type="submit"
       >
         <a target="_blank" href="https://instagram.com/">
@@ -1218,7 +1344,7 @@
         </a>
       </button>
       <button
-        class="wa bg-primary h-8 w-8 rounded-full text-white shadow-2xl xl:h-8 xl:w-8 2xl:h-12 2xl:w-12"
+        class="wa hover:border-primary hover:text-primary bg-primary h-8 w-8 rounded-full border border-transparent text-white shadow-2xl hover:bg-white xl:h-8 xl:w-8 2xl:h-12 2xl:w-12"
         type="submit"
       >
         <a
@@ -1230,7 +1356,7 @@
       </button>
       <button
         target="_blank"
-        class="message bg-primary h-8 w-8 rounded-full text-white shadow-2xl xl:h-8 xl:w-8 2xl:h-12 2xl:w-12"
+        class="message hover:border-primary hover:text-primary bg-primary h-8 w-8 rounded-full border border-transparent text-white shadow-2xl hover:bg-white xl:h-8 xl:w-8 2xl:h-12 2xl:w-12"
         type="submit"
       >
         <a target="_blank" href="mailto:contoh@gmail.com">
