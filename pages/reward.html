@@ -212,7 +212,7 @@
         class="container relative z-10 mx-auto flex flex-nowrap items-center justify-between"
       >
         <a
-          class="text-primary hidden font-bold md:block xl:text-[14px]"
+          class="text-primary hidden font-bold xl:block xl:text-[14px]"
           href=""
           data-translatable
         >
@@ -323,7 +323,7 @@
           >
             <li id="listLoading" class="list-none text-xl">Loading . . .</li>
           </div>
-          <div class="relative hidden md:block xl:ml-[-9rem]">
+          <div class="relative hidden xl:block xl:ml-[-9rem]">
             <div
               class="pointer-events-none absolute inset-y-0 left-0 flex items-center pl-3"
             >
@@ -436,7 +436,7 @@
           <button
             id="btnHamburger"
             type="button"
-            class="inline items-center rounded-lg p-2 text-sm text-gray-500 transition-all duration-300 ease-in-out hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600 md:hidden xl:ml-[1.9rem]"
+            class="inline items-center rounded-lg p-2 text-sm text-gray-500 transition-all duration-300 ease-in-out hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600 xl:hidden xl:ml-[1.9rem]"
             aria-controls="mobile-menu-3"
             aria-expanded="false"
           >
@@ -469,12 +469,12 @@
         </div>
         <div
           id="sidebar"
-          class="transitioin-all absolute left-[-100%] top-[4rem] h-screen w-[13rem] items-center justify-between bg-white duration-300 ease-in-out md:static md:left-0 md:top-0 md:order-2 md:flex md:h-auto md:w-auto md:bg-transparent"
+          class="transitioin-all absolute left-[-100%] top-[4rem] h-screen w-[13rem] items-center bg-white duration-300 ease-in-out md:top-0 md:order-2 md:flex md:h-screen md:w-[70%] md:flex-col md:justify-center md:space-y-5 md:shadow-2xl xl:static xl:h-auto xl:w-auto xl:flex-row xl:justify-between xl:space-y-0 xl:bg-transparent"
           id="mobile-menu-3"
         >
           <ul
             id="changedColor"
-            class="xl:text-primary mt-4 flex flex-col space-y-4 text-center text-[1.2rem] text-gray-700 md:mt-0 md:flex-row md:items-center md:space-x-8 md:font-medium lg:space-y-0"
+            class="mt-4 flex flex-col space-y-4 text-center text-[1.2rem] text-gray-700 md:mt-0 md:w-full md:items-center md:font-medium lg:space-y-5 xl:w-auto xl:flex-row xl:space-x-8 xl:space-y-0 xl:text-[14px] xl:text-primary"
           >
             <li>
               <a
@@ -534,41 +534,43 @@
     <main>
       <section class="heroLogin">
         <div
-          class="mx-auto flex h-[27rem] w-full justify-center xl:h-[30rem] 2xl:h-[33rem]"
+          class="mx-auto flex h-auto w-full xl:flex-row flex-col justify-center xl:h-[30rem] 2xl:h-[33rem]"
         >
           <div
             class="mx-auto flex w-full flex-col items-center justify-center bg-primary px-4 py-2.5 md:px-14 xl:items-center xl:px-24 2xl:items-start"
           >
-            <div class="reward flex flex-col justify-center items-center">
+            <div
+              class="reward flex flex-col justify-center items-center py-8 xl:py-0"
+            >
               <img
-                class="xl:h-[11rem] xl:mb-16"
+                class="xl:h-[11rem] sm:h-[11rem] xl:mt-0 mb-4 xl:mb-16"
                 src="./../assets/reward.png"
                 alt=""
                 srcset=""
               />
               <div
-                class="progress flex w-full xl:mb-1 text-white justify-between"
+                class="progress flex w-full mb-1 xl:mb-1 text-white justify-between"
               >
                 <p>300</p>
                 <p>400</p>
               </div>
               <div
-                class="w-full xl:mb-16 bg-transparent border-white border rounded-full h-auto dark:bg-gray-700"
+                class="w-full mb-4 xl:mb-16 bg-transparent border-white border rounded-full h-auto dark:bg-gray-700"
               >
                 <div
-                  class="bg-white h-2.5 rounded-full"
+                  class="bg-white h-1.5 xl:h-2.5 rounded-full"
                   style="width: 45%"
                 ></div>
               </div>
               <button
-                class="border border-white xl:px-7 rounded-full xl:py-3 text-white"
+                class="border text-[14px] border-white px-4 py-3 xl:px-7 rounded-full xl:py-3 text-white"
               >
                 GUNAKAN KUPON
               </button>
             </div>
           </div>
           <div
-            class="bg-white flex w-44 flex-col justify-center px-4 py-2.5 sm:w-full sm:items-center md:px-14 xl:w-full xl:items-center xl:justify-start xl:px-0 2xl:items-center 2xl:px-10"
+            class="bg-white flex w-full flex-col justify-center px-4 py-2.5 sm:w-full sm:items-center md:px-14 xl:w-full xl:items-center xl:justify-start xl:px-0 2xl:items-center 2xl:px-10 h-[25rem] xl:h-auto"
           >
             <div
               class="tos-navbar text-primary flex flex-wrap justify-center space-y-5 border-primary text-[14px] font-bold xl:w-auto xl:justify-between xl:space-y-10 xl:border-b-[2px] xl:pb-3 xl:text-[1.5rem] 2xl:w-auto 2xl:space-y-0"
@@ -622,112 +624,112 @@
             </div>
 
             <div
-              class="coupons xl:mt-3 overflow-y-scroll xl:h-full flex flex-wrap w-full justify-center"
+              class="coupons sm:mt-6 xl:mt-3 overflow-y-scroll xl:h-full flex flex-wrap w-full justify-center"
             >
               <img
-                class="xl:h-[6rem]"
+                class="xl:h-[6rem] sm:h-[6rem]"
                 src="./../assets/voucher.png"
                 alt=""
                 srcset=""
               />
               <img
-                class="xl:h-[6rem]"
+                class="xl:h-[6rem] sm:h-[6rem]"
                 src="./../assets/voucher.png"
                 alt=""
                 srcset=""
               />
               <img
-                class="xl:h-[6rem]"
+                class="xl:h-[6rem] sm:h-[6rem]"
                 src="./../assets/voucher.png"
                 alt=""
                 srcset=""
               />
               <img
-                class="xl:h-[6rem]"
+                class="xl:h-[6rem] sm:h-[6rem]"
                 src="./../assets/voucher.png"
                 alt=""
                 srcset=""
               />
               <img
-                class="xl:h-[6rem]"
+                class="xl:h-[6rem] sm:h-[6rem]"
                 src="./../assets/voucher.png"
                 alt=""
                 srcset=""
               />
               <img
-                class="xl:h-[6rem]"
+                class="xl:h-[6rem] sm:h-[6rem]"
                 src="./../assets/voucher.png"
                 alt=""
                 srcset=""
               />
               <img
-                class="xl:h-[6rem]"
+                class="xl:h-[6rem] sm:h-[6rem]"
                 src="./../assets/voucher.png"
                 alt=""
                 srcset=""
               />
               <img
-                class="xl:h-[6rem]"
+                class="xl:h-[6rem] sm:h-[6rem]"
                 src="./../assets/voucher.png"
                 alt=""
                 srcset=""
               />
               <img
-                class="xl:h-[6rem]"
+                class="xl:h-[6rem] sm:h-[6rem]"
                 src="./../assets/voucher.png"
                 alt=""
                 srcset=""
               />
               <img
-                class="xl:h-[6rem]"
+                class="xl:h-[6rem] sm:h-[6rem]"
                 src="./../assets/voucher.png"
                 alt=""
                 srcset=""
               />
               <img
-                class="xl:h-[6rem]"
+                class="xl:h-[6rem] sm:h-[6rem]"
                 src="./../assets/voucher.png"
                 alt=""
                 srcset=""
               />
               <img
-                class="xl:h-[6rem]"
+                class="xl:h-[6rem] sm:h-[6rem]"
                 src="./../assets/voucher.png"
                 alt=""
                 srcset=""
               />
               <img
-                class="xl:h-[6rem]"
+                class="xl:h-[6rem] sm:h-[6rem]"
                 src="./../assets/voucher.png"
                 alt=""
                 srcset=""
               />
               <img
-                class="xl:h-[6rem]"
+                class="xl:h-[6rem] sm:h-[6rem]"
                 src="./../assets/voucher.png"
                 alt=""
                 srcset=""
               />
               <img
-                class="xl:h-[6rem]"
+                class="xl:h-[6rem] sm:h-[6rem]"
                 src="./../assets/voucher.png"
                 alt=""
                 srcset=""
               />
               <img
-                class="xl:h-[6rem]"
+                class="xl:h-[6rem] sm:h-[6rem]"
                 src="./../assets/voucher.png"
                 alt=""
                 srcset=""
               />
               <img
-                class="xl:h-[6rem]"
+                class="xl:h-[6rem] sm:h-[6rem]"
                 src="./../assets/voucher.png"
                 alt=""
                 srcset=""
               />
               <img
-                class="xl:h-[6rem]"
+                class="xl:h-[6rem] sm:h-[6rem]"
                 src="./../assets/voucher.png"
                 alt=""
                 srcset=""
@@ -773,7 +775,7 @@
               class="logoFooter flex flex-col xl:flex-row xl:items-center xl:pr-[5rem]"
             >
               <img
-                class="h-[6rem] w-[12rem] xl:h-[6rem] xl:w-auto"
+                class="h-[6rem] w-[12rem] xl:h-[6rem] sm:h-[6rem] xl:w-auto"
                 src="./../assets/logo.webp"
                 alt=""
                 srcset=""
@@ -1296,6 +1298,7 @@
       btnHamburger.addEventListener("click", function () {
         sidebar.classList.toggle("left-[-100%]");
         sidebar.classList.toggle("left-[-2.5rem]");
+        sidebar.classList.toggle("md:left-[-3.5rem]");
         btnHamburger.classList.toggle("open");
 
         if (btnHamburger.classList.contains("open")) {
