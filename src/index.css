@@ -206,7 +206,12 @@
   @media (min-width: 1536px) {
     .data-list {
       width: 8rem !important;
+      height: 34rem !important;
       margin-left: 3rem !important;
+    }
+
+    .data-list img {
+      @apply h-[3rem];
     }
   }
 }
