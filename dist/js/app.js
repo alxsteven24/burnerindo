@@ -105,12 +105,14 @@ window.onscroll = function () {
 
   if (window.pageYOffset > fixedHeader) {
     header.classList.add("stickyNavbar");
+    header.classList.remove("xl:bg-transparent");
     changedColor.classList.add("changedColor");
     changedColor.classList.remove("xl:text-white");
     changedColor.classList.remove("text-gray-700");
     // header.classList.remove("bg-transparent");
   } else {
     header.classList.remove("stickyNavbar");
+    header.classList.add("xl:bg-transparent");
     changedColor.classList.add("xl:text-white");
     changedColor.classList.add("text-gray-700");
     // header.classList.add("bg-transparent");
@@ -120,6 +122,8 @@ window.onscroll = function () {
 btnHamburger.addEventListener("click", function () {
   sidebar.classList.toggle("left-[-100%]");
   sidebar.classList.toggle("left-[-2.5rem]");
+  sidebar.classList.toggle("md:left-[-3.5rem]");
+  sidebar.classList.toggle("lg:left-[-10%]");
   btnHamburger.classList.toggle("open");
 
   if (btnHamburger.classList.contains("open")) {

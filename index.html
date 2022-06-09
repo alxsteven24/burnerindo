@@ -43,9 +43,12 @@
     </style>
   </head>
   <body class="overflow-x-hidden">
-    <nav id="navbar" class="bg-white px-[2.5rem] py-2.5 md:px-14 xl:px-[5rem]">
+    <nav
+      id="navbar"
+      class="bg-white xl:bg-transparent px-[2.5rem] py-2.5 md:px-14 xl:px-[5rem]"
+    >
       <div
-        class="container relative z-10 mx-auto flex flex-nowrap items-center justify-between xl:flex-wrap"
+        class="container relative z-10 mx-auto flex flex-nowrap items-center justify-between"
       >
         <a href="#" class="flex items-center">
           <img
@@ -55,11 +58,11 @@
             alt="Flowbite Logo"
           />
         </a>
-        <div class="flex md:order-1 xl:ml-0 2xl:ml-[11rem]">
+        <div class="flex md:order-1 xl:ml-[11rem]">
           <input
             type="text"
             id="searchNavbar-mobile"
-            class="mx-auto block w-[55%] rounded-lg border border-gray-300 bg-gray-50 p-2 pl-[1.5rem] text-gray-900 focus:border-blue-500 focus:ring-blue-500 dark:border-gray-600 dark:bg-gray-700 dark:text-white dark:placeholder-gray-400 dark:focus:border-blue-500 dark:focus:ring-blue-500 sm:text-sm md:w-full lg:mr-16 xl:hidden"
+            class="mx-auto block w-[55%] rounded-lg border border-gray-300 bg-gray-50 p-2 pl-[1rem] text-gray-900 focus:border-blue-500 focus:ring-blue-500 dark:border-gray-600 dark:bg-gray-700 dark:text-white dark:placeholder-gray-400 dark:focus:border-blue-500 dark:focus:ring-blue-500 sm:text-sm md:mr-[3rem] md:w-full lg:mr-16 xl:hidden"
             placeholder="Search..."
           />
           <div
@@ -151,7 +154,7 @@
           >
             <li id="listLoading" class="list-none text-xl">Loading . . .</li>
           </div>
-          <div class="relative hidden md:block xl:ml-[10rem]">
+          <div class="relative hidden xl:block xl:ml-[-9rem]">
             <div
               class="pointer-events-none absolute inset-y-0 left-0 flex items-center pl-3"
             >
@@ -171,7 +174,7 @@
             <input
               type="text"
               id="searchNavbar"
-              class="block w-[20rem] rounded-full border-2 border-white bg-[#cc0000] p-2 pl-10 text-white placeholder:text-white focus:border-white focus:ring-white sm:text-sm md:w-48 xl:w-[20rem]"
+              class="block w-[20rem] rounded-full border-2 border-white bg-[#cc0000] p-2 pl-10 text-white placeholder:text-white focus:border-white focus:ring-white sm:text-sm md:w-48 xl:w-[15rem]"
               placeholder="Cari..."
             />
             <div
@@ -264,7 +267,7 @@
           <button
             id="btnHamburger"
             type="button"
-            class="inline items-center rounded-lg p-2 text-sm text-gray-500 transition-all duration-300 ease-in-out hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600 md:hidden xl:ml-[1.9rem]"
+            class="inline items-center rounded-lg p-2 text-sm text-gray-500 transition-all duration-300 ease-in-out hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600 xl:hidden xl:ml-[1.9rem]"
             aria-controls="mobile-menu-3"
             aria-expanded="false"
           >
@@ -297,18 +300,17 @@
         </div>
         <div
           id="sidebar"
-          class="transitioin-all absolute left-[-100%] top-[4rem] h-screen w-[13rem] items-center justify-between bg-white duration-300 ease-in-out md:static md:left-0 md:top-0 md:order-2 md:flex md:h-auto md:w-auto md:bg-transparent"
+          class="transitioin-all absolute left-[-100%] top-[4rem] h-screen w-[13rem] items-center bg-white duration-300 ease-in-out md:top-0 md:order-2 md:flex md:h-screen md:w-[70%] md:flex-col md:justify-center md:space-y-5 md:shadow-2xl xl:static xl:h-auto xl:w-auto xl:flex-row xl:justify-between xl:space-y-0 xl:bg-transparent"
           id="mobile-menu-3"
         >
           <ul
             id="changedColor"
-            class="mt-4 flex flex-col space-y-4 text-center text-[1.2rem] text-gray-700 md:mt-0 md:flex-row md:items-center md:space-x-8 md:font-medium lg:space-y-0 xl:text-[14px] xl:text-white"
+            class="mt-4 flex flex-col space-y-4 text-center text-[1.2rem] text-gray-700 md:mt-0 md:w-full md:items-center md:font-medium lg:space-y-5 xl:w-auto xl:flex-row xl:space-x-8 xl:space-y-0 xl:text-[14px] xl:text-white"
           >
             <li>
               <a
-                href="./pages/login.html"
-                class="block rounded py-2 pr-4 pl-3 md:p-0"
-                aria-current="page"
+                href="./login.html"
+                class="block rounded py-2 pr-4 pl-3 md:p-0 xl:text-[14px]"
                 data-translatable
               >
                 <span>Masuk/Daftar</span>
@@ -317,121 +319,23 @@
             </li>
             <li>
               <a
-                href="./pages/tentang-kami.html"
-                class="block border-b border-gray-100 py-2 pr-4 pl-3 hover:bg-gray-50 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white md:border-0 md:p-0 md:hover:bg-transparent"
+                href="./tentang-kami.html"
+                class="block border-b border-gray-100 py-2 pr-4 pl-3 md:border-0 md:p-0 xl:text-[14px]"
                 data-translatable
               >
                 <span>Tentang Kami</span>
                 <span>About Us</span>
               </a>
             </li>
-            <li class="hover-cart">
+            <li>
               <a
-                id=""
-                href="./pages/purchase.html"
-                class="block border-b border-gray-100 py-2 pr-4 pl-3 hover:bg-gray-50 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white md:border-0 md:p-0 md:hover:bg-transparent"
+                href="#"
+                class="block border-b border-gray-100 py-2 pr-4 pl-3 md:border-0 md:p-0 md:hover:bg-transparent xl:text-[14px]"
                 data-translatable
               >
-                <span
-                  >Keranjang <i class="fas fa-shopping-cart xl:fa-[12px]"></i
-                ></span>
+                <span>Keranjang <i class="fas fa-shopping-cart"></i></span>
                 <span>Cart <i class="fas fa-shopping-cart"></i></span>
               </a>
-
-              <div
-                class="cart-hover hidden w-[20rem] bg-white transition-all duration-300 ease-in-out xl:absolute xl:right-10 xl:mt-3 xl:block xl:shadow-2xl"
-              >
-                <div
-                  class="cart-item-scroll xl:h-[15rem] xl:overflow-y-scroll xl:px-4"
-                >
-                  <div
-                    class="cart-item flex items-center xl:justify-between xl:space-x-3"
-                  >
-                    <div class="cart-hover__image">
-                      <img
-                        class="xl:h-[5rem]"
-                        src="./assets/search/img.jpg"
-                        alt=""
-                        srcset=""
-                      />
-                    </div>
-                    <div class="cart-hover__name text-primary">
-                      <p>Nama Barang</p>
-                      <p class="text-[14px]">Rp. 1.000.000 x 1</p>
-                    </div>
-                  </div>
-                  <div
-                    class="cart-item flex items-center xl:justify-between xl:space-x-3"
-                  >
-                    <div class="cart-hover__image">
-                      <img
-                        class="xl:h-[5rem]"
-                        src="./assets/search/img.jpg"
-                        alt=""
-                        srcset=""
-                      />
-                    </div>
-                    <div class="cart-hover__name text-primary">
-                      <p>Nama Barang</p>
-                      <p class="text-[14px]">Rp. 1.000.000 x 1</p>
-                    </div>
-                  </div>
-                  <div
-                    class="cart-item flex items-center xl:justify-between xl:space-x-3"
-                  >
-                    <div class="cart-hover__image">
-                      <img
-                        class="xl:h-[5rem]"
-                        src="./assets/search/img.jpg"
-                        alt=""
-                        srcset=""
-                      />
-                    </div>
-                    <div class="cart-hover__name text-primary">
-                      <p>Nama Barang</p>
-                      <p class="text-[14px]">Rp. 1.000.000 x 1</p>
-                    </div>
-                  </div>
-                  <div
-                    class="cart-item flex items-center xl:justify-between xl:space-x-3"
-                  >
-                    <div class="cart-hover__image">
-                      <img
-                        class="xl:h-[5rem]"
-                        src="./assets/search/img.jpg"
-                        alt=""
-                        srcset=""
-                      />
-                    </div>
-                    <div class="cart-hover__name text-primary">
-                      <p>Nama Barang</p>
-                      <p class="text-[14px]">Rp. 1.000.000 x 1</p>
-                    </div>
-                  </div>
-                </div>
-
-                <div
-                  class="cart-total text-primary border-grey-200 border-t-2 text-left xl:flex xl:justify-between xl:xl:px-5 xl:py-4"
-                >
-                  <p>Total :</p>
-                  <p>Rp. 5.000.000</p>
-                </div>
-
-                <div
-                  class="cart-button text-primary flex xl:flex-col xl:space-y-3 xl:px-5 xl:pb-3"
-                >
-                  <a
-                    class="hover:border-primary border-2 border-white py-2"
-                    href="./purchase.html"
-                  >
-                    <button>View Card</button>
-                  </a>
-
-                  <a class="bg-primary py-2 text-white" href="./purchase.html">
-                    <button>Checkout</button>
-                  </a>
-                </div>
-              </div>
             </li>
             <li class="flex items-center justify-center">
               <a href="#" class="language mr-5" data-lang-ref="id">
@@ -453,7 +357,7 @@
       >
         <img
           loading="lazy"
-          class="absolute right-0 top-[2rem] -z-[1] ml-auto h-[12rem] sm:top-[4rem] sm:left-0 sm:right-0 sm:h-[19rem] md:left-[16.5rem] md:top-0 md:z-0 md:h-[23rem] lg:top-0 lg:left-[14.5rem] lg:z-0 lg:h-[28rem] xl:h-[36rem] 2xl:h-[36rem]"
+          class="absolute right-0 top-[2rem] -z-[1] ml-auto h-[12rem] sm:top-[4rem] sm:left-0 sm:right-0 sm:h-[19rem] md:left-[16.5rem] md:top-0 md:z-[-1] md:h-[23rem] lg:top-0 lg:left-[14.5rem] lg:z-[-1] lg:h-[28rem] xl:h-[36rem] 2xl:h-[36rem]"
           src="./assets/bg-navbar2.webp"
           alt=""
           srcset=""
@@ -1258,66 +1162,68 @@
               <div
                 class="produkLaris h-32 w-[17rem] rounded-xl bg-[#fecdbb] px-[14px] py-4 sm:w-[16rem] sm:px-4 xl:h-[10rem] xl:w-[21rem]"
               >
-                <div
-                  class="produkLaris--text flex h-full flex-col justify-between text-[#4a4e5a]"
-                >
-                  <h6
-                    class="font-bold sm:text-[12px] xl:text-[14px]"
-                    data-translatable
+                <a href="./index.html">
+                  <div
+                    class="produkLaris--text flex h-full flex-col justify-between text-[#4a4e5a]"
                   >
-                    <span>PRODUK LARIS</span>
-                    <span>SELLING PRODUCT</span>
-                  </h6>
-                  <a
-                    href="./index.html"
-                    class="relative z-10 sm:text-[10px] xl:text-[14px]"
-                    data-translatable
-                  >
-                    <span
-                      >Belanja sekarang <i class="fas fa-angle-right"></i
-                    ></span>
-                    <span>Shop now <i class="fas fa-angle-right"></i></span>
-                  </a>
-                </div>
-                <img
-                  class="absolute top-[-25px] right-[-35px] z-[1] h-[11rem] sm:right-[-35px] sm:top-[-30px] sm:h-[13rem] xl:right-[-87px] xl:top-[-82px] xl:h-[21rem]"
-                  src="./assets/produk-laris.webp"
-                  alt=""
-                  srcset=""
-                />
+                    <h6
+                      class="font-bold sm:text-[12px] xl:text-[14px]"
+                      data-translatable
+                    >
+                      <span>PRODUK LARIS</span>
+                      <span>SELLING PRODUCT</span>
+                    </h6>
+                    <p
+                      class="relative z-10 sm:text-[10px] xl:text-[14px]"
+                      data-translatable
+                    >
+                      <span
+                        >Belanja sekarang <i class="fas fa-angle-right"></i
+                      ></span>
+                      <span>Shop now <i class="fas fa-angle-right"></i></span>
+                    </p>
+                  </div>
+                  <img
+                    class="absolute top-[-25px] right-[-35px] z-[1] h-[11rem] sm:right-[-35px] sm:top-[-30px] sm:h-[13rem] xl:right-[-87px] xl:top-[-82px] xl:h-[21rem]"
+                    src="./assets/produk-laris.webp"
+                    alt=""
+                    srcset=""
+                  />
+                </a>
               </div>
             </div>
             <div class="wrapper-produkLaris relative z-[5] xl:w-[21rem]">
               <div
                 class="produkLaris h-32 w-[18rem] rounded-xl bg-[#bbfee6] px-[14px] py-4 sm:w-[16rem] sm:px-4 xl:h-[10rem] xl:w-[21rem]"
               >
-                <div
-                  class="produkLaris--text flex h-full flex-col justify-between text-[#4a4e5a]"
-                >
-                  <h6
-                    class="font-bold sm:text-[12px] xl:text-[14px]"
-                    data-translatable
+                <a href="./index.html" target="_blank">
+                  <div
+                    class="produkLaris--text flex h-full flex-col justify-between text-[#4a4e5a]"
                   >
-                    <span>PRODUK TERBARU</span>
-                    <span>NEW PRODUCT</span>
-                  </h6>
-                  <a
-                    href="./index.html"
-                    class="relative z-10 sm:text-[10px] xl:text-[14px]"
-                    data-translatable
-                  >
-                    <span
-                      >Belanja sekarang <i class="fas fa-angle-right"></i
-                    ></span>
-                    <span>Shop now <i class="fas fa-angle-right"></i></span>
-                  </a>
-                </div>
-                <img
-                  class="absolute top-[-25px] right-[-35px] z-[1] h-[11rem] sm:right-[-35px] sm:top-[-30px] sm:h-[13rem] xl:right-[-87px] xl:top-[-82px] xl:h-[21rem]"
-                  src="./assets/produk-laris.webp"
-                  alt=""
-                  srcset=""
-                />
+                    <h6
+                      class="font-bold sm:text-[12px] xl:text-[14px]"
+                      data-translatable
+                    >
+                      <span>PRODUK TERBARU</span>
+                      <span>NEW PRODUCT</span>
+                    </h6>
+                    <p
+                      class="relative z-10 sm:text-[10px] xl:text-[14px]"
+                      data-translatable
+                    >
+                      <span
+                        >Belanja sekarang <i class="fas fa-angle-right"></i
+                      ></span>
+                      <span>Shop now <i class="fas fa-angle-right"></i></span>
+                    </p>
+                  </div>
+                  <img
+                    class="absolute top-[-25px] right-[-35px] z-[1] h-[11rem] sm:right-[-35px] sm:top-[-30px] sm:h-[13rem] xl:right-[-87px] xl:top-[-82px] xl:h-[21rem]"
+                    src="./assets/produk-laris.webp"
+                    alt=""
+                    srcset=""
+                  />
+                </a>
               </div>
             </div>
             <div
@@ -1326,33 +1232,34 @@
               <div
                 class="produkLaris h-32 w-[18rem] rounded-xl bg-[#bbfee6] px-[14px] py-4 sm:w-[16rem] sm:px-4 xl:h-[10rem] xl:w-[21rem]"
               >
-                <div
-                  class="produkLaris--text flex h-full flex-col justify-between text-[#4a4e5a]"
-                >
-                  <h6
-                    class="font-bold sm:text-[12px] xl:text-[14px]"
-                    data-translatable
+                <a href="./index.html" target="_blank">
+                  <div
+                    class="produkLaris--text flex h-full flex-col justify-between text-[#4a4e5a]"
                   >
-                    <span>PRODUK PROMO</span>
-                    <span>PROMO PRODUCTS</span>
-                  </h6>
-                  <a
-                    href="./index.html"
-                    class="relative z-10 sm:text-[10px] xl:text-[14px]"
-                    data-translatable
-                  >
-                    <span
-                      >Belanja sekarang <i class="fas fa-angle-right"></i
-                    ></span>
-                    <span>Shop now <i class="fas fa-angle-right"></i></span>
-                  </a>
-                </div>
-                <img
-                  class="absolute top-[-25px] right-[-35px] z-[1] h-[11rem] sm:right-[-35px] sm:top-[-30px] sm:h-[13rem] xl:right-[-87px] xl:top-[-82px] xl:h-[21rem]"
-                  src="./assets/produk-laris.webp"
-                  alt=""
-                  srcset=""
-                />
+                    <h6
+                      class="font-bold sm:text-[12px] xl:text-[14px]"
+                      data-translatable
+                    >
+                      <span>PRODUK PROMO</span>
+                      <span>PROMO PRODUCTS</span>
+                    </h6>
+                    <p
+                      class="relative z-10 sm:text-[10px] xl:text-[14px]"
+                      data-translatable
+                    >
+                      <span
+                        >Belanja sekarang <i class="fas fa-angle-right"></i
+                      ></span>
+                      <span>Shop now <i class="fas fa-angle-right"></i></span>
+                    </p>
+                  </div>
+                  <img
+                    class="absolute top-[-25px] right-[-35px] z-[1] h-[11rem] sm:right-[-35px] sm:top-[-30px] sm:h-[13rem] xl:right-[-87px] xl:top-[-82px] xl:h-[21rem]"
+                    src="./assets/produk-laris.webp"
+                    alt=""
+                    srcset=""
+                  />
+                </a>
               </div>
             </div>
           </div>
@@ -2777,7 +2684,7 @@
       >
         <div class="left hidden xl:block">
           <ul
-            class="data-list sticky top-[40%] 2xl:top-[30%] left-8 hidden xl:block"
+            class="data-list sticky top-[40%] 2xl:top-[20%] left-8 hidden xl:block"
             data-autoscroll
           >
             <li class="mb-5">
