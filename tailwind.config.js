@@ -15,6 +15,9 @@ module.exports = {
           "linear-gradient(90deg, rgb(0 255 67) 0%, rgb(9 121 23) 75%, rgb(17 111 33) 100%)",
         sold: "#696969",
       },
+      screens: {
+        "3xl": "1955px",
+      },
     },
   },
   plugins: [require("flowbite/plugin")],

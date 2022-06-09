@@ -196,7 +196,7 @@ $(".owl-flash").owlCarousel({
   margin: 10,
   nav: true,
   lazyLoad: true,
-  // autoplay: true,
+  autoplay: true,
   autoplayTimeout: 2000,
   autoplayHoverPause: true,
   responsive: {
