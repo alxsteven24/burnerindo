@@ -213,5 +213,14 @@
     .data-list img {
       @apply h-[3rem];
     }
+
+    .owl-carousel .owl-item img {
+      @apply h-[10rem];
+    }
+
+    /* .owl-item.active,
+    .owl-item {
+      width: 181.969px !important;
+    } */
   }
 }
