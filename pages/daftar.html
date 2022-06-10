@@ -43,7 +43,7 @@
 
       @media (min-width: 1280px) {
         .heroRegist .swiper {
-          width: 28rem;
+          width: 24rem;
           height: 76%;
           display: block;
           position: absolute;
@@ -51,7 +51,7 @@
           margin: auto;
           left: 0;
           right: 0rem;
-          top: 10rem;
+          top: 8rem;
         }
       }
 
@@ -62,6 +62,7 @@
           display: block;
           position: absolute;
           z-index: 0;
+          top: 3rem;
         }
       }
 
@@ -348,12 +349,12 @@
         </div>
         <div
           id="sidebar"
-          class="transitioin-all absolute left-[-100%] top-[4rem] h-screen w-[13rem] items-center bg-white duration-300 ease-in-out md:top-0 md:order-2 md:flex md:h-screen md:w-[70%] md:flex-col md:justify-center md:space-y-5 md:shadow-2xl xl:static xl:h-auto xl:w-auto xl:flex-row xl:justify-between xl:space-y-0 xl:bg-transparent"
+          class="transitioin-all absolute left-[-200%] top-[4rem] h-screen w-full items-center bg-white duration-300 ease-in-out md:top-0 md:order-2 md:flex md:h-screen md:w-[90%] md:flex-col md:justify-center md:space-y-5 md:shadow-2xl xl:static xl:h-auto xl:w-auto xl:flex-row xl:justify-between xl:space-y-0 xl:bg-transparent"
           id="mobile-menu-3"
         >
           <ul
             id="changedColor"
-            class="mt-4 flex flex-col space-y-4 text-center text-[1.2rem] text-gray-700 md:mt-0 md:w-full md:items-center md:font-medium lg:space-y-5 xl:w-auto xl:flex-row xl:space-x-8 xl:space-y-0 xl:text-[14px] xl:text-primary"
+            class="mt-4 flex flex-col space-y-4 text-center text-[1.2rem] text-gray-700 md:mt-0 md:w-full md:items-center md:font-medium md:space-y-10 lg:space-y-5 xl:w-auto xl:flex-row xl:space-x-8 xl:space-y-0 xl:text-[14px] xl:text-primary"
           >
             <li>
               <a
@@ -413,7 +414,7 @@
     <main>
       <section class="heroRegist">
         <div
-          class="mx-auto flex h-[27rem] w-full justify-center xl:h-[35rem] xl:min-h-screen 2xl:h-[36rem] 2xl:min-h-screen"
+          class="mx-auto flex h-[27rem] w-full justify-center xl:h-[30rem] 2xl:h-[33rem]"
         >
           <div
             class="mx-auto flex w-full flex-col items-center justify-center bg-white px-4 py-2.5 md:px-14 xl:items-start xl:px-24 2xl:items-start"
@@ -445,7 +446,7 @@
           </div>
           <div
             id="login"
-            class="swiper mySwiper absolute bottom-0 left-0 top-[10rem] right-[5rem] m-auto hidden xl:block"
+            class="swiper mySwiper absolute bottom-0 left-0 top-[10rem] right-[5rem] m-auto hidden xl:block xl:"
           >
             <div class="swiper-wrapper">
               <div class="swiper-slide">
@@ -469,7 +470,7 @@
             </div>
           </div>
           <div
-            class="bg-primary flex w-44 flex-col justify-center px-4 py-2.5 sm:w-full sm:text-center md:px-14 lg:items-center xl:w-full xl:items-end xl:px-24"
+            class="bg-primary flex w-44 flex-col justify-center px-4 py-2.5 sm:w-full sm:text-center md:px-14 lg:items-center xl:w-full xl:items-end xl:px-24 2xl:items-center 3xl:px-0 3xl:pr-0 3xl:pl-[11rem]"
           >
             <h2
               class="text-base font-bold text-white sm:text-xl xl:text-4xl"
@@ -1041,13 +1042,15 @@
           changedColor.classList.add("changedColor");
           changedColor.classList.remove("xl:text-white");
           changedColor.classList.remove("text-gray-700");
-          imageFlip.style.top = "3rem";
+          imageFlip.style.top = "-10rem";
+          imageFlip.classList.toggle("3xl:top-[3rem]");
           // header.classList.remove("bg-transparent");
         } else {
           header.classList.remove("stickyNavbar");
           changedColor.classList.add("xl:text-white");
           changedColor.classList.add("text-gray-700");
-          imageFlip.style.top = "10rem";
+          imageFlip.style.top = "8rem";
+          imageFlip.classList.toggle("3xl:top-[3rem]");
           // imageFlip.classList.remove('top-[3rem]')
           // imageFlip.classList.add('top-[10rem]')
           // header.classList.add("bg-transparent");
@@ -1055,8 +1058,9 @@
       };
 
       btnHamburger.addEventListener("click", function () {
-        sidebar.classList.toggle("left-[-100%]");
+        sidebar.classList.toggle("left-[-200%]");
         sidebar.classList.toggle("left-[-2.5rem]");
+        sidebar.classList.toggle("md:left-[-3.5rem]");
         btnHamburger.classList.toggle("open");
 
         if (btnHamburger.classList.contains("open")) {
