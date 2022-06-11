@@ -1487,8 +1487,9 @@
       };
 
       btnHamburger.addEventListener("click", function () {
-        sidebar.classList.toggle("left-[-100%]");
+        sidebar.classList.toggle("left-[-200%]");
         sidebar.classList.toggle("left-[-2.5rem]");
+        sidebar.classList.toggle("md:left-[-3.5rem]");
         btnHamburger.classList.toggle("open");
 
         if (btnHamburger.classList.contains("open")) {
