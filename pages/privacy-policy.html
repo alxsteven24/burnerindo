@@ -171,7 +171,7 @@
             <input
               type="text"
               id="searchNavbar"
-              class="block w-[20rem] rounded-full border-2 border-white bg-[#cc0000] p-2 pl-10 text-white placeholder:text-white focus:border-white focus:ring-white sm:text-sm md:w-48 xl:w-[20rem]"
+              class="block w-[20rem] rounded-full border-2 border-white bg-[#cc0000] p-2 pl-10 text-white placeholder:text-white focus:border-white focus:ring-white sm:text-sm md:w-48 xl:w-[20rem] 2xl:w-[25rem] 3xl:w-[30rem]"
               placeholder="Cari..."
             />
             <div
@@ -297,12 +297,12 @@
         </div>
         <div
           id="sidebar"
-          class="transitioin-all absolute left-[-100%] top-[4rem] h-screen w-[13rem] items-center bg-white duration-300 ease-in-out md:top-0 md:order-2 md:flex md:h-screen md:w-[70%] md:flex-col md:justify-center md:space-y-5 md:shadow-2xl xl:static xl:h-auto xl:w-auto xl:flex-row xl:justify-between xl:space-y-0 xl:bg-transparent"
+          class="transitioin-all absolute left-[-200%] top-[4rem] h-screen w-full items-center bg-white duration-300 ease-in-out md:top-0 md:order-2 md:flex md:h-screen md:flex-col md:justify-center md:space-y-5 md:shadow-2xl xl:static xl:h-auto xl:w-auto xl:flex-row xl:justify-between xl:space-y-0 xl:bg-transparent"
           id="mobile-menu-3"
         >
           <ul
             id="changedColor"
-            class="mt-4 flex flex-col space-y-4 text-center text-[1.2rem] text-gray-700 md:mt-0 md:w-full md:items-center md:font-medium lg:space-y-5 xl:w-auto xl:flex-row xl:space-x-8 xl:space-y-0 xl:text-[14px] xl:text-white"
+            class="mt-4 flex flex-col space-y-4 text-center text-[1.2rem] text-gray-700 md:mt-0 md:w-full md:items-center md:font-medium md:space-y-7 lg:space-y-5 xl:w-auto xl:flex-row xl:space-x-8 xl:space-y-0 xl:text-[14px] xl:text-white"
           >
             <li>
               <a
@@ -448,11 +448,11 @@
 
     <main>
       <section
-        class="heroIndex mt-0 flex h-auto items-center justify-center bg-white md:mt-[7rem] lg:-mt-32 lg:h-[50rem] xl:mt-0 xl:h-full 2xl:mt-0"
+        class="heroIndex mt-0 flex h-auto items-center justify-center bg-white xl:mt-0 xl:h-full 2xl:mt-0"
       >
         <img
           loading="lazy"
-          class="absolute right-0 top-[2rem] -z-[1] ml-auto h-[12rem] sm:top-[4rem] sm:left-0 sm:right-0 sm:h-[19rem] md:left-[16.5rem] md:top-0 md:z-0 md:h-[23rem] lg:top-0 lg:left-[14.5rem] lg:z-[-1] lg:h-[28rem] xl:h-[36rem] 2xl:h-[36rem]"
+          class="absolute right-0 top-[2rem] -z-[1] ml-auto h-[12rem] sm:top-[4rem] sm:left-0 sm:right-0 sm:h-[19rem] md:left-[16.5rem] md:top-0 md:z-[-1] md:h-[23rem] lg:top-0 lg:left-[14.5rem] lg:z-[-1] lg:h-[28rem] xl:h-[36rem] 2xl:h-[36rem]"
           src="./../assets/bg-navbar2.webp"
           alt=""
           srcset=""
@@ -1136,7 +1136,7 @@
             </div>
           </div>
           <div
-            class="brands-copyright text-primary pb-12 font-bold xl:pb-[2.5rem] xl:text-[14px]"
+            class="brands-copyright text-primary pb-8 pt-8 text-[14px] font-bold xl:text-[14px]"
           >
             <p data-translatable>
               <span>© Copyright 2022 PT. Burnerindo Teknik Utama</span>
@@ -1310,8 +1310,9 @@
       };
 
       btnHamburger.addEventListener("click", function () {
-        sidebar.classList.toggle("left-[-100%]");
+        sidebar.classList.toggle("left-[-200%]");
         sidebar.classList.toggle("left-[-2.5rem]");
+        sidebar.classList.toggle("md:left-[-3.5rem]");
         btnHamburger.classList.toggle("open");
 
         if (btnHamburger.classList.contains("open")) {
