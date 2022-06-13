@@ -188,6 +188,10 @@
       display: none !important;
     }
 
+    .data-list {
+      height: 33rem !important;
+    }
+
     .fas::before {
       font-size: 20px !important;
     }
@@ -198,8 +202,12 @@
       font-size: 25px !important;
     }
 
+    .data-list img {
+      @apply h-[3rem];
+    }
+
     .owl-carousel .owl-item img {
-      @apply h-[7rem];
+      @apply h-[10rem];
     }
   }
 
