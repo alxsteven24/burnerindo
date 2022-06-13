@@ -92,7 +92,7 @@
         class="container relative z-10 mx-auto flex flex-nowrap items-center justify-between"
       >
         <a
-          class="text-primary hidden font-bold xl:block xl:text-[14px]"
+          class="hidden font-bold text-primary xl:block xl:text-[14px]"
           href=""
           data-translatable
         >
@@ -203,7 +203,7 @@
           >
             <li id="listLoading" class="list-none text-xl">Loading . . .</li>
           </div>
-          <div class="relative hidden xl:block xl:ml-[-9rem]">
+          <div class="relative hidden xl:ml-[-9rem] xl:block">
             <div
               class="pointer-events-none absolute inset-y-0 left-0 flex items-center pl-3"
             >
@@ -223,7 +223,7 @@
             <input
               type="text"
               id="searchNavbar"
-              class="block w-[20rem] rounded-full border-2 border-white bg-[#cc0000] p-2 pl-10 text-white placeholder:text-white focus:border-white focus:ring-white sm:text-sm md:w-48 xl:w-[15rem]"
+              class="block w-[20rem] rounded-full border-2 border-white bg-[#cc0000] p-2 pl-10 text-white placeholder:text-white focus:border-white focus:ring-white sm:text-sm md:w-48 xl:w-[20rem] 2xl:w-[25rem] 3xl:w-[30rem]"
               placeholder="Cari..."
             />
             <div
@@ -316,7 +316,7 @@
           <button
             id="btnHamburger"
             type="button"
-            class="inline items-center rounded-lg p-2 text-sm text-gray-500 transition-all duration-300 ease-in-out hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600 xl:hidden xl:ml-[1.9rem]"
+            class="inline items-center rounded-lg p-2 text-sm text-gray-500 transition-all duration-300 ease-in-out hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600 xl:ml-[1.9rem] xl:hidden"
             aria-controls="mobile-menu-3"
             aria-expanded="false"
           >
@@ -354,7 +354,7 @@
         >
           <ul
             id="changedColor"
-            class="mt-4 flex flex-col space-y-4 text-center text-[1.2rem] text-gray-700 md:mt-0 md:w-full md:items-center md:font-medium md:space-y-10 lg:space-y-5 xl:w-auto xl:flex-row xl:space-x-8 xl:space-y-0 xl:text-[14px] xl:text-primary"
+            class="mt-4 flex flex-col space-y-4 text-center text-[1.2rem] text-gray-700 md:mt-0 md:w-full md:items-center md:space-y-10 md:font-medium lg:space-y-5 xl:w-auto xl:flex-row xl:space-x-8 xl:space-y-0 xl:text-[14px] xl:text-primary"
           >
             <li>
               <a
@@ -420,14 +420,14 @@
             class="mx-auto flex w-full flex-col items-center justify-center bg-white px-4 py-2.5 md:px-14 xl:items-start xl:px-24 2xl:items-start"
           >
             <h2
-              class="text-primary mb-6 text-base font-bold sm:text-xl xl:mb-6 xl:text-4xl"
+              class="mb-6 text-base font-bold text-primary sm:text-xl xl:mb-6 xl:text-4xl"
               data-translatable
             >
               <span>SALAM KENAL</span>
               <span>NICE TO MEET YOU</span>
             </h2>
             <p
-              class="text-primary mb-6 text-base xl:mr-[7rem] xl:mb-6 xl:text-left xl:text-xl 2xl:mr-[7rem] 2xl:text-left"
+              class="mb-6 text-base text-primary xl:mr-[7rem] xl:mb-6 xl:text-left xl:text-xl 2xl:mr-[7rem] 2xl:text-left"
               data-translatable
             >
               <span
@@ -437,7 +437,7 @@
             </p>
             <button
               type="submit"
-              class="text-primary hover:bg-primary border-primary focus:ring-primary w-36 rounded-full border bg-transparent px-5 py-2.5 text-center text-sm font-medium hover:text-white focus:outline-none focus:ring-4 sm:w-[18rem] xl:w-[16rem]"
+              class="w-36 rounded-full border border-primary bg-transparent px-5 py-2.5 text-center text-sm font-medium text-primary hover:bg-primary hover:text-white focus:outline-none focus:ring-4 focus:ring-primary sm:w-[18rem] xl:w-[16rem]"
               data-translatable
             >
               <span>DAFTAR</span>
@@ -446,7 +446,7 @@
           </div>
           <div
             id="login"
-            class="swiper mySwiper absolute bottom-0 left-0 top-[10rem] right-[5rem] m-auto hidden xl:block xl:"
+            class="swiper mySwiper xl: absolute bottom-0 left-0 top-[10rem] right-[5rem] m-auto hidden xl:block"
           >
             <div class="swiper-wrapper">
               <div class="swiper-slide">
@@ -470,7 +470,7 @@
             </div>
           </div>
           <div
-            class="bg-primary flex w-44 flex-col justify-center px-4 py-2.5 sm:w-full sm:text-center md:px-14 lg:items-center xl:w-full xl:items-end xl:px-24 2xl:items-center 3xl:px-0 3xl:pr-0 3xl:pl-[11rem]"
+            class="flex w-44 flex-col justify-center bg-primary px-4 py-2.5 sm:w-full sm:text-center md:px-14 lg:items-center xl:w-full xl:items-end xl:px-24 2xl:items-center 3xl:px-0 3xl:pr-0 3xl:pl-[11rem]"
           >
             <h2
               class="text-base font-bold text-white sm:text-xl xl:text-4xl"
@@ -485,7 +485,7 @@
                 <input
                   type="email"
                   id="email"
-                  class="text-primary placeholder:text-primary block w-36 rounded-full border border-white bg-gray-50 py-2.5 px-4 text-sm focus:border-white focus:ring-white sm:w-[18rem] xl:w-[16rem]"
+                  class="block w-36 rounded-full border border-white bg-gray-50 py-2.5 px-4 text-sm text-primary placeholder:text-primary focus:border-white focus:ring-white sm:w-[18rem] xl:w-[16rem]"
                   placeholder="Email"
                   required=""
                 />
@@ -494,7 +494,7 @@
                 <input
                   type="password"
                   id="password"
-                  class="text-primary placeholder:text-primary block w-36 rounded-full border border-white bg-gray-50 py-2.5 px-4 text-sm focus:border-white focus:ring-white sm:w-[18rem] xl:w-[16rem]"
+                  class="block w-36 rounded-full border border-white bg-gray-50 py-2.5 px-4 text-sm text-primary placeholder:text-primary focus:border-white focus:ring-white sm:w-[18rem] xl:w-[16rem]"
                   required=""
                   placeholder="Kata Sandi"
                 />
@@ -510,7 +510,7 @@
               <a href="./login.html">
                 <button
                   type="submit"
-                  class="hover:text-primary focus:ring-primary w-36 rounded-full border border-white bg-transparent px-5 py-2.5 text-center text-sm font-medium text-white hover:bg-white focus:outline-none focus:ring-4 sm:w-[18rem] xl:w-[16rem]"
+                  class="w-36 rounded-full border border-white bg-transparent px-5 py-2.5 text-center text-sm font-medium text-white hover:bg-white hover:text-primary focus:outline-none focus:ring-4 focus:ring-primary sm:w-[18rem] xl:w-[16rem]"
                   data-translatable
                 >
                   <span>MASUK</span>
@@ -523,7 +523,7 @@
       </section>
 
       <footer
-        class="border-primary mb-0 h-[50rem] border-t-[15px] bg-[#fecdbb] px-6 md:px-14 xl:mb-0 xl:mt-0 xl:h-full"
+        class="mb-0 h-[50rem] border-t-[15px] border-primary bg-[#fecdbb] px-6 md:px-14 xl:mb-0 xl:mt-0 xl:h-full"
       >
         <div
           class="container mx-auto mt-12 flex h-[30rem] flex-col justify-start xl:mt-0 xl:h-[18rem] xl:flex-row"
@@ -601,7 +601,7 @@
             </h6>
             <div class="icon-menu">
               <button
-                class="instagram bg-primary h-8 w-8 rounded-full text-white shadow-2xl xl:h-8 xl:w-8 2xl:h-12 2xl:w-12"
+                class="instagram h-8 w-8 rounded-full bg-primary text-white shadow-2xl xl:h-8 xl:w-8 2xl:h-12 2xl:w-12"
                 type="submit"
               >
                 <a target="_blank" href="https://instagram.com/">
@@ -609,7 +609,7 @@
                 </a>
               </button>
               <button
-                class="wa bg-primary h-8 w-8 rounded-full text-white shadow-2xl xl:h-8 xl:w-8 2xl:h-12 2xl:w-12"
+                class="wa h-8 w-8 rounded-full bg-primary text-white shadow-2xl xl:h-8 xl:w-8 2xl:h-12 2xl:w-12"
                 type="submit"
               >
                 <a
@@ -621,7 +621,7 @@
               </button>
               <button
                 target="_blank"
-                class="message bg-primary h-8 w-8 rounded-full text-white shadow-2xl xl:h-8 xl:w-8 2xl:h-12 2xl:w-12"
+                class="message h-8 w-8 rounded-full bg-primary text-white shadow-2xl xl:h-8 xl:w-8 2xl:h-12 2xl:w-12"
                 type="submit"
               >
                 <a target="_blank" href="mailto:contoh@gmail.com">
@@ -630,7 +630,7 @@
               </button>
               <button
                 target="_blank"
-                class="message bg-primary h-8 w-8 rounded-full text-white shadow-2xl xl:h-8 xl:w-8 2xl:h-12 2xl:w-12"
+                class="message h-8 w-8 rounded-full bg-primary text-white shadow-2xl xl:h-8 xl:w-8 2xl:h-12 2xl:w-12"
                 type="submit"
               >
                 <a
@@ -679,7 +679,7 @@
                     class="footer-brand__brand flex flex-row flex-wrap justify-between space-y-5 xl:flex-row xl:flex-nowrap xl:space-y-5"
                   >
                     <img
-                      class="h-[40px] w-[55px] mt-5 xl:mt-5"
+                      class="mt-5 h-[40px] w-[55px] xl:mt-5"
                       src="./../assets/brand1.webp"
                       alt=""
                       srcset=""
@@ -746,7 +746,7 @@
                     class="payment flex flex-row flex-wrap justify-between space-y-7 xl:mb-[2.5rem] xl:flex-row xl:flex-nowrap xl:space-y-5 xl:space-x-5 2xl:justify-start"
                   >
                     <img
-                      class="h-[29px] w-[64px] mt-5 xl:mt-5 xl:h-[15px] xl:w-[24px]"
+                      class="mt-5 h-[29px] w-[64px] xl:mt-5 xl:h-[15px] xl:w-[24px]"
                       src="./../assets/footer/bca.webp"
                       alt=""
                       srcset=""
@@ -844,7 +844,7 @@
               </div>
             </div>
             <div
-              class="brands-copyright text-primary pb-12 font-bold xl:pb-[2.5rem] xl:text-[14px]"
+              class="brands-copyright pb-12 font-bold text-primary xl:pb-[2.5rem] xl:text-[14px]"
             >
               <p data-translatable>
                 <span>© Copyright 2022 PT. Burnerindo Teknik Utama</span>
@@ -867,7 +867,7 @@
         class="floating-sosmed fixed right-8 top-[70%] z-[5] flex h-32 flex-col justify-between lg:top-[48%] lg:h-[7rem] xl:top-[77%] xl:h-32 2xl:top-[74%] 2xl:h-[10rem]"
       >
         <button
-          class="instagram hover:border-primary hover:text-primary bg-primary h-8 w-8 rounded-full border border-transparent text-white shadow-2xl hover:bg-white xl:h-8 xl:w-8 2xl:h-12 2xl:w-12"
+          class="instagram h-8 w-8 rounded-full border border-transparent bg-primary text-white shadow-2xl hover:border-primary hover:bg-white hover:text-primary xl:h-8 xl:w-8 2xl:h-12 2xl:w-12"
           type="submit"
         >
           <a target="_blank" href="https://instagram.com/">
@@ -875,7 +875,7 @@
           </a>
         </button>
         <button
-          class="wa hover:border-primary hover:text-primary bg-primary h-8 w-8 rounded-full border border-transparent text-white shadow-2xl hover:bg-white xl:h-8 xl:w-8 2xl:h-12 2xl:w-12"
+          class="wa h-8 w-8 rounded-full border border-transparent bg-primary text-white shadow-2xl hover:border-primary hover:bg-white hover:text-primary xl:h-8 xl:w-8 2xl:h-12 2xl:w-12"
           type="submit"
         >
           <a
@@ -887,7 +887,7 @@
         </button>
         <button
           target="_blank"
-          class="message hover:border-primary hover:text-primary bg-primary h-8 w-8 rounded-full border border-transparent text-white shadow-2xl hover:bg-white xl:h-8 xl:w-8 2xl:h-12 2xl:w-12"
+          class="message h-8 w-8 rounded-full border border-transparent bg-primary text-white shadow-2xl hover:border-primary hover:bg-white hover:text-primary xl:h-8 xl:w-8 2xl:h-12 2xl:w-12"
           type="submit"
         >
           <a target="_blank" href="mailto:contoh@gmail.com">
