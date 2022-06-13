@@ -120,10 +120,9 @@ window.onscroll = function () {
 };
 
 btnHamburger.addEventListener("click", function () {
-  sidebar.classList.toggle("left-[-100%]");
+  sidebar.classList.toggle("left-[-200%]");
   sidebar.classList.toggle("left-[-2.5rem]");
   sidebar.classList.toggle("md:left-[-3.5rem]");
-  sidebar.classList.toggle("lg:left-[-10%]");
   btnHamburger.classList.toggle("open");
 
   if (btnHamburger.classList.contains("open")) {
