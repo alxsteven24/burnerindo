@@ -193,7 +193,7 @@
             <input
               type="text"
               id="searchNavbar"
-              class="block w-[20rem] rounded-full border-2 border-white bg-[#cc0000] p-2 pl-10 text-white placeholder:text-white focus:border-white focus:ring-white sm:text-sm md:w-48 xl:w-[20rem] 2xl:w-[25rem] 3xl:w-[30rem]"
+              class="3xl:w-[30rem] block w-[20rem] rounded-full border-2 border-white bg-[#cc0000] p-2 pl-10 text-white placeholder:text-white focus:border-white focus:ring-white sm:text-sm md:w-48 xl:w-[20rem] 2xl:w-[25rem]"
               placeholder="Cari..."
             />
             <div
@@ -324,7 +324,7 @@
         >
           <ul
             id="changedColor"
-            class="mt-4 flex flex-col space-y-4 text-center text-[1.2rem] text-gray-700 md:mt-0 md:w-full md:items-center md:font-medium md:space-y-7 lg:space-y-5 xl:w-auto xl:flex-row xl:space-x-8 xl:space-y-0 xl:text-[14px] xl:text-white"
+            class="mt-4 flex flex-col space-y-4 text-center text-[1.2rem] text-gray-700 md:mt-0 md:w-full md:items-center md:space-y-7 md:font-medium lg:space-y-5 xl:w-auto xl:flex-row xl:space-x-8 xl:space-y-0 xl:text-[14px] xl:text-white"
           >
             <li>
               <a
@@ -488,7 +488,7 @@
             class="wrapper-kategori relative z-0 mt-8 lg:w-[55rem] xl:mt-[7rem] xl:w-[73rem]"
           >
             <div
-              class="purchase-navbar xl:justify-flex flex flex-wrap justify-start rounded-t-2xl bg-gray-500 py-3 pl-5 text-[14px] font-bold text-white xl:w-auto xl:items-center xl:justify-around xl:py-3 xl:pl-5 xl:text-[16px] 2xl:w-auto 2xl:space-y-0"
+              class="purchase-navbar xl:justify-flex flex flex-wrap justify-start rounded-t-2xl bg-gray-400 py-3 pl-5 text-[14px] font-bold text-black xl:w-auto xl:items-center xl:justify-around xl:py-3 xl:pl-5 xl:text-[16px] 2xl:w-auto 2xl:space-y-0"
             >
               <div class="flex items-center xl:text-[20px]">
                 <input
@@ -852,8 +852,19 @@
               </div>
             </div>
             <div
-              class="purchase-footer xl:justify-flex flex flex-wrap justify-around rounded-b-2xl bg-gray-500 py-3 text-[14px] text-white sm:items-center sm:space-x-5 sm:px-3 xl:w-auto xl:items-center xl:py-3 xl:text-[16px] 2xl:w-auto 2xl:space-y-0"
+              class="purchase-footer xl:justify-flex flex flex-wrap justify-around rounded-b-2xl bg-gray-400 py-3 text-[14px] text-black sm:items-center sm:space-x-5 sm:px-3 xl:w-auto xl:items-center xl:justify-end xl:space-x-10 xl:py-[1.5rem] xl:text-[16px] 2xl:w-auto 2xl:space-y-0"
             >
+              <div
+                class="footer-total mt-5 space-y-2 font-bold xl:mt-0 xl:space-y-3"
+              >
+                <p>Rp. 156.000.000.000,-</p>
+                <button
+                  class="w-full rounded-full bg-red-600 py-1 text-white xl:py-1"
+                  type="submit"
+                >
+                  checkout
+                </button>
+              </div>
               <div class="relative flex items-center xl:text-[20px]">
                 <input
                   class="w-[8rem] rounded-t-lg pr-10 text-gray-500 xl:w-[16rem] xl:pr-10"
@@ -878,37 +889,6 @@
                     ></path>
                   </svg>
                 </div>
-              </div>
-              <button
-                type="submit"
-                class="hidden rounded-2xl border-2 border-transparent transition-all ease-in-out hover:border-red-600 hover:text-white xl:block xl:px-2 xl:py-2 xl:text-[20px]"
-                data-translatable
-              >
-                <span>Hapus Produk Kosong</span>
-                <span>Delete Empty Product</span>
-              </button>
-              <p class="mt-3 font-bold sm:order-2 sm:mt-0" data-translatable>
-                <span>Total 36 produk</span>
-                <span>Total 36 products</span>
-              </p>
-              <button
-                type="submit"
-                class="block rounded-2xl border-2 border-transparent transition-all ease-in-out hover:border-red-600 hover:text-white sm:order-1 xl:hidden xl:px-2 xl:py-2 xl:text-[20px]"
-                data-translatable
-              >
-                <span>Hapus Produk Kosong</span>
-                <span>Delete Empty Product</span>
-              </button>
-              <div
-                class="footer-total mt-5 space-y-2 sm:order-3 xl:mt-0 xl:space-y-3"
-              >
-                <p>Rp. 156.000.000.000,-</p>
-                <button
-                  class="w-full rounded-full bg-red-600 py-1 text-white xl:py-1"
-                  type="submit"
-                >
-                  checkout
-                </button>
               </div>
             </div>
           </div>
@@ -1148,7 +1128,7 @@
                   class="footer-brand__brand flex flex-row flex-wrap justify-between space-y-5 xl:flex-row xl:flex-nowrap xl:space-y-5"
                 >
                   <img
-                    class="h-[40px] w-[55px] mt-5 xl:mt-5"
+                    class="mt-5 h-[40px] w-[55px] xl:mt-5"
                     src="./../assets/brand1.webp"
                     alt=""
                     srcset=""
@@ -1215,7 +1195,7 @@
                   class="payment flex flex-row flex-wrap justify-between space-y-7 xl:mb-[2.5rem] xl:flex-row xl:flex-nowrap xl:space-y-5 xl:space-x-5 2xl:justify-start"
                 >
                   <img
-                    class="h-[29px] w-[64px] mt-5 xl:mt-5 xl:h-[15px] xl:w-[24px]"
+                    class="mt-5 h-[29px] w-[64px] xl:mt-5 xl:h-[15px] xl:w-[24px]"
                     src="./../assets/footer/bca.webp"
                     alt=""
                     srcset=""
@@ -1313,7 +1293,7 @@
             </div>
           </div>
           <div
-            class="brands-copyright text-primary pb-8 pt-8 font-bold text-[12px] xl:text-[14px]"
+            class="brands-copyright text-primary pb-8 pt-8 text-[12px] font-bold xl:text-[14px]"
           >
             <p data-translatable>
               <span>© Copyright 2022 PT. Burnerindo Teknik Utama</span>
