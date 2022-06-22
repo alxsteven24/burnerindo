@@ -49,6 +49,18 @@
         font-size: 26px !important;
         color: red;
       }
+
+      .fas.fa-long-arrow-alt-left::before {
+        font-size: 14px !important;
+      }
+
+      /* .fab.fa-facebook-f::before {
+        font-size: 14px !important;
+      } */
+
+      #bagikan-envelope .fas.fa-envelope::before {
+        font-size: 14px !important;
+      }
     </style>
   </head>
   <body>
@@ -545,12 +557,12 @@
               </nav>
             </div>
             <div
-              class="produk-content mx-auto mt-7 flex flex-col xl:mt-0 xl:flex-row xl:justify-center xl:space-x-20 2xl:justify-evenly"
+              class="produk-content mx-auto mt-7 flex flex-col xl:mt-0 xl:flex-row xl:justify-center xl:space-x-20 2xl:space-x-7 2xl:justify-start"
             >
               <div class="produk__image space-y-3 xl:space-y-3">
                 <div class="image__hero relative">
                   <img
-                    class="h-auto w-full"
+                    class="h-auto 2xl:h-[15rem] w-full"
                     src="./../assets/kategori1.webp"
                     alt=""
                     srcset=""
@@ -560,7 +572,7 @@
                   class="image__thumbnail flex space-x-3 sm:w-full sm:justify-start xl:w-auto xl:space-x-3"
                 >
                   <img
-                    class="h-[3.3rem] border border-2 hover:cursor-pointer sm:h-[6rem] lg:h-[10rem] xl:h-[7rem]"
+                    class="h-[3.3rem] border border-2 hover:cursor-pointer sm:h-[6rem] lg:h-[10rem] xl:h-[7rem] 2xl:h-[3rem]"
                     src="./../assets/search/img.jpg"
                     alt=""
                     srcset=""
@@ -651,54 +663,75 @@
                   class="detail-bottom flex flex-col justify-between space-y-5 xl:space-y-0"
                 >
                   <div
-                    class="bottom-top flex items-center justify-start xl:space-x-5"
+                    class="bottom-top flex items-center mb-7 justify-start xl:space-x-5"
                   >
-                    <a class="border border-2 xl:py-1 xl:px-4" href="">
+                    <a
+                      class="border border-2 xl:py-1 xl:px-4 text-[14px]"
+                      href=""
+                    >
                       <i class="fas fa-long-arrow-alt-left"></i>
                       kembali
                     </a>
-                    <input type="number" name="" id="" value="1" />
+                    <input class="w-24" type="number" name="" id="" value="1" />
                     <div class="love">
                       <i class="fas fa-heart"></i>
                     </div>
-                    <button class="bg-primary rounded-md px-7 py-3 text-white">
+                    <button
+                      class="bg-primary rounded-md px-5 text-[14px] py-1 text-white"
+                    >
                       Beli
                     </button>
                   </div>
-                  <div class="bottom-bottom">
-                    <p>Bagikan</p>
+                  <div class="bottom-bottom xl:space-x-3 flex items-center">
+                    <p class="text-[16px]">Bagikan</p>
                     <button
-                      class="instagram hover:border-primary hover:text-primary bg-primary h-8 w-8 rounded-full border border-transparent text-white shadow-2xl hover:bg-white xl:h-8 xl:w-8 2xl:h-12 2xl:w-12"
-                      type="submit"
-                    >
-                      <a target="_blank" href="https://instagram.com/">
-                        <i
-                          class="fab fa-instagram lg:text-[1rem] xl:text-[1rem]"
-                        ></i>
-                      </a>
-                    </button>
-                    <button
-                      class="wa hover:border-primary hover:text-primary bg-primary h-8 w-8 rounded-full border border-transparent text-white shadow-2xl hover:bg-white xl:h-8 xl:w-8 2xl:h-12 2xl:w-12"
+                      class="bg-gray-500 h-8 w-8 rounded-full border border-transparent text-white shadow-2xl xl:h-8 xl:w-8"
                       type="submit"
                     >
                       <a
+                        class="flex justify-center items-center text-[14px]"
                         target="_blank"
-                        href="https://api.whatsapp.com/send?phone=089677144304&text=Contoh%0AText"
+                        href="https://instagram.com/"
                       >
-                        <i
-                          class="fab fa-whatsapp lg:text-[1rem] xl:text-[1rem]"
-                        ></i>
+                        <i class="fab fa-facebook-f"></i>
                       </a>
                     </button>
                     <button
-                      target="_blank"
-                      class="message hover:border-primary hover:text-primary bg-primary h-8 w-8 rounded-full border border-transparent text-white shadow-2xl hover:bg-white xl:h-8 xl:w-8 2xl:h-12 2xl:w-12"
+                      class="bg-gray-500 h-8 w-8 rounded-full border border-transparent text-white shadow-2xl xl:h-8 xl:w-8"
                       type="submit"
                     >
-                      <a target="_blank" href="mailto:contoh@gmail.com">
-                        <i
-                          class="far fa-envelope lg:text-[1rem] xl:text-[1rem]"
-                        ></i>
+                      <a
+                        class="flex justify-center items-center text-[14px]"
+                        target="_blank"
+                        href="https://api.whatsapp.com/send?phone=089677144304&text=Contoh%0AText"
+                      >
+                        <i class="fab fa-twitter"></i>
+                      </a>
+                    </button>
+                    <button
+                      id="bagikan-envelope"
+                      target="_blank"
+                      class="bg-gray-500 h-8 w-8 rounded-full border border-transparent text-white shadow-2xl xl:h-8 xl:w-8"
+                      type="submit"
+                    >
+                      <a
+                        class="flex justify-center items-center text-[14px]"
+                        target="_blank"
+                        href="mailto:contoh@gmail.com"
+                      >
+                        <i class="fas fa-envelope"></i>
+                      </a>
+                    </button>
+                    <button
+                      class="wa bg-gray-500 h-8 w-8 rounded-full border border-transparent text-white shadow-2xl xl:h-8 xl:w-8"
+                      type="submit"
+                    >
+                      <a
+                        class="flex justify-center items-center text-[14px]"
+                        target="_blank"
+                        href="https://api.whatsapp.com/send?phone=089677144304&text=Contoh%0AText"
+                      >
+                        <i class="fab fa-whatsapp"></i>
                       </a>
                     </button>
                   </div>
@@ -706,7 +739,7 @@
               </div>
             </div>
 
-            <div class="content flex flex-col 2xl:mt-24">
+            <div class="content flex flex-col">
               <div
                 class="content-type mr-3 mt-[3rem] text-[20px] font-bold text-gray-500 xl:mt-[7rem]"
               >
