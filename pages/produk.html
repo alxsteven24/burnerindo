@@ -47,19 +47,26 @@
 
       .far.fa-heart::before {
         font-size: 26px !important;
-        color: red;
+        color: #cc0000 !important;
+        transition: all 500 ease-in-out !important;
+      }
+
+      .fas.fa-heart::before {
+        font-size: 26px !important;
+        color: #cc0000 !important;
+        transition: all 500 ease-in-out !important;
       }
 
       .fas.fa-long-arrow-alt-left::before {
         font-size: 14px !important;
       }
 
-      /* .fab.fa-facebook-f::before {
-        font-size: 14px !important;
-      } */
-
       #bagikan-envelope .fas.fa-envelope::before {
         font-size: 14px !important;
+      }
+
+      .liked {
+        display: none !important;
       }
     </style>
   </head>
@@ -557,12 +564,12 @@
               </nav>
             </div>
             <div
-              class="produk-content mx-auto mt-7 flex flex-col xl:mt-0 xl:flex-row xl:justify-center xl:space-x-20 2xl:space-x-7 2xl:justify-start"
+              class="produk-content mx-auto mt-7 lg:space-x-10 flex flex-col xl:mt-0 lg:flex-row xl:flex-row xl:justify-start 2xl:space-x-7"
             >
               <div class="produk__image space-y-3 xl:space-y-3">
                 <div class="image__hero relative">
                   <img
-                    class="h-auto 2xl:h-[15rem] w-full"
+                    class="h-auto lg:h-[20rem] xl:h-[14rem] 2xl:h-[15rem] w-full"
                     src="./../assets/kategori1.webp"
                     alt=""
                     srcset=""
@@ -572,7 +579,7 @@
                   class="image__thumbnail flex space-x-3 sm:w-full sm:justify-start xl:w-auto xl:space-x-3"
                 >
                   <img
-                    class="h-[3.3rem] border border-2 hover:cursor-pointer sm:h-[6rem] lg:h-[10rem] xl:h-[7rem] 2xl:h-[3rem]"
+                    class="h-[3.3rem] lg:h-[4rem] border-2 hover:cursor-pointer sm:h-[6rem] 2xl:h-[3rem]"
                     src="./../assets/search/img.jpg"
                     alt=""
                     srcset=""
@@ -585,7 +592,7 @@
                 </div>
               </div>
               <div
-                class="produk__detail mt-10 flex flex-col justify-around space-y-7 xl:mt-0 xl:justify-start xl:space-x-0 xl:text-[20px]"
+                class="produk__detail mt-10 lg:mt-0 flex flex-col justify-around space-y-7 xl:mt-0 xl:justify-start xl:space-x-0 xl:text-[20px]"
               >
                 <div class="detail-top flex items-center">
                   <p class="text-[20px] font-bold text-gray-500">
@@ -663,10 +670,10 @@
                   class="detail-bottom flex flex-col justify-between space-y-5 xl:space-y-0"
                 >
                   <div
-                    class="bottom-top flex items-center mb-7 justify-start xl:space-x-5"
+                    class="bottom-top flex items-center mb-5 xl:mb-7 justify-between sm:justify-start sm:space-x-3 xl:justify-start xl:space-x-5"
                   >
                     <a
-                      class="border border-2 xl:py-1 xl:px-4 text-[14px]"
+                      class="border border-2 py-1 px-4 xl:py-1 xl:px-4 text-[14px]"
                       href=""
                     >
                       <i class="fas fa-long-arrow-alt-left"></i>
@@ -674,7 +681,14 @@
                     </a>
                     <input class="w-24" type="number" name="" id="" value="1" />
                     <div class="love">
-                      <i class="fas fa-heart"></i>
+                      <i
+                        id="unliked"
+                        class="far transition-all ease-in-out duration-500 fa-heart toggleLikes"
+                      ></i>
+                      <i
+                        id="liked"
+                        class="fas fa-heart toggleLikes liked transition-all ease-in-out duration-500"
+                      ></i>
                     </div>
                     <button
                       class="bg-primary rounded-md px-5 text-[14px] py-1 text-white"
@@ -682,7 +696,9 @@
                       Beli
                     </button>
                   </div>
-                  <div class="bottom-bottom xl:space-x-3 flex items-center">
+                  <div
+                    class="bottom-bottom space-x-3 xl:space-x-3 flex items-center"
+                  >
                     <p class="text-[16px]">Bagikan</p>
                     <button
                       class="bg-gray-500 h-8 w-8 rounded-full border border-transparent text-white shadow-2xl xl:h-8 xl:w-8"
@@ -1416,7 +1432,30 @@
       let showLoading = document.getElementById("showLoading");
       let showLoadingMob = document.getElementById("showLoading-mobile");
       let produks = document.querySelector(".searchs");
-      console.log(searchNav);
+      let likes = document.querySelectorAll(".toggleLikes");
+      let unliked = document.getElementById("unliked");
+      let liked = document.getElementById("liked");
+      // console.log(liked);
+
+      likes.forEach(function (els) {
+        // console.log(els);
+        els.addEventListener("click", function (el) {
+          let target = el.target;
+          console.log(target);
+
+          if (target.id == "unliked") {
+            unliked.classList.toggle("liked");
+            liked.classList.toggle("liked");
+            return;
+          }
+
+          if (target.id == "liked") {
+            liked.classList.toggle("liked");
+            unliked.classList.toggle("liked");
+            return;
+          }
+        });
+      });
 
       produks.addEventListener("click", function (e) {
         // e.preventDefault();
