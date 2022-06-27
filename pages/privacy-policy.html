@@ -460,109 +460,82 @@
 
         <div
           id="shopNow"
-          class="container-kategori mt-0 px-6 pb-[5rem] md:px-14 xl:mt-0 xl:px-[7rem] xl:pb-[5rem] 2xl:px-48"
+          class="container-kategori flex xl:space-x-10 w-full mt-0 px-6 pb-[5rem] md:px-14 xl:mt-0 xl:px-[7rem] xl:py-[5rem] 2xl:px-48"
         >
-          <div class="wrapper-kategori relative z-0 mt-8 xl:mt-[7rem]">
+          <aside class="w-64" aria-label="Sidebar">
             <div
-              class="tos-navbar text-primary flex flex-wrap justify-evenly space-y-5 text-[14px] font-bold xl:w-auto xl:justify-between xl:space-y-10 xl:text-[1.5rem] 2xl:w-auto 2xl:space-y-0"
+              class="overflow-y-auto shadow-md bg-white rounded dark:bg-gray-800"
             >
               <div
-                class="tentang-kami mt-5 border-r-4 border-[#fecdbb] xl:mt-10 2xl:mt-0"
+                class="flex items-center px-2 py-5 bg-gray-200 text-base font-normal text-gray-900 rounded-t-lg border border-gray"
               >
-                <a href="./tentang-kami.html">
-                  <h1
-                    class="mr-[1rem] xl:mr-[1.5rem] xl:text-[20px] 2xl:mr-12"
-                    data-translatable
-                  >
-                    <span>ABOUT US</span>
-                    <span>TENTANG KAMI</span>
-                  </h1>
-                </a>
+                <p class="ml-3">HALAMAN</p>
               </div>
-              <div class="tentang-kami border-r-4 border-[#fecdbb]">
-                <a href="./kontak-kami.html">
-                  <h1
-                    class="mr-[1rem] xl:mr-[1.5rem] xl:text-[20px] 2xl:mr-12"
-                    data-translatable
-                  >
-                    <span>CONTACT US</span>
-                    <span>KONTAK KAMI</span>
-                  </h1>
-                </a>
-              </div>
-              <div class="tentang-kami border-r-4 border-[#fecdbb]">
-                <a href="./syarat-ketentuan.html">
-                  <h1
-                    class="mr-[1rem] xl:mr-[1.5rem] xl:text-[20px] 2xl:mr-12"
-                    data-translatable
-                  >
-                    <span>TERMS AND CONDITIONS</span>
-                    <span>SYARAT DAN KETENTUAN</span>
-                  </h1>
-                </a>
-              </div>
-              <div class="tentang-kami border-r-4 border-[#fecdbb]">
-                <a href="./privacy-policy.html">
-                  <h1
-                    class="mr-[1rem] xl:mr-[1.5rem] xl:text-[20px] 2xl:mr-12"
-                    data-translatable
-                  >
-                    <span>PRIVACY & POLICY</span>
-                    <span>KEBIJAKAN PRIBADI</span>
-                  </h1>
-                </a>
-              </div>
-              <div class="tentang-kami border-r-4 border-[#fecdbb]">
-                <a href="./terms-of-service.html">
-                  <h1
-                    class="mr-[1rem] xl:mr-[1.5rem] xl:text-[20px] 2xl:mr-12"
-                    data-translatable
-                  >
-                    <span>TERMS OF SERVICE</span>
-                    <span>SYARAT LAYANAN</span>
-                  </h1>
-                  <div
-                    class="h-0 w-0 bg-[#fecdbb] hover:h-1 hover:w-[95%]"
-                  ></div>
-                </a>
+              <div class="border border-gray">
+                <ul class="space-y-2">
+                  <li>
+                    <a
+                      href="./tentang-kami.html"
+                      class="flex items-center p-2 mx-4 my-2 text-base font-bold rounded-lg text-gray-600 hover:bg-gray-100"
+                    >
+                      <span class="ml-3">TENTANG KAMI</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="./kontak-kami.html"
+                      class="flex items-center p-2 mx-4 my-2 text-base font-bold text-gray-600 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700"
+                    >
+                      <span class="flex-1 ml-3 whitespace-nowrap"
+                        >KONTAK KAMI</span
+                      >
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="./syarat-ketentuan.html"
+                      class="flex items-center p-2 mx-4 my-2 text-base font-bold text-gray-600 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700"
+                    >
+                      <span class="flex-1 ml-3 whitespace-nowrap"
+                        >SYARAT & KETENTUAN</span
+                      >
+                    </a>
+                  </li>
+                </ul>
+                <ul
+                  class="pt-4 mt-4 space-y-2 border-t border-gray-200 dark:border-gray-700"
+                >
+                  <li>
+                    <a
+                      href="./privacy-policy.html"
+                      class="flex items-center p-2 mx-4 my-2 text-base font-bold bg-primary rounded-lg transition duration-75 text-white group"
+                    >
+                      <span class="ml-4">PRIVACY & POLICY</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="./terms-of-service.html"
+                      class="flex items-center mx-4 my-2 p-2 text-base font-bold text-gray-600 rounded-lg transition duration-75 hover:bg-gray-100 dark:hover:bg-gray-700 dark:text-white group"
+                    >
+                      <span class="ml-3">TERMS OF USE</span>
+                    </a>
+                  </li>
+                </ul>
               </div>
             </div>
+          </aside>
 
-            <div
-              class="tos-content mt-20 font-bold text-[#4a4e5a] xl:mt-28 2xl:mt-28"
-            >
-              <h2
-                class="text-center text-[16px] xl:text-[20px]"
-                data-translatable
-              >
-                <span class="xl:text-[20px]">Privacy Policy</span>
-                <span class="xl:text-[20px]">Kebijakan Privasi </span>
-              </h2>
-              <p
-                class="mt-7 px-5 text-[14px] xl:mt-7 xl:px-10 xl:text-[14px] 2xl:mt-7 2xl:px-10"
-                data-translatable
-              >
-                <span>
-                  Burnerindo.com is an Ecommerce website that aims to make it
-                  easier for members to find the products/items they need online
-                  so that it is more effective and efficient. Burnerindo.com is
-                  committed to protecting member data and treat the rights of
-                  all members registered with burnerindo.com correctly and
-                  sincerely. All the data that members provide to burnerindo.com
-                  are for member requirements for the use of services at
-                  burnerindo.com. These data will be used accordingly in the
-                  policy of burnerindo.com. Burnerindo.com will protect and
-                  respect the rights of all data members. Burnerindo.com may
-                  change and change the privacy policy at any time, all policy
-                  changes on burnerindo.com are loaded and published in this
-                  burnerindo.com, so that members of burnerindo.com can see,
-                  know and understand every change or change the privacy policy
-                  at burnerindo.com relating to the personal data of members.
-                  Every member burnerindo.com agrees to any new policy changes
-                  by using the services and services of burnerindo.com.
-                </span>
-                <span
-                  >Burnerindo.com adalah website Ecommerce yang bertujuan untuk
+          <section
+            class="block p-6 w-full bg-white text-[#4A4E5A] rounded-lg border border-gray-200 shadow-md"
+          >
+            <h3 class="font-normal text-[25px]">PRIVACY POLICY</h3>
+            <div class="kebijakan pt-4 space-y-1">
+              <h3 class="font-normal text-[20px]">Kebijakan Privasi</h3>
+              <div class="kebijakan-text text-[14px] space-y-3">
+                <p>
+                  Burnerindo.com adalah website
+                  <span class="font-bold">Ecommerce</span> yang bertujuan untuk
                   memudahkan anggota mencari produk/barang yang di butuhkan
                   secara online sehingga lebih efektif dan efisien.
                   Burnerindo.com berkomitmen melindungi data anggota dan
@@ -571,248 +544,126 @@
                   data-data yang diberikan anggota kepada burnerindo.com adalah
                   untuk persyaratan anggota untuk penggunaan layanan di
                   burnerindo.com. Data-data tersebut akan di gunakan sesuai
-                  dalam kebijakan burnerindo.com. Burnerindo.com akan melindungi
-                  dan menghormati hak-hak semua data anggota. Burnerindo.com
-                  dapat mengganti dan merubah kebijakan perivasi setiap waktu,
-                  semua perubahan kebijakan di burnerindo.com dimuat dan
-                  dipublikasikan dalam burnerindo.com ini, sehingga anggota dari
-                  burnerindo.com dapat melihat, mengetahui dan memahami setiap
-                  penggantian atau perubahan kebijakan privasi di burnerindo.com
-                  yang berkaitan dengan data pribadi anggota. Setiap anggota
-                  burnerindo.com menyetujui setiap perubahan kebijakan yang baru
-                  dengan menggunakan jasa dan layanan dari burnerindo.com.</span
-                >
-              </p>
-              <div
-                class="tos-privacy mt-10 space-y-5 rounded-xl bg-[#fecdbb] py-5 px-5 xl:mt-10 xl:space-y-5 xl:py-10 xl:px-10 2xl:mt-10 2xl:space-y-5 2xl:py-10 2xl:px-10"
-              >
-                <h3 class="text-[16px] xl:text-[20px]" data-translatable>
-                  <span>Use of Information Against Members</span>
-                  <span>Penggunaan Informasi Terhadap Anggota </span>
-                </h3>
-
-                <p class="xl:text-[14px]">
-                  <span
-                    >All burnerindo.com member data information in the form of
-                    names, e-mail address, address, telephone number, date of
-                    birth, etc given and provided by members at burnerindo.com
-                    means members have agreed to all privacy policies at
-                    burnerindo.com and any policy changes in
-                    burnerindo.com.</span
-                  >
-                  <span
-                    >Semua informasi data anggota burnerindo.com berupa nama,
-                    alamat email, alamat, no telepon, tanggal lahir, dll yang
-                    diberikan dan disi oleh anggota di burnerindo.com berarti
-                    anggota telah setuju terhadap semua kebijakan privasi di
-                    burnerindo.com dan setiap perubahan kebijakan di
-                    burnerindo.com.</span
-                  >
+                  dalam kebijakan burnerindo.com.
                 </p>
-                <p class="xl:text-[14px]">
-                  <span
-                    >The use of information on member data is as follows:</span
-                  >
-                  <span>
-                    Penggunaan informasi terhadap data anggota sebagai berikut
-                    :</span
-                  >
+                <p>
+                  Burnerindo.com akan melindungi dan menghormati hak-hak semua
+                  data anggota. Burnerindo.com dapat mengganti dan merubah
+                  kebijakan perivasi setiap waktu, semua perubahan kebijakan di
+                  burnerindo.com dimuat dan dipublikasikan dalam burnerindo.com
+                  ini, sehingga anggota dari burnerindo.com dapat melihat,
+                  mengetahui dan memahami setiap penggantian atau perubahan
+                  kebijakan privasi di burnerindo.com yang berkaitan dengan data
+                  pribadi anggota. Setiap anggota burnerindo.com menyetujui
+                  setiap perubahan kebijakan yang baru dengan menggunakan jasa
+                  dan layanan dari burnerindo.com.
                 </p>
-                <div
-                  class="misson-1 bg-primary rounded-xl py-5 px-5 text-center text-white xl:py-10 xl:px-10"
-                >
-                  <h3 class="text-[14px] xl:text-[14px]" data-translatable>
-                    <span
-                      >Provide product and service information on burnerindo.com
-                      appropriate and can help the efforts of members of the
-                      burnerindo.com. And all members agree to be contacted by
-                      burnerindo.com by phone or email</span
-                    >
-                    <span
-                      >Memberikan informasi produk dan layanan di burnerindo.com
-                      yang tepat dan dapat membantu usaha anggota dari
-                      burnerindo.com. Dan semua anggota setuju untuk dihubungi
-                      oleh burnerindo.com melalui telepon atau email</span
-                    >
-                  </h3>
-                </div>
-                <div
-                  class="misson-2 bg-primary rounded-xl py-5 px-5 text-center text-white xl:py-10 xl:px-10"
-                >
-                  <p class="text-[14px] xl:text-[14px]" data-translatable>
-                    <span
-                      >To help members take part in burnerindo.com to features,
-                      content, products, and services so that members can
-                      interact or search for the required product effectively
-                      and efficiently.</span
-                    >
-                    <span
-                      >Untuk membantu anggota ambil bagian di burnerindo.com
-                      terhadap fitur, isi, produk, dan layanan sehingga anggota
-                      dapat berinteraksi atau mencari produk yang dibutuhkan
-                      secara efektif dan efisien.</span
-                    >
+              </div>
+            </div>
+            <div class="penggunaan pt-4 space-y-1">
+              <h3 class="font-normal text-[20px]">
+                Penggunaan Informasi Terhadap Anggota
+              </h3>
+              <div class="penggunaan-text text-[14px]">
+                <p>
+                  Semua informasi data anggota burnerindo.com berupa nama,
+                  alamat email, alamat, no telepon, tanggal lahir, dll yang
+                  diberikan dan disi oleh anggota di burnerindo.com berarti
+                  anggota telah setuju terhadap semua kebijakan privasi di
+                  burnerindo.com dan setiap perubahan kebijakan di
+                  burnerindo.com.
+                </p>
+                <p>
+                  Penggunaan informasi terhadap data anggota sebagai berikut :
+                </p>
+                <div class="pengunaan-item px-5">
+                  <p>
+                    - Memberikan informasi produk dan layanan di burnerindo.com
+                    yang tepat dan dapat membantu usaha anggota dari
+                    burnerindo.com. Dan semua anggota setuju untuk dihubungi
+                    oleh burnerindo.com melalui telepon atau email.
                   </p>
-                </div>
-                <div
-                  class="misson-3 bg-primary rounded-xl py-5 px-5 text-center text-white xl:py-10 xl:px-10"
-                >
-                  <p class="text-[14px] xl:text-[14px]" data-translatable>
-                    <span
-                      >For product order confirmation, product payment and
-                      delivery of products related to member transactions at
-                      burnerindo.com.</span
-                    >
-                    <span
-                      >Untuk konfirmasi pesanan produk, pembayaran produk dan
-                      pengiriman produk yang berkaitan dengan transaksi anggota
-                      di burnerindo.com.</span
-                    >
+                  <p>
+                    - Untuk membantu anggota ambil bagian di burnerindo.com
+                    terhadap fitur, isi, produk, dan layanan sehingga anggota
+                    dapat berinteraksi atau mencari produk yang dibutuhkan
+                    secara efektif dan efisien.
                   </p>
-                </div>
-                <div
-                  class="misson-3 bg-primary rounded-xl py-5 px-5 text-center text-white xl:py-10 xl:px-10"
-                >
-                  <p class="text-[14px] xl:text-[14px]" data-translatable>
-                    <span
-                      >Provide offers/promotions and other information that the
-                      best about burnerindo.com products via email, sms, wa to
-                      members</span
-                    >
-                    <span
-                      >Memberikan penawaran/promosi dan informasi lainnya yang
-                      terbaik tentang produk burnerindo.com melalui email, sms,
-                      wa kepada anggota</span
-                    >
+                  <p>
+                    - Untuk konfirmasi pesanan produk, pembayaran produk dan
+                    pengiriman produk yang berkaitan dengan transaksi anggota di
+                    burnerindo.com.
                   </p>
-                </div>
-                <div
-                  class="misson-3 bg-primary rounded-xl py-5 px-5 text-center text-white xl:py-10 xl:px-10"
-                >
-                  <p class="text-[14px] xl:text-[14px]" data-translatable>
-                    <span
-                      >Asking for input through surveys or research internal via
-                      email for Ecommerce development burnerindo.com so as to
-                      improve products and services service at burnerindo.com is
-                      better and can help to fulfill the product search needed
-                      by member at burnerindo.com.</span
-                    >
-                    <span
-                      >Meminta memberikan masukkan melalui survey atau riset
-                      internal melalui email untuk pengembangan Ecommerce
-                      burnerindo.com sehingga dapat meningkatkan produk dan
-                      layanan di burnerindo.com lebih baik dan dapat membantu
-                      untuk memenuhi pencarian produk yang dibutuhkan oleh
-                      anggota di burnerindo.com.</span
-                    >
+                  <p>
+                    - Memberikan penawaran/promosi dan informasi lainnya yang
+                    terbaik tentang produk burnerindo.com melalui email, sms, wa
+                    kepada anggota.
                   </p>
-                </div>
-                <div
-                  class="misson-3 bg-primary rounded-xl py-5 px-5 text-center text-white xl:py-10 xl:px-10"
-                >
-                  <p class="text-[14px] xl:text-[14px]" data-translatable>
-                    <span
-                      >To notify any policy changes in burnerindo.com to all
-                      members.
-                    </span>
-                    <span
-                      >Untuk memberitahu setiap perubahan kebijakan di
-                      burnerindo.com kepada semua anggota.
-                    </span>
+                  <p>
+                    - Meminta memberikan masukkan melalui survey atau riset
+                    internal melalui email untuk pengembangan Ecommerce
+                    burnerindo.com sehingga dapat meningkatkan produk dan
+                    layanan di burnerindo.com lebih baik dan dapat membantu
+                    untuk memenuhi pencarian produk yang dibutuhkan oleh anggota
+                    di burnerindo.com.
+                  </p>
+                  <p>
+                    - Untuk memberitahu setiap perubahan kebijakan di
+                    burnerindo.com kepada semua anggota.
                   </p>
                 </div>
               </div>
-
-              <div
-                class="tos-copyright mt-5 space-y-5 rounded-xl bg-[#fecdbb] py-5 px-5 xl:mt-10 xl:space-y-5 xl:py-10 xl:px-10 2xl:mt-10 2xl:space-y-5 2xl:py-10 2xl:px-10"
-              >
-                <h3 class="text-[16px] xl:text-[20px]" data-translatable>
-                  <span>Security </span>
-                  <span>Keamanan </span>
-                </h3>
-                <p class="text-[14px] xl:text-[14px]" data-translatable>
-                  <span
-                    >Burnerindo.com is committed to protecting and respecting
-                    member's personal data. For that burnerindo.com do security
-                    in accordance with this privacy policy with how to secure
-                    and copy electronic data regularly and if necessary
-                    safeguarding physical data also.</span
-                  >
-                  <span
-                    >Burnerindo.com berkomitmen untuk melindungi dan menghormati
-                    data pribadi anggota. Untuk itu burnerindo.com melakukan
-                    keamanan yang sesuai dengan kebijakan privasi ini dengan
-                    cara melakukan pengamanan dan menyalin data elektronik
-                    secara teratur dan jika diperlukan pengamanan data fisik
-                    juga.</span
-                  >
+            </div>
+            <div class="keamanan pt-4 space-y-1">
+              <h3 class="font-normal text-[20px]">Keamanan</h3>
+              <div class="keamanan-text text-[14px] space-y-3">
+                <p>
+                  Burnerindo.com berkomitmen untuk melindungi dan menghormati
+                  data pribadi anggota. Untuk itu burnerindo.com melakukan
+                  keamanan yang sesuai dengan kebijakan privasi ini dengan cara
+                  melakukan pengamanan dan menyalin data elektronik secara
+                  teratur dan jika diperlukan pengamanan data fisik juga.
                 </p>
               </div>
-              <div
-                class="tos-tradeMarks mt-5 space-y-5 rounded-xl bg-[#fecdbb] py-5 px-5 xl:mt-10 xl:space-y-5 xl:py-10 xl:px-10 2xl:mt-10 2xl:space-y-5 2xl:py-10 2xl:px-10"
-              >
-                <h3 class="text-[16px] xl:text-[20px]" data-translatable>
-                  <span>Information Disclosure and Control </span>
-                  <span>Pengungkapan dan Pengendalian Informasi </span>
-                </h3>
-                <p class="text-[14px] xl:text-[14px]" data-translatable>
-                  <span
-                    >Burnerindo.com is committed not to sell and provide data to
-                    third parties except burnerindo.com obliged to comply
-                    legally in Indonesia allowed to sell or provide member data
-                    to third parties.</span
-                  >
-                  <span
-                    >Burnerindo.com berkomitmen tidak akan menjual dan
-                    memberikan data kepada pihak ketiga kecuali burnerindo.com
-                    berkewajiban untuk mematuhi secara hukum di Indonesia
-                    diperbolehkan untuk menjual atau memberikan data anggota
-                    kepada pihak ketiga.</span
-                  >
+            </div>
+            <div class="pengungkapan pt-4 space-y-1">
+              <h3 class="font-normal text-[20px]">
+                Pengungkapan dan Pengendalian Informasi
+              </h3>
+              <div class="pengungkapan-text text-[14px] space-y-3">
+                <p>
+                  Burnerindo.com berkomitmen tidak akan menjual dan memberikan
+                  data kepada pihak ketiga kecuali burnerindo.com berkewajiban
+                  untuk mematuhi secara hukum di Indonesia diperbolehkan untuk
+                  menjual atau memberikan data anggota kepada pihak ketiga.
                 </p>
               </div>
-              <div
-                class="tos-license mt-5 space-y-5 rounded-xl bg-[#fecdbb] py-5 px-5 xl:mt-10 xl:space-y-5 xl:py-10 xl:px-10 2xl:mt-10 2xl:space-y-5 2xl:py-10 2xl:px-10"
-              >
-                <h3 class="text-[16px] xl:text-[20px]" data-translatable>
-                  <span>Contact Person </span>
-                  <span>Pihak yang dapat Dihubungi </span>
-                </h3>
-                <p class="text-[14px] xl:text-[14px]" data-translatable>
-                  <span
-                    >Any suggestions or input from burnerindo.com members
-                    regarding this privacy policy can be sent to email:
-                    support@burnerindo.co.id</span
-                  >
-                  <span
-                    >Setiap saran atau masukkan dari anggota burnerindo.com
-                    mengenai kebijakan privasi ini dapat di kirimkan ke email :
-                    support@burnerindo.co.id</span
-                  >
-                </p>
-              </div>
-              <div
-                class="tos-validity mt-5 space-y-5 rounded-xl bg-[#fecdbb] py-5 px-5 xl:mt-10 xl:space-y-5 xl:py-10 xl:px-10 2xl:mt-10 2xl:space-y-5 2xl:py-10 2xl:px-10"
-              >
-                <h3 class="text-[16px] xl:text-[20px]" data-translatable>
-                  <span>Applicable law </span>
-                  <span>Hukum yang Berlaku </span>
-                </h3>
-                <p class="text-[14px] xl:text-[14px]" data-translatable>
-                  <span
-                    >Each privacy policy in the terms and conditions which has
-                    been made on burnerindo.com is based on the law applicable
-                    in the territory of the Republic of Indonesia.</span
-                  >
-                  <span
-                    >Setiap kebijakan privasi dalam persyaratan dan ketentuan
-                    yang telah di buat di burnerindo.com ini berdasarkan hukum
-                    yang berlaku di wilayah Republik Indonesia.</span
+            </div>
+            <div class="pihak pt-4 space-y-1">
+              <h3 class="font-normal text-[20px]">
+                Pihak yang dapat dihubungi
+              </h3>
+              <div class="pihak-text text-[14px] space-y-3">
+                <p>
+                  Setiap saran atau masukkan dari anggota burnerindo.com
+                  mengenai kebijakan privasi ini dapat di kirimkan ke email :
+                  <a class="text-primary" href="mailto:support@burnerindo.co.id"
+                    >support@burnerindo.co.id.</a
                   >
                 </p>
               </div>
             </div>
-          </div>
+            <div class="hukum pt-4 space-y-1">
+              <h3 class="font-normal text-[20px]">Hukum yang berlaku</h3>
+              <div class="pihak-text text-[14px] space-y-3">
+                <p>
+                  Setiap kebijakan privasi dalam persyaratan dan ketentuan yang
+                  telah di buat di burnerindo.com ini berdasarkan hukum yang
+                  berlaku di wilayah Republik Indonesia.
+                </p>
+              </div>
+            </div>
+          </section>
         </div>
       </section>
     </main>
