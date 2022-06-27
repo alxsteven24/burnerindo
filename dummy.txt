@@ -1,0 +1,197 @@
+<div
+          id="shopNow"
+          class="container-kategori flex xl:space-x-10 w-full mt-0 px-6 pb-[5rem] md:px-14 xl:mt-0 xl:px-[7rem] xl:py-[5rem] 2xl:px-48"
+        >
+          <aside class="w-64" aria-label="Sidebar">
+            <div
+              class="overflow-y-auto shadow-md bg-white rounded dark:bg-gray-800"
+            >
+              <div
+                class="flex items-center px-2 py-5 bg-gray-200 text-base font-normal text-gray-900 rounded-t-lg border border-gray"
+              >
+                <p class="ml-3">HALAMAN</p>
+              </div>
+              <div class="border border-gray">
+                <ul class="space-y-2">
+                  <li>
+                    <a
+                      href="./tentang-kami.html"
+                      class="flex items-center p-2 mx-4 my-2 text-base font-bold rounded-lg bg-primary text-white"
+                    >
+                      <span class="ml-3">TENTANG KAMI</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="./kontak-kami.html"
+                      class="flex items-center p-2 mx-4 my-2 text-base font-normal text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700"
+                    >
+                      <span class="flex-1 ml-3 whitespace-nowrap"
+                        >KONTAK KAMI</span
+                      >
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="./syarat-ketentuan.html"
+                      class="flex items-center p-2 mx-4 my-2 text-base font-normal text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700"
+                    >
+                      <span class="flex-1 ml-3 whitespace-nowrap"
+                        >SYARAT & KETENTUAN</span
+                      >
+                    </a>
+                  </li>
+                </ul>
+                <ul
+                  class="pt-4 mt-4 space-y-2 border-t border-gray-200 dark:border-gray-700"
+                >
+                  <li>
+                    <a
+                      href="./privacy-policy.html"
+                      class="flex items-center p-2 mx-4 my-2 text-base font-normal text-gray-900 rounded-lg transition duration-75 hover:bg-gray-100 dark:hover:bg-gray-700 dark:text-white group"
+                    >
+                      <span class="ml-4">PRIVACY & POLICY</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="./terms-of-service.html"
+                      class="flex items-center mx-4 my-2 p-2 text-base font-normal text-gray-900 rounded-lg transition duration-75 hover:bg-gray-100 dark:hover:bg-gray-700 dark:text-white group"
+                    >
+                      <span class="ml-3">TERMS OF USE</span>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </aside>
+
+          <section
+            class="block p-6 w-full bg-white text-[#4A4E5A] rounded-lg border border-gray-200 shadow-md"
+          >
+            <div class="tentang-kami__header xl:space-y-5">
+              <h3 class="font-normal text-[25px]">Tentang Kami</h3>
+              <p>
+                Disahkan pada tahun 2015, PT. BurnerindoTeknikUtama didirikan
+                sebagai One-Stop- SparePart-Solution/Solusi-Suku-Cadang-Satu
+                Atap, khususnya dalam memasok suku cadang untuk burners dan
+                steam boilers. Kami utamakan penyediaan suku cadang kualitas
+                utama & asli untuk semua jenis dan merek burner dan steam
+                boilers, seperti Weishaupt, Riello, FBR, Siemens, Suntec, Dungs,
+                Danfoss, Satronic / Honeywell, Krom Schroder, Elster, Brahma,
+                Giuliani Anello, Coprim, Madas, Steinen, Monarch, RMG, Gestra,
+                Mobrey.
+              </p>
+              <p>
+                Dalam bisnis kami, kami mampu menawarkan harga terbaik & paling
+                bersaing dibandingkan dengan para pemasok lainnya karena kami
+                memelihara hubungan bisnis yang langsung & solid dengan para
+                pemasok dan mitra dari seluruh dunia. Kami juga memberikan
+                layanan teknis terbaik yang didukung sebuah tim profesional yang
+                sangat terlatih & berpengalaman yang senantiasa siap menjawab
+                kebutuhan usaha Anda.
+              </p>
+              <p>
+                Akhirnya, tujuan kami itu selalu memberi kepuasan semua
+                pelanggan melalui standar internasional kami & layanan pelanggan
+                bermutu tinggi. Kombinasi semua nilai-niali bisnis inilah
+                fondasi yang menjelaskan komitmen & semangat kami dalam industri
+                ini.
+              </p>
+              <div class="tentang-kami__misi xl:space-y-1 mt-5">
+                <h3 class="font-bold">Misi</h3>
+                <div class="misi-content space-y-3">
+                  <p>
+                    - Menjawab tantangan in-stock demands pada saat paling
+                    kritis dan atas permintaan pelanggan.
+                  </p>
+                  <p>
+                    - Memelihara hubungan bisnis dengan mitra-mitra kami yang
+                    sudah mapan agar dapat mencapai harga terunggul.
+                  </p>
+                  <p>
+                    - Melanjutkan penyediaan dukungan penuh bagi
+                    pelanggan/customer support melalui semua lini usaha,
+                    termasuk para teknisi unggulan, penjualan dan customer care.
+                  </p>
+                </div>
+              </div>
+              <div
+                class="tentang-kami__misi xl:space-y-1 mt-5 border-gray-400 border-b pb-7"
+              >
+                <h3 class="font-bold">Visi</h3>
+                <div class="misi-content">
+                  <p>
+                    Menjadi perusahaan teknik terkemuka yang mengkhususkan diri
+                    pada semua jenis steam boilers dan burners di Indonesia.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="tentang-kami__header xl:space-y-5 mt-5">
+              <h3 class="font-normal text-[25px]">MENGAPA KAMI ?</h3>
+              <div class="tentang-kami__misi xl:space-y-1 mt-5">
+                <h3 class="font-bold">Layanan</h3>
+                <div class="misi-content">
+                  <p>
+                    Kami telah membangun reputasi sebagai sebuah layanan yang
+                    handal, cepat & efisien di semua tuntutan tugas. Dengan
+                    didukung jajaran lengkap suku cadang untuk burners dan steam
+                    boilers, tim teknisi kami yang amat terlatih & memenuhi
+                    kualifikasi, siap melaksanakan perbaikan & pelayanan dengan
+                    cara yang pas guna menghindari kehilangan biaya produksi
+                    atau waktu.
+                  </p>
+                </div>
+              </div>
+              <div class="tentang-kami__misi xl:space-y-1 mt-5">
+                <h3 class="font-bold">Mutu</h3>
+                <div class="misi-content">
+                  <p>
+                    Mutu standar perusahaan kami diterapkan tidak hanya pada
+                    merek-merek suku cadang yang ternama kami yang sudah menjadi
+                    mitra kami, namun juga ditampilkan diterapkan dalam bentuk
+                    para teknisi yang bermutu & berpengalaman yang memahami
+                    perbaikan dasar untuk menyelesaikan turun mesin. Lebih
+                    lanjut,. customer care kami juga mencerminkan
+                    profesionalisme yang patut para klien kami terima dalam
+                    bisnis mereka.
+                  </p>
+                </div>
+              </div>
+              <div class="tentang-kami__misi xl:space-y-1 mt-5">
+                <h3 class="font-bold">Stok</h3>
+                <div class="misi-content">
+                  <p>
+                    Setelah bekerja sama erat dengan para mitra yang bereputasi
+                    sangat baik yang adalah penyedia utama untuk permintaan
+                    burner dan steam boilers dunia, kami mampu memasok segera
+                    aksesoris atau suku cadang apapun untuk kebutuhan pelanggan.
+                  </p>
+                </div>
+              </div>
+              <div class="tentang-kami__misi xl:space-y-1 mt-5">
+                <h3 class="font-bold">Harga</h3>
+                <div class="misi-content">
+                  <p>
+                    Penetapan harga yang bersaing itu hasil ketekunan kami
+                    membangun hubungan usaha yang solid dengan para mitra kami
+                    yang suportif, yang memungkinkan kami memasok semua suku
+                    cadang dengan harga yang ekonomis dan bersaing.
+                  </p>
+                </div>
+              </div>
+              <div class="tentang-kami__misi xl:space-y-1 mt-5">
+                <h3 class="font-bold">Kepuasan Pelanggan</h3>
+                <div class="misi-content">
+                  <p>
+                    Kami menyediakan kelebihan-kelebihan layanan melalui
+                    keterampilan hebat kami & daya penyesuaian kami. Dengan
+                    peralatan & teknik yang paling maju & para teknisi kami.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
