@@ -23,6 +23,8 @@
         width: 5px;
       }
 
+      /* width */
+
       /* Track */
       .menu-desk::-webkit-scrollbar-track {
         background: #f1f1f1;
@@ -448,7 +450,7 @@
 
     <main>
       <section
-        class="heroIndex mt-0 flex h-auto items-center justify-center bg-white lg:mt-0 lg:h-auto xl:mt-0 xl:h-full 2xl:mt-0"
+        class="heroIndex mt-0 flex h-auto items-center justify-center bg-white lg:mt-0 xl:mt-0 xl:h-full 2xl:mt-0"
       >
         <img
           loading="lazy"
@@ -457,150 +459,130 @@
           alt=""
           srcset=""
         />
-
         <div
           id="shopNow"
-          class="container-kategori mt-0 px-6 pb-[5rem] md:px-14 xl:mt-0 xl:px-[7rem] xl:pb-[5rem] 2xl:px-48"
+          class="container-kategori flex flex-col xl:flex-row xl:space-x-10 w-full mt-0 px-6 pb-[5rem] md:px-14 xl:mt-0 xl:px-[7rem] xl:py-[5rem] 2xl:px-48"
         >
-          <div class="wrapper-kategori relative z-0 mt-8 xl:mt-[7rem]">
+          <aside class="w-full xl:w-64" aria-label="Sidebar">
             <div
-              class="tos-navbar text-primary flex flex-wrap justify-evenly space-y-5 text-[14px] font-bold xl:w-auto xl:justify-between xl:space-y-10 xl:text-[1.5rem] 2xl:w-auto 2xl:space-y-0"
+              class="overflow-y-auto shadow-md bg-white rounded dark:bg-gray-800"
             >
               <div
-                class="tentang-kami mt-5 border-r-4 border-[#fecdbb] xl:mt-10 2xl:mt-0"
+                class="flex items-center px-2 py-5 bg-gray-200 text-base font-normal text-gray-900 rounded-t-lg border border-gray"
               >
-                <a href="./tentang-kami.html">
-                  <h1
-                    class="mr-[1rem] xl:mr-[1.5rem] xl:text-[20px] 2xl:mr-12"
-                    data-translatable
-                  >
-                    <span>ABOUT US</span>
-                    <span>TENTANG KAMI</span>
-                  </h1>
-                </a>
+                <p class="ml-3">HALAMAN</p>
               </div>
-              <div class="tentang-kami border-r-4 border-[#fecdbb]">
-                <a href="./kontak-kami.html">
-                  <h1
-                    class="mr-[1rem] xl:mr-[1.5rem] xl:text-[20px] 2xl:mr-12"
-                    data-translatable
-                  >
-                    <span>CONTACT US</span>
-                    <span>KONTAK KAMI</span>
-                  </h1>
-                </a>
-              </div>
-              <div class="tentang-kami border-r-4 border-[#fecdbb]">
-                <a href="./syarat-ketentuan.html">
-                  <h1
-                    class="mr-[1rem] xl:mr-[1.5rem] xl:text-[20px] 2xl:mr-12"
-                    data-translatable
-                  >
-                    <span>TERMS AND CONDITIONS</span>
-                    <span>SYARAT DAN KETENTUAN</span>
-                  </h1>
-                </a>
-              </div>
-              <div class="tentang-kami border-r-4 border-[#fecdbb]">
-                <a href="./privacy-policy.html">
-                  <h1
-                    class="mr-[1rem] xl:mr-[1.5rem] xl:text-[20px] 2xl:mr-12"
-                    data-translatable
-                  >
-                    <span>PRIVACY & POLICY</span>
-                    <span>KEBIJAKAN PRIBADI</span>
-                  </h1>
-                </a>
-              </div>
-              <div class="tentang-kami border-r-4 border-[#fecdbb]">
-                <a href="./terms-of-service.html">
-                  <h1
-                    class="mr-[1rem] xl:mr-[1.5rem] xl:text-[20px] 2xl:mr-12"
-                    data-translatable
-                  >
-                    <span>TERMS OF SERVICE</span>
-                    <span>SYARAT LAYANAN</span>
-                  </h1>
-                  <div
-                    class="h-0 w-0 bg-[#fecdbb] hover:h-1 hover:w-[95%]"
-                  ></div>
-                </a>
+              <div class="border border-gray">
+                <ul class="space-y-2">
+                  <li>
+                    <a
+                      href="./tentang-kami.html"
+                      class="flex items-center p-2 mx-4 my-2 text-base font-bold rounded-lg text-gray-600 hover:bg-gray-100"
+                    >
+                      <span class="ml-3">TENTANG KAMI</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="./kontak-kami.html"
+                      class="flex items-center p-2 mx-4 my-2 text-base font-bold text-gray-600 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700"
+                    >
+                      <span class="flex-1 ml-3 whitespace-nowrap"
+                        >KONTAK KAMI</span
+                      >
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="./syarat-ketentuan.html"
+                      class="flex items-center p-2 mx-4 my-2 text-base font-bold text-gray-600 rounded-lg transition duration-75 hover:bg-gray-100 dark:hover:bg-gray-700 dark:text-white group"
+                    >
+                      <span class="flex-1 ml-3 whitespace-nowrap"
+                        >SYARAT & KETENTUAN</span
+                      >
+                    </a>
+                  </li>
+                </ul>
+                <ul
+                  class="pt-4 mt-4 space-y-2 border-t border-gray-200 dark:border-gray-700"
+                >
+                  <li>
+                    <a
+                      href="./privacy-policy.html"
+                      class="flex items-center p-2 mx-4 my-2 text-base font-bold text-gray-600 rounded-lg transition duration-75 hover:bg-gray-100 dark:hover:bg-gray-700 dark:text-white group"
+                    >
+                      <span class="ml-4">PRIVACY & POLICY</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="./terms-of-service.html"
+                      class="flex items-center p-2 mx-4 my-2 text-base font-bold text-white bg-primary rounded-lg"
+                    >
+                      <span class="ml-3">TERMS OF USE</span>
+                    </a>
+                  </li>
+                </ul>
               </div>
             </div>
+          </aside>
 
+          <section
+            class="block mt-7 xl:mt-0 p-6 w-full bg-white text-[#4A4E5A] rounded-lg border border-gray-200 shadow-md"
+          >
             <div
-              class="tos-content mt-20 font-bold text-[#4a4e5a] xl:mt-28 2xl:mt-28"
+              class="syarat-ketentuan xl:space-y-5 border-gray-400 border-b pb-5"
             >
-              <h2
-                class="text-center text-[16px] xl:text-[20px]"
-                data-translatable
-              >
-                <span>TERMS OF SERVICE</span>
-                <span>SYARAT LAYANAN</span>
-              </h2>
-              <p
-                class="mt-7 px-5 text-[14px] xl:mt-7 xl:px-10 xl:text-[14px] 2xl:mt-7 2xl:px-10"
-                data-translatable
-              >
-                <span
-                  >Please read the terms in full before you use this Website. If
-                  you do not accept these terms, please do not use this Website.
-                  Continue using the Website implies that you accept these
-                  terms. We do occasionally update these terms so please refer
-                  back to them in the future.</span
-                >
-                <span
-                  >Harap baca ketentuan secara lengkap sebelum Anda menggunakan
-                  Situs Web ini. Jika Anda tidak menerima persyaratan ini, mohon
-                  jangan gunakan Situs Web ini. Terus menggunakan Situs web
-                  menyiratkan bahwa Anda menerima persyaratan ini. Kami
-                  terkadang memperbarui persyaratan ini, jadi silakan merujuk
-                  kembali ke mereka di masa depan.</span
-                >
+              <h3 class="font-normal text-[25px]">TERMS OF USE</h3>
+              <p>
+                Please read the terms in full before you use this Website. If
+                you do not accept these terms, please do not use this Website.
+                Continue using the Website implies that you accept these terms.
+                We do occasionally update these terms so please refer back to
+                them in the future.
               </p>
-              <p
-                class="mt-7 px-5 text-[14px] xl:mt-7 xl:px-10 xl:text-[14px] 2xl:mt-7 2xl:px-10"
-                data-translatable
-              >
-                <span
-                  >The term 'YourOnlineStore' or 'us' or 'we' refers to the
-                  owner of the website. The term 'you' refers to the user or
-                  viewer of our website</span
-                >
-                <span
-                  >Istilah 'YourOnlineStore' atau 'kami' atau 'kami' mengacu
-                  pada pemiliknya dari situs web. Istilah 'Anda' mengacu pada
-                  pengguna atau pemirsa dari situs web kami</span
-                >
+              <p>
+                The term 'YourOnlineStore' or 'us' or 'we' refers to the owner
+                of the website. The term 'you' refers to the user or viewer of
+                our website.
               </p>
-              <div
-                class="tos-privacy mt-10 space-y-5 rounded-xl bg-[#fecdbb] py-5 px-5 xl:mt-10 xl:space-y-5 xl:py-10 xl:px-10 2xl:mt-10 2xl:space-y-5 2xl:py-10 2xl:px-10"
-              >
-                <h3 class="text-[16px] xl:text-[20px]" data-translatable>
-                  <span>Privacy</span>
-                  <span>Pribadi</span>
-                </h3>
-                <p class="text-[14px] xl:text-[14px]" data-translatable>
-                  <span
-                    >Please review our Privacy Notice, which also governs your
-                    visit to our website, to understand our practices.</span
-                  >
-                  <span
-                    >Harap tinjau Pemberitahuan Privasi kami, yang juga mengatur
-                    kunjungi situs web kami, untuk memahami praktik kami.</span
-                  >
-                </p>
+            </div>
+
+            <div class="privacy-burnerindo border border-primary">
+              <div class="privacy-burnerindo__btn border-b border-gray-400">
+                <button
+                  id="privacy-burnerindo"
+                  class="bg-primary btn-collapse px-3 py-2 text-white"
+                  type="button"
+                >
+                  Privacy
+                </button>
               </div>
               <div
-                class="tos-copyright mt-5 space-y-5 rounded-xl bg-[#fecdbb] py-5 px-5 xl:mt-10 xl:space-y-5 xl:py-10 xl:px-10 2xl:mt-10 2xl:space-y-5 2xl:py-10 2xl:px-10"
+                class="overflow-y-hidden privacy-collapse transition-all ease-in-out duration-300"
               >
-                <h3 class="text-[16px] xl:text-[20px]" data-translatable>
-                  <span>Copyright</span>
-                  <span>Hak Cipta</span>
-                </h3>
-                <p class="text-[14px] xl:text-[14px]" data-translatable>
-                  <span
-                    >All content included on this site, such as text, graphics,
+                <p class="px-3 pt-4 pb-10">
+                  Please review our Privacy Notice, which also governs your
+                  visit to our website, to understand our practices.
+                </p>
+              </div>
+            </div>
+            <div class="copyright border border-primary mt-5">
+              <div class="copyright__btn border-b border-gray-400">
+                <button
+                  id="copyright-burnerindo"
+                  class="bg-primary btn-collapse px-3 py-2 text-white"
+                  type="button"
+                >
+                  Copyright
+                </button>
+              </div>
+              <div
+                class="overflow-y-hidden copyright-collapse transition-all ease-in-out duration-300"
+              >
+                <div class="copyright-text px-3 pt-4 pb-10">
+                  <p class="text-[14px]">
+                    All content included on this site, such as text, graphics,
                     logos, button icons, images, audio clips, digital downloads,
                     data compilations, and software, is the property of
                     YourOnlineStore or its content suppliers and protected by
@@ -608,30 +590,27 @@
                     on this site is the exclusive property of YourOnlineStore,
                     with copyright authorship for this collection by
                     YourOnlineStore, and protected by international copyright
-                    laws.</span
-                  >
-                  <span
-                    >Semua konten yang disertakan di situs ini, seperti teks,
-                    grafik, logo, ikon tombol, gambar, klip audio, unduhan
-                    digital, kompilasi data, dan perangkat lunak, adalah milik
-                    dari YourOnlineStore atau pemasok kontennya dan dilindungi
-                    oleh hukum hak cipta internasional. Kompilasi semua konten
-                    di situs ini adalah milik eksklusif YourOnlineStore, dengan
-                    hak cipta untuk koleksi ini oleh YourOnlineStore, dan
-                    dilindungi oleh hak cipta internasional hukum.</span
-                  >
-                </p>
+                    laws.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="trade border border-primary mt-5">
+              <div class="trade__btn border-b border-gray-400">
+                <button
+                  id="trade-burnerindo"
+                  class="bg-primary btn-collapse px-3 py-2 text-white"
+                  type="button"
+                >
+                  Trade Marks
+                </button>
               </div>
               <div
-                class="tos-tradeMarks mt-5 space-y-5 rounded-xl bg-[#fecdbb] py-5 px-5 xl:mt-10 xl:space-y-5 xl:py-10 xl:px-10 2xl:mt-10 2xl:space-y-5 2xl:py-10 2xl:px-10"
+                class="overflow-y-hidden trade-collapse transition-all ease-in-out duration-300"
               >
-                <h3 class="text-[16px] xl:text-[20px]" data-translatable>
-                  <span>Trade Marks</span>
-                  <span>Merek Dagang</span>
-                </h3>
-                <p class="text-[14px] xl:text-[14px]" data-translatable>
-                  <span
-                    >YourOnlineStore trademarks and trade dress may not be used
+                <div class="trade-text px-3 pt-4 pb-10">
+                  <p class="text-[14px]">
+                    YourOnlineStore trademarks and trade dress may not be used
                     in connection with any product or service that is not
                     YourOnlineStore, in any manner that is likely to cause
                     confusion among customers, or in any manner that disparages
@@ -639,74 +618,47 @@
                     owned by YourOnlineStore or its subsidiaries that appear on
                     this site are the property of their respective owners, who
                     may or may not be affiliated with, connected to, or
-                    sponsored by YourOnlineStore or its subsidiaries.</span
-                  >
-                  <span
-                    >Merek dagang dan trade dress YourOnlineStore tidak boleh
-                    digunakan di hubungan dengan produk atau layanan apa pun
-                    yang tidak YourOnlineStore, dengan cara apa pun yang mungkin
-                    menyebabkan kebingungan di antara pelanggan, atau dengan
-                    cara apa pun yang meremehkan atau mendiskreditkan
-                    YourOnlineStore. Semua merek dagang lain yang tidak dimiliki
-                    oleh YourOnlineStore atau anak perusahaannya yang muncul di
-                    situs ini adalah milik dari pemiliknya masing-masing, yang
-                    mungkin atau mungkin tidak berafiliasi dengan, terhubung
-                    dengan, atau disponsori oleh YourOnlineStore atau anak
-                    perusahaannya.</span
-                  >
-                </p>
+                    sponsored by YourOnlineStore or its subsidiaries.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="license border border-primary mt-5">
+              <div class="license__btn border-b border-gray-400">
+                <button
+                  id="license-burnerindo"
+                  class="bg-primary btn-collapse px-3 py-2 text-white"
+                  type="button"
+                >
+                  License And Site Access
+                </button>
               </div>
               <div
-                class="tos-license mt-5 space-y-5 rounded-xl bg-[#fecdbb] py-5 px-5 xl:mt-10 xl:space-y-5 xl:py-10 xl:px-10 2xl:mt-10 2xl:space-y-5 2xl:py-10 2xl:px-10"
+                class="overflow-y-hidden license-collapse transition-all ease-in-out duration-300"
               >
-                <h3 class="text-[16px] xl:text-[20px]" data-translatable>
-                  <span>License And Site Access</span>
-                  <span>Lisensi Dan Akses Situs</span>
-                </h3>
-                <p class="text-[14px] xl:text-[14px]" data-translatable>
-                  <span
-                    >YourOnlineStore grants you a limited license to access and
+                <div class="license-text px-3 pt-4">
+                  <p class="text-[14px]">
+                    YourOnlineStore grants you a limited license to access and
                     make personal use of this site. You may copy information
                     from this Website only as necessary for your personal use to
                     (a) view, (b) save, and (c) print, or (d) e-mail it. You are
-                    granted a limited, revocable, and nonex-clusive right to
+                    granted a limited, revocable, and nonexclusive right to
                     create a hyperlink to the home page of YourOnlineStore so
                     long as the link does not portray YourOnlineStore, its
-                    associ-ates, or their products or services in a false,
+                    associates, or their products or services in a false,
                     misleading, derogatory, or otherwise offensive matter. You
                     may not use any YourOnlineStore logo or other proprietary
                     graphic or trademark as part of the link without express
-                    written permission. You agree otherwise not to repro-duce,
+                    written permission. You agree otherwise not to reproduce,
                     modify, distribute, decompile, disassemble or reverse
                     engineer any portion of this Website. You further agree that
                     You will not use this Website to do any of the following
-                    (“Activities”):</span
-                  >
-                  <span
-                    >YourOnlineStore memberi Anda lisensi terbatas untuk
-                    mengakses dan memanfaatkan situs ini secara pribadi. Anda
-                    dapat menyalin informasi dari Situs Web ini hanya jika
-                    diperlukan untuk penggunaan pribadi Anda untuk (a) melihat,
-                    (b) menyimpan, dan (c) mencetak, atau (d) mengirimkannya
-                    melalui email. Anda diberikan hak terbatas, dapat
-                    dibatalkan, dan noneksklusif untuk buat hyperlink ke halaman
-                    beranda YourOnlineStore begitu lama karena tautan tidak
-                    menggambarkan YourOnlineStore, asosiasinya, atau produk atau
-                    layanan mereka dengan cara yang salah, menyesatkan,
-                    menghina, atau hal lain yang menyinggung. Anda tidak boleh
-                    menggunakan apapun Logo Toko Online Anda atau gambar atau
-                    merek dagang milik lainnya sebagai bagian dari tautan tanpa
-                    izin tertulis yang tegas. Anda setuju sebaliknya untuk tidak
-                    mereproduksi, memodifikasi, mendistribusikan,
-                    mendekompilasi, membongkar, atau merekayasa balik bagian
-                    mana pun dari ini Situs web. Anda selanjutnya setuju bahwa
-                    Anda tidak akan menggunakan Situs Web ini untuk melakukan
-                    salah satu dari berikut ini (“Aktivitas”):</span
-                  >
-                </p>
-                <p class="text-[14px] xl:text-[14px]" data-translatable>
-                  <span
-                    >Attempt to gain unauthorized access to this Website, other
+                    (“Activities”):
+                  </p>
+                </div>
+                <div class="license-text px-3 pt-4 pb-10">
+                  <p class="text-[14px]">
+                    Attempt to gain unauthorized access to this Website, other
                     accounts, computer systems or networks connected to this
                     Website, through password mining or any other means
                     Impersonate any person or entity, including, but not limited
@@ -715,57 +667,50 @@
                     entity Take any action that imposes an unreasonably or
                     disproportionately large load on this Website infrastructure
                     Intentionally or unintentionally violate any applicable
-                    local, national or international law</span
-                  >
-                  <span
-                    >Mencoba untuk mendapatkan akses tidak sah ke Situs Web ini,
-                    lainnya akun, sistem komputer, atau jaringan yang terhubung
-                    ke ini Situs web, melalui penambangan kata sandi atau cara
-                    lain apa pun Meniru orang atau entitas apa pun, termasuk,
-                    namun tidak terbatas kepada, perwakilan atau karyawan
-                    Perusahaan, atau secara tidak benar menyatakan atau jika
-                    tidak, salah menggambarkan afiliasi Anda dengan seseorang
-                    atau entitas Mengambil tindakan apa pun yang memaksakan
-                    tindakan yang tidak wajar atau beban besar yang tidak
-                    proporsional pada infrastruktur Situs Web ini Sengaja atau
-                    tidak sengaja melanggar peraturan lokal yang berlaku, hukum
-                    nasional atau internasional</span
-                  >
-                </p>
+                    local, national or international law.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="validity border border-primary mt-5">
+              <div class="validity__btn border-b border-gray-400">
+                <button
+                  id="validity-burnerindo"
+                  class="bg-primary btn-collapse px-3 py-2 text-white"
+                  type="button"
+                >
+                  Validity Of Website Content
+                </button>
               </div>
               <div
-                class="tos-validity mt-5 space-y-5 rounded-xl bg-[#fecdbb] py-5 px-5 xl:mt-10 xl:space-y-5 xl:py-10 xl:px-10 2xl:mt-10 2xl:space-y-5 2xl:py-10 2xl:px-10"
+                class="overflow-y-hidden validity-collapse transition-all ease-in-out duration-300"
               >
-                <h3 class="text-[16px] xl:text-[20px]" data-translatable>
-                  <span>Validity Of Website Content</span>
-                  <span>Validitas Konten Situs Web</span>
-                </h3>
-                <p class="text-[14px] xl:text-[14px]" data-translatable>
-                  <span
-                    >We take all reasonable steps to ensure that the information
+                <div class="validity-text px-3 pt-4 pb-10">
+                  <p class="text-[14px]">
+                    We take all reasonable steps to ensure that the information
                     on this Website is correct. However, we do not guarantee the
                     correctness or completeness of material on this Website. We
                     may make changes to the material on this Website at any time
-                    and without notice.</span
-                  >
-                  <span
-                    >Kami mengambil semua langkah yang wajar untuk memastikan
-                    bahwa informasi di Situs Web ini benar. Namun, kami tidak
-                    menjamin kebenaran atau kelengkapan materi di Situs Web ini.
-                    Kami dapat membuat perubahan pada materi di Situs Web ini
-                    kapan saja dan tanpa pemberitahuan.</span
-                  >
-                </p>
+                    and without notice.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="external border border-primary mt-5">
+              <div class="external__btn border-b border-gray-400">
+                <button
+                  id="external-burnerindo"
+                  class="bg-primary btn-collapse px-3 py-2 text-white"
+                  type="button"
+                >
+                  External Links
+                </button>
               </div>
               <div
-                class="tos-external mt-5 space-y-5 rounded-xl bg-[#fecdbb] py-5 px-5 xl:mt-10 xl:space-y-5 xl:py-10 xl:px-10 2xl:mt-10 2xl:space-y-5 2xl:py-10 2xl:px-10"
+                class="overflow-y-hidden external-collapse transition-all ease-in-out duration-300"
               >
-                <h3 class="text-[16px] xl:text-[20px]" data-translatable>
-                  <span>External Links</span>
-                  <span>Tautan Eksternal</span>
-                </h3>
-                <p class="text-[14px] xl:text-[14px]" data-translatable>
-                  <span>
+                <div class="external-text px-3 pt-4">
+                  <p class="text-[14px]">
                     This Website may contain links to other sites on the
                     Internet that are owned and operated by third party vendors
                     and other third parties (the 'External Links'). Since we do
@@ -779,30 +724,12 @@
                     liable, directly or indirectly, for any damage or loss
                     caused or alleged to be caused by or in connection with use
                     of or reliance on any such content, goods or services
-                    available on or through any such site or resource.</span
-                  >
-                  <span
-                    >Situs Web ini mungkin berisi tautan ke situs lain di
-                    Internet yang dimiliki dan dioperasikan oleh vendor pihak
-                    ketiga dan lainnya pihak ketiga ('Tautan Eksternal'). Karena
-                    kita tidak memiliki kontrol apa pun atas situs dan sumber
-                    daya tersebut, Anda mengakui dan setuju bahwa kami tidak
-                    akan bertanggung jawab atas ketersediaan situs atau sumber
-                    eksternal tersebut, dan jangan mendukung dan tidak
-                    bertanggung jawab atau berkewajiban atas konten apa pun,
-                    iklan, produk, atau materi lain pada atau tersedia dari
-                    situs atau sumber daya tersebut. Anda selanjutnya mengakui
-                    dan setuju bahwa kami tidak akan bertanggung jawab atau
-                    berkewajiban, secara langsung atau tidak langsung, untuk
-                    setiap kerusakan atau kerugian yang disebabkan atau diduga
-                    disebabkan oleh atau sehubungan dengan penggunaan atau
-                    ketergantungan pada konten, barang atau jasa yang tersedia
-                    pada atau melalui situs atau sumber daya.</span
-                  >
-                </p>
-                <p class="text-[14px] xl:text-[14px]" data-translatable>
-                  <span
-                    >DISCLAIMER OF WARRANTIES AND LIMITATION OF LIABILITY THIS
+                    available on or through any such site or resource.
+                  </p>
+                </div>
+                <div class="external-text px-3 pt-4 pb-10">
+                  <p class="text-[14px]">
+                    DISCLAIMER OF WARRANTIES AND LIMITATION OF LIABILITY THIS
                     SITE IS PROVIDED BY YOURONLINESTORE ON AN 'AS IS' AND 'AS
                     AVAILABLE' BASIS. YOURONLINESTORE MAKES NO REPRESENTATIONS
                     OR WARRANTIES OF ANY KIND, EXPRESS OR IMPLIED, AS TO THE
@@ -811,92 +738,56 @@
                     AGREE THAT YOUR USE OF THIS SITE IS AT YOUR SOLE RISK.
                     YOURONLINESTORE DOES NOT WARRANT THAT THIS WEBSITE AND/OR
                     ITS SERVICES WILL BE UNINTERRUPTED, TIMELY, SECURE, OR ERROR
-                    FREE</span
-                  >
-                  <span
-                    >PENOLAKAN JAMINAN DAN PEMBATASAN TANGGUNG JAWAB SITUS INI
-                    DISEDIAKAN OLEH TOKO ONLINE ANDA PADA 'SEBAGAIMANA ADANYA'
-                    DAN 'SEBAGAIMANA ADANYA' DASAR TERSEDIA. TOKO ONLINE ANDA
-                    TIDAK MEMBUAT PERNYATAAN ATAU JAMINAN APAPUN, TERSURAT
-                    MAUPUN TERSIRAT, TERHADAP PENGOPERASIAN SITUS INI ATAU
-                    INFORMASI, KONTEN, MATERI, ATAU PRODUK YANG TERMASUK PADA
-                    SITUS INI. ANDA SETUJU BAHWA PENGGUNAAN SITUS INI ADALAH
-                    RISIKO ANDA SENDIRI. TOKO ONLINE ANDA TIDAK MENJAMIN SITUS
-                    WEB INI DAN/ATAU LAYANANNYA TANPA GANGGUAN, TEPAT WAKTU,
-                    AMAN, ATAU BEBAS KESALAHAN</span
-                  >
-                </p>
+                    FREE.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="limitation border border-primary mt-5">
+              <div class="limitation__btn border-b border-gray-400">
+                <button
+                  id="limitation-burnerindo"
+                  class="bg-primary btn-collapse px-3 py-2 text-white"
+                  type="button"
+                >
+                  Limitation Of Liability
+                </button>
               </div>
               <div
-                class="tos-limitation mt-5 space-y-5 rounded-xl bg-[#fecdbb] py-5 px-5 xl:mt-10 xl:space-y-5 xl:py-10 xl:px-10 2xl:mt-10 2xl:space-y-5 2xl:py-10 2xl:px-10"
+                class="overflow-y-hidden limitation-collapse transition-all ease-in-out duration-300"
               >
-                <h3 class="text-[16px] xl:text-[20px]" data-translatable>
-                  <span> Limitation Of Liability</span>
-                  <span>Batasan Tanggung Jawab</span>
-                </h3>
-                <p class="text-[14px] xl:text-[14px]" data-translatable>
-                  <span
-                    >We take all reasonable steps to ensure that the information
-                    on this Website is correct. However, we do not guarantee the
-                    correctness or completeness of material on this Website. We
-                    may make changes to the material on this Website at any time
-                    and without notice.</span
-                  >
-                  <span
-                    >Kami mengambil semua langkah yang wajar untuk memastikan
-                    bahwa informasi di Situs Web ini benar. Namun, kami tidak
-                    menjamin kebenaran atau kelengkapan materi di Situs Web ini.
-                    Kita dapat membuat perubahan pada materi di Situs Web ini
-                    kapan saja dan tanpa pemberitahuan.</span
-                  >
-                </p>
+                <div class="limitation-text px-3 pt-4 pb-10">
+                  <p class="text-[14px]">
+                    You understand that to the extent permitted under applicable
+                    law, in no event will or its officers, employees, directors,
+                    shareholders, parents, subsidiaries, affiliates, agents or
+                    licensors be liable for any direct, indirect, incidental,
+                    special, consequential or exemplary damages, including but
+                    not limited to, damages for loss of revenues, profits,
+                    goodwill, use, data or other intangible losses (even if such
+                    parties were advised or, knew of or should have known of the
+                    possibility of such damages), resulting from your use of
+                    this Website and/or Services.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="exclusions border border-primary mt-5">
+              <div class="exclusions__btn border-b border-gray-400">
+                <button
+                  id="exclusions-burnerindo"
+                  class="bg-primary btn-collapse px-3 py-2 text-white"
+                  type="button"
+                >
+                  Exclusions And Limitations
+                </button>
               </div>
               <div
-                class="tos-limitation2 mt-5 space-y-5 rounded-xl bg-[#fecdbb] py-5 px-5 xl:mt-10 xl:space-y-5 xl:py-10 xl:px-10 2xl:mt-10 2xl:space-y-5 2xl:py-10 2xl:px-10"
+                class="overflow-y-hidden exclusions-collapse transition-all ease-in-out duration-300"
               >
-                <h3 class="text-[16px] xl:text-[20px]" data-translatable>
-                  <span> Limitation Of Liability</span>
-                  <span>Batasan Tanggung Jawab</span>
-                </h3>
-                <p class="text-[14px] xl:text-[14px]" data-translatable>
-                  <span
-                    >You understand that to the extent permitted under
-                    applicable law, in no event will or its officers, employees,
-                    directors, shareholders, parents, subsidiaries, affiliates,
-                    agents or licensors be liable for any direct, indirect,
-                    incidental, special, consequential or exemplary damages,
-                    including but not limited to, damages for loss of revenues,
-                    profits, goodwill, use, data or other intangible losses
-                    (even if such parties were advised or, knew of or should
-                    have known of the possibility of such damages), resulting
-                    from your use of this Website and/or Services.</span
-                  >
-                  <span
-                    >Anda memahami bahwa sejauh diizinkan berdasarkan yang
-                    berlaku hukum, dalam hal apapun akan atau pejabat, karyawan,
-                    direktur, pemegang saham, orang tua, anak perusahaan,
-                    afiliasi, agen atau pemberi lisensi bertanggung jawab atas
-                    setiap langsung, tidak langsung, insidental, kerusakan
-                    khusus, konsekuensial atau contoh, termasuk tetapi tidak
-                    terbatas pada, ganti rugi atas hilangnya pendapatan, laba,
-                    itikad baik, penggunaan, data, atau kerugian tidak berwujud
-                    lainnya (bahkan jika pihak-pihak tersebut diberi tahu atau,
-                    mengetahui atau seharusnya mengetahui tentang kemungkinan
-                    kerusakan tersebut), yang dihasilkan dari penggunaan Anda
-                    atas ini Situs Web dan/atau Layanan.</span
-                  >
-                </p>
-              </div>
-              <div
-                class="tos-exclusions mt-5 space-y-5 rounded-xl bg-[#fecdbb] py-5 px-5 xl:mt-10 xl:space-y-5 xl:py-10 xl:px-10 2xl:mt-10 2xl:space-y-5 2xl:py-10 2xl:px-10"
-              >
-                <h3 class="text-[16px] xl:text-[20px]" data-translatable>
-                  <span> Exclusions And Limitations</span>
-                  <span>Pengecualian Dan Batasan</span>
-                </h3>
-                <p class="text-[14px] xl:text-[14px]" data-translatable>
-                  <span
-                    >Some jurisdictions do not allow the exclusion of certain
+                <div class="exclusions-text px-3 pt-4 pb-10">
+                  <p class="text-[14px]">
+                    Some jurisdictions do not allow the exclusion of certain
                     warranties or the limitation or exclusion of liability for
                     incidental or consequential damages. Accordingly, some of
                     the above limitations and disclaimers may not apply to you.
@@ -904,49 +795,42 @@
                     law, disclaim any implied warranty or limit its liabilities,
                     the scope and duration of such warranty and the extent of
                     YourOnlineStore's liability shall be the minimum permitted
-                    under such applicable law</span
-                  >
-                  <span
-                    >Beberapa yurisdiksi tidak mengizinkan pengecualian tertentu
-                    jaminan atau pembatasan atau pengecualian tanggung jawab
-                    untuk kerusakan insidental atau konsekuensial. Oleh karena
-                    itu, beberapa dari batasan dan penafian di atas mungkin
-                    tidak berlaku untuk Anda. ke sejauh mana kami tidak boleh,
-                    berdasarkan hukum yang berlaku, melepaskan jaminan tersirat
-                    atau membatasi kewajibannya, the ruang lingkup dan durasi
-                    garansi tersebut dan sejauh mana Tanggung jawab
-                    TokoOnlineAnda adalah minimum yang diizinkan berdasarkan
-                    hukum yang berlaku tersebut</span
-                  >
-                </p>
-              </div>
-              <div
-                class="tos-Questions mt-5 space-y-5 rounded-xl bg-[#fecdbb] py-5 px-5 xl:mt-10 xl:space-y-5 xl:py-10 xl:px-10 2xl:mt-10 2xl:space-y-5 2xl:py-10 2xl:px-10"
-              >
-                <h3 class="text-[16px] xl:text-[20px]" data-translatable>
-                  <span>Questions</span>
-                  <span>Pertanyaan</span>
-                </h3>
-                <p class="text-[14px] xl:text-[14px]" data-translatable>
-                  <span
-                    >Questions regarding our Conditions of Usage, Privacy
-                    Policy, or other policy related material can be directed to
-                    our support staff by emailing us at: info@yo</span
-                  >
-                  <span
-                    >Pertanyaan mengenai Ketentuan Penggunaan, Kebijakan
-                    Privasi, atau materi terkait kebijakan lainnya dapat
-                    diarahkan ke kami staf pendukung dengan mengirim email
-                    kepada kami di: info@yo</span
-                  >
-                </p>
+                    under such applicable law.
+                  </p>
+                </div>
               </div>
             </div>
-          </div>
+            <div class="questions border border-primary mt-5">
+              <div class="questions__btn border-b border-gray-400">
+                <button
+                  id="questions-burnerindo"
+                  class="bg-primary btn-collapse px-3 py-2 text-white"
+                  type="button"
+                >
+                  Questions
+                </button>
+              </div>
+              <div
+                class="overflow-y-hidden questions-collapse transition-all ease-in-out duration-300"
+              >
+                <div class="questions-text px-3 pt-4 pb-10">
+                  <p class="text-[14px]">
+                    Questions regarding our Conditions of Usage, Privacy Policy,
+                    or other policy related material can be directed to our
+                    support staff by emailing us at:
+                    <a
+                      class="text-primary"
+                      href="mailto:info@youronlinestore.com"
+                      >info@youronlinestore.com.</a
+                    >
+                  </p>
+                </div>
+              </div>
+            </div>
+          </section>
         </div>
       </section>
     </main>
-
     <footer
       class="border-primary mb-0 h-[50rem] border-t-[15px] bg-rose-100 px-6 md:px-14 xl:mb-0 xl:mt-0 xl:h-full"
     >
@@ -1266,7 +1150,7 @@
             </div>
           </div>
           <div
-            class="brands-copyright text-primary pb-8 pt-8 text-[12px] font-bold xl:text-[14px]"
+            class="brands-copyright text-primary pb-8 pt-8 font-bold text-[12px] xl:text-[14px]"
           >
             <p data-translatable>
               <span>© Copyright 2022 PT. Burnerindo Teknik Utama</span>
@@ -1331,6 +1215,63 @@
       let showLoading = document.getElementById("showLoading");
       let showLoadingMob = document.getElementById("showLoading-mobile");
       let produks = document.querySelector(".searchs");
+
+      // collapse variabel
+      const btnCollapses = document.querySelectorAll(".btn-collapse");
+      const tentang = document.querySelector(".tentang-collapse");
+      const privacy = document.querySelector(".privacy-collapse");
+      const copyright = document.querySelector(".copyright-collapse");
+      const trade = document.querySelector(".trade-collapse");
+      const license = document.querySelector(".license-collapse");
+      const validity = document.querySelector(".validity-collapse");
+      const external = document.querySelector(".external-collapse");
+      const limitation = document.querySelector(".limitation-collapse");
+      const exclusions = document.querySelector(".exclusions-collapse");
+      const questions = document.querySelector(".questions-collapse");
+
+      btnCollapses.forEach(function (collapse) {
+        console.log(collapse);
+        collapse.addEventListener("click", function (el) {
+          let target = el.target.id;
+          if (target == "privacy-burnerindo") {
+            privacy.classList.toggle("h-0");
+            return;
+          }
+          if (target == "copyright-burnerindo") {
+            copyright.classList.toggle("h-0");
+            return;
+          }
+          if (target == "trade-burnerindo") {
+            trade.classList.toggle("h-0");
+            return;
+          }
+          if (target == "license-burnerindo") {
+            license.classList.toggle("h-0");
+            return;
+          }
+          if (target == "validity-burnerindo") {
+            validity.classList.toggle("h-0");
+            return;
+          }
+          if (target == "external-burnerindo") {
+            external.classList.toggle("h-0");
+            return;
+          }
+          if (target == "limitation-burnerindo") {
+            limitation.classList.toggle("h-0");
+            return;
+          }
+          if (target == "exclusions-burnerindo") {
+            exclusions.classList.toggle("h-0");
+            return;
+          }
+          if (target == "questions-burnerindo") {
+            questions.classList.toggle("h-0");
+            return;
+          }
+        });
+      });
+
       console.log(searchNav);
 
       produks.addEventListener("click", function (e) {
@@ -1472,9 +1413,9 @@
       var i18n = domI18n({
         selector: "[data-translatable]",
         separator: " // ",
-        languages: ["id", "en"],
-        defaultLanguage: "id",
-        currentLanguage: "id",
+        languages: ["en", "id"],
+        defaultLanguage: "en",
+        currentLanguage: "en",
       });
 
       let languange = document.querySelectorAll(".language");
