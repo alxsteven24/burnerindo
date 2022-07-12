@@ -495,14 +495,19 @@
                   required=""
                 />
               </div>
-              <div class="mb-4">
+              <div class="mb-4 relative">
                 <input
                   type="password"
                   id="password"
-                  class="text-primary placeholder:text-primary block w-36 rounded-full border border-white bg-gray-50 py-2.5 px-4 text-sm focus:border-white focus:ring-white sm:w-[18rem] xl:w-[16rem]"
+                  class="text-primary placeholder:text-primary block w-36 rounded-full border border-white bg-gray-50 py-2.5 pl-4 pr-14 text-sm focus:border-white focus:ring-white sm:w-[18rem] xl:w-[16rem]"
                   required=""
                   placeholder="Kata Sandi"
                 />
+                <div class="show absolute top-2.5 right-5">
+                  <div class="hover:cursor-pointer text-primary">
+                    <i id="show" class="fas fa-eye-slash"></i>
+                  </div>
+                </div>
               </div>
               <div class="mb-6 text-center text-white">
                 <a href="#">
@@ -914,7 +919,21 @@
       let showLoading = document.getElementById("showLoading");
       let showLoadingMob = document.getElementById("showLoading-mobile");
       let produks = document.querySelector(".searchs");
-      console.log(searchNav);
+      let showPass = document.getElementById("show");
+      let password = document.getElementById("password");
+
+      showPass.addEventListener("click", function (e) {
+        e.preventDefault();
+        let target = e.target;
+        console.log(typeof target.className);
+        if (target.className === "fas fa-eye-slash") {
+          target.className = "fas fa-eye";
+          password.type = "text";
+        } else {
+          target.className = "fas fa-eye-slash";
+          password.type = "password";
+        }
+      });
 
       produks.addEventListener("click", function (e) {
         // e.preventDefault();
