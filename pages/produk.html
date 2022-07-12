@@ -567,7 +567,18 @@
               class="produk-content mx-auto mt-7 lg:space-x-10 flex flex-col xl:mt-0 lg:flex-row xl:flex-row xl:justify-start 2xl:space-x-7"
             >
               <div class="produk__image space-y-3 xl:space-y-3">
-                <div class="image__hero relative">
+                <div class="image__hero relative block xl:hidden">
+                  <img
+                    class="h-auto lg:h-[20rem] xl:h-[14rem] 2xl:h-[15rem] w-full"
+                    src="./../assets/kategori1.webp"
+                    alt=""
+                    srcset=""
+                  />
+                </div>
+                <div
+                  class="image__hero relative hover:cursor-move hidden xl:block"
+                  id="img-container"
+                >
                   <img
                     class="h-auto lg:h-[20rem] xl:h-[14rem] 2xl:h-[15rem] w-full"
                     src="./../assets/kategori1.webp"
@@ -601,10 +612,10 @@
                   </p>
                 </div>
                 <div
-                  class="detail-content space-y-7 px-5 py-5 xl:w-[25rem] xl:space-y-10 xl:px-0 xl:py-0"
+                  class="detail-content space-y-7 px-5 py-5 lg:w-[30rem] xl:w-[28rem] xl:space-y-10 xl:px-0 xl:py-0"
                 >
                   <div
-                    class="content__detail text-[12px] font-bold xl:text-[16px]"
+                    class="content__detail text-[12px] xl:space-y-1 font-bold xl:text-[16px]"
                   >
                     <div class="detail__harga flex text-[14px]">
                       <div class="harga-property w-1/2">
@@ -646,6 +657,14 @@
                       </div>
                       <div class="detail-value w-1/2 font-bold text-gray-500">
                         <p>: 1000 Gram</p>
+                      </div>
+                    </div>
+                    <div class="detail__terjual flex text-[14px]">
+                      <div class="detail-property w-1/2">
+                        <p class="font-normal">Terjual</p>
+                      </div>
+                      <div class="detail-value w-1/2 font-bold text-gray-500">
+                        <p>: x3</p>
                       </div>
                     </div>
                     <div class="detail__katalog flex text-[14px]">
@@ -1421,6 +1440,8 @@
 
     <script src="https://unpkg.com/flowbite@1.4.5/dist/flowbite.js"></script>
     <script src="./../dist/js/dom-i18n.min.js"></script>
+    <script src="https://unpkg.com/js-image-zoom/js-image-zoom.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/js-image-zoom/js-image-zoom.min.js"></script>
     <!-- <script src="./../dist/js/app.js"></script> -->
     <script>
       let searchNav = document.getElementById("searchNavbar");
@@ -1569,25 +1590,25 @@
         btnHamburger.classList.toggle("open");
         if (btnHamburger.classList.contains("open")) {
           btnHamburger.innerHTML = `
-    <svg fill="currentColor" class="h-6 w-6 transition-all ease-in-out duration-300' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 352 512"><!-- Font Awesome Pro 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) --><path d="M242.72 256l100.07-100.07c12.28-12.28 12.28-32.19 0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48 0L176 189.28 75.93 89.21c-12.28-12.28-32.19-12.28-44.48 0L9.21 111.45c-12.28 12.28-12.28 32.19 0 44.48L109.28 256 9.21 356.07c-12.28 12.28-12.28 32.19 0 44.48l22.24 22.24c12.28 12.28 32.2 12.28 44.48 0L176 322.72l100.07 100.07c12.28 12.28 32.2 12.28 44.48 0l22.24-22.24c12.28-12.28 12.28-32.19 0-44.48L242.72 256z"/></svg>
-    `;
+        <svg fill="currentColor" class="h-6 w-6 transition-all ease-in-out duration-300' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 352 512"><!-- Font Awesome Pro 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) --><path d="M242.72 256l100.07-100.07c12.28-12.28 12.28-32.19 0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48 0L176 189.28 75.93 89.21c-12.28-12.28-32.19-12.28-44.48 0L9.21 111.45c-12.28 12.28-12.28 32.19 0 44.48L109.28 256 9.21 356.07c-12.28 12.28-12.28 32.19 0 44.48l22.24 22.24c12.28 12.28 32.2 12.28 44.48 0L176 322.72l100.07 100.07c12.28 12.28 32.2 12.28 44.48 0l22.24-22.24c12.28-12.28 12.28-32.19 0-44.48L242.72 256z"/></svg>
+        `;
           return;
         } else {
           btnHamburger.innerHTML = `
-    <svg
-    id="open"
-    class="h-6 w-6 transition-all ease-in-out duration-300"
-    fill="currentColor"
-    viewBox="0 0 20 20"
-    xmlns="http://www.w3.org/2000/svg"
-  >
-    <path
-      fill-rule="evenodd"
-      d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
-      clip-rule="evenodd"
-    ></path>
-  </svg>
-    `;
+        <svg
+        id="open"
+        class="h-6 w-6 transition-all ease-in-out duration-300"
+        fill="currentColor"
+        viewBox="0 0 20 20"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          fill-rule="evenodd"
+          d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+          clip-rule="evenodd"
+        ></path>
+      </svg>
+        `;
           return;
         }
       });
@@ -1607,6 +1628,23 @@
           e.preventDefault();
         });
       });
+
+      var options = {
+        width: 200, // required
+        // more options here
+        height: 200,
+        zoomWidth: 100,
+        offset: { vertical: 0, horizontal: 10 },
+        // offset: {
+        //   vertical: 0,
+        //   horizontal: 10,
+        // },
+        scale: 1,
+        zoomStyle: {
+          // your css styles here
+        },
+      };
+      new ImageZoom(document.getElementById("img-container"), options);
     </script>
   </body>
 </html>
