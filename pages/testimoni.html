@@ -46,6 +46,7 @@
 
       .owl-carousel .owl-item img {
         height: auto;
+        width: 73rem;
       }
 
       .owl-nav {
@@ -480,7 +481,7 @@
 
         <div
           id="shopNow"
-          class="container-kategori flex-col xl:flex-row flex xl:space-x-10 w-full mt-0 px-6 pb-[5rem] md:px-14 xl:mt-0 xl:px-[7rem] xl:py-[5rem] 2xl:px-48"
+          class="container-kategori flex-col xl:flex-row flex xl:space-x-28 w-full mt-0 px-6 pb-[5rem] md:px-14 xl:mt-0 xl:px-0 xl:py-[5rem] 2xl:px-48"
         >
           <aside class="w-full xl:w-64" aria-label="Sidebar">
             <div class="overflow-y-auto bg-white rounded">
@@ -618,15 +619,21 @@
 
           <div class="wrapperTesti flex flex-col xl:space-y-10">
             <section
-              class="block mt-7 xl:mt-0 p-6 w-full bg-rose-100 text-[#4A4E5A] shadow-md xl:w-[62vw] xl:h-[23rem] 2xl:h-[25rem] 3xl:h-[30rem]"
+              class="block mt-7 relative xl:mt-0 p-6 w-full bg-rose-100 rounded-xl text-[#4A4E5A] shadow-md xl:w-[40rem] xl:h-[23rem] 2xl:h-[20rem]"
             >
+              <img
+                class="absolute w-28 h-28 xl:block hidden top-[30%] left-[-3rem] z-10"
+                src="./../assets/quote.png"
+                alt=""
+                srcset=""
+              />
               <div
                 class="owl-carousel owl-sales owl-theme h-full flex-col justify-center border-primary border-t-[5px] border-b-[5px]"
               >
                 <div
                   class="sales flex xl:flex-row flex-col space-y-7 xl:space-y-0 py-10 xl:py-0 items-center"
                 >
-                  <div class="sales-text text-center">
+                  <div class="sales-text text-center xl:px-10 2xl:px-12">
                     <h6 class="text-primary text-[20px] font-bold">
                       NAMA SALES
                     </h6>
@@ -643,7 +650,7 @@
                 <div
                   class="sales items-center flex xl:flex-row flex-col space-y-7 xl:space-y-0 py-10 xl:py-0"
                 >
-                  <div class="sales-text text-center">
+                  <div class="sales-text text-center xl:px-10 2xl:px-12">
                     <h6 class="text-primary text-[20px] font-bold">
                       NAMA SALES
                     </h6>
@@ -654,16 +661,20 @@
                     </p>
                   </div>
                   <div class="sales-img">
-                    <iframe
+                    <!-- <iframe
                       class="w-full aspect-video"
-                      src="https://www.youtube.com/..."
-                    ></iframe>
+                      src="./../assets/[Adikfilm] - MnVBe (2022) Eps-01 480p NF-WebDL.mp4"
+                    ></iframe> -->
+                    <video class="w-full aspect-video" controls>
+                      <source src="./../assets/movie" type="video/mp4" />
+                      Your browser does not support the video tag.
+                    </video>
                   </div>
                 </div>
                 <div
                   class="sales items-center flex xl:flex-row flex-col space-y-7 xl:space-y-0 py-10 xl:py-0"
                 >
-                  <div class="sales-text text-center">
+                  <div class="sales-text text-center xl:px-10 2xl:px-12">
                     <h6 class="text-primary text-[20px] font-bold">
                       NAMA SALES
                     </h6>
@@ -680,15 +691,21 @@
               </div>
             </section>
             <section
-              class="block mt-7 xl:mt-0 p-6 w-full bg-rose-100 text-[#4A4E5A] shadow-md xl:w-[62vw] xl:h-[23rem] 2xl:h-[25rem] 3xl:h-[30rem]"
+              class="block relative mt-7 xl:mt-0 p-6 w-full bg-rose-100 text-[#4A4E5A] shadow-md rounded-xl xl:w-[40rem] xl:h-[23rem] 2xl:h-[20rem]"
             >
+              <img
+                class="absolute w-28 h-28 xl:block hidden top-[30%] left-[-3rem] z-10"
+                src="./../assets/quote.png"
+                alt=""
+                srcset=""
+              />
               <div
                 class="owl-carousel owl-sales owl-theme h-full flex-col justify-center border-primary border-b-[5px]"
               >
                 <div
                   class="sales flex xl:flex-row flex-col space-y-7 xl:space-y-0 py-10 xl:py-0 items-center"
                 >
-                  <div class="sales-text text-center">
+                  <div class="sales-text text-center xl:px-10 2xl:px-12">
                     <h6 class="text-primary text-[20px] font-bold">
                       NAMA EVENT
                     </h6>
@@ -705,9 +722,9 @@
                 <div
                   class="sales flex xl:flex-row flex-col space-y-7 xl:space-y-0 py-10 xl:py-0 items-center"
                 >
-                  <div class="sales-text text-center">
+                  <div class="sales-text text-center xl:px-10 2xl:px-12">
                     <h6 class="text-primary text-[20px] font-bold">
-                      NAMA SALES
+                      NAMA EVENT
                     </h6>
                     <p class="text-[#4A4E5A] text-[16px]">
                       apa yang ingin disampaikan bla maksimal 4 baris kebawah
@@ -716,18 +733,18 @@
                     </p>
                   </div>
                   <div class="sales-img">
-                    <iframe
-                      class="w-full aspect-video"
-                      src="https://www.youtube.com/..."
-                    ></iframe>
+                    <video class="w-full aspect-video" controls>
+                      <source src="./../assets/movie" type="video/mp4" />
+                      Your browser does not support the video tag.
+                    </video>
                   </div>
                 </div>
                 <div
                   class="sales flex xl:flex-row flex-col space-y-7 xl:space-y-0 py-10 xl:py-0 items-center"
                 >
-                  <div class="sales-text text-center">
+                  <div class="sales-text text-center xl:px-10 2xl:px-12">
                     <h6 class="text-primary text-[20px] font-bold">
-                      NAMA SALES
+                      NAMA EVENT
                     </h6>
                     <p class="text-[#4A4E5A] text-[16px]">
                       apa yang ingin disampaikan bla maksimal 4 baris kebawah
@@ -742,32 +759,21 @@
               </div>
             </section>
             <section
-              class="block mt-7 xl:mt-0 p-6 w-full bg-rose-100 text-[#4A4E5A] shadow-md xl:w-[62vw] xl:h-[23rem] 2xl:h-[25rem] 3xl:h-[30rem]"
+              class="block relative mt-7 xl:mt-0 p-6 w-full bg-rose-100 text-[#4A4E5A] shadow-md rounded-xl xl:w-[40rem] xl:h-[23rem] 2xl:h-[20rem]"
             >
+              <img
+                class="absolute w-28 h-28 xl:block hidden top-[30%] left-[-3rem] z-[10]"
+                src="./../assets/quote.png"
+                alt=""
+                srcset=""
+              />
               <div
                 class="owl-carousel owl-sales owl-theme h-full flex-col justify-center border-primary border-b-[5px]"
               >
                 <div
                   class="sales flex xl:flex-row flex-col space-y-7 xl:space-y-0 py-10 xl:py-0 items-center"
                 >
-                  <div class="sales-text text-center">
-                    <h6 class="text-primary text-[20px] font-bold">
-                      NAMA EVENT
-                    </h6>
-                    <p class="text-[#4A4E5A] text-[16px]">
-                      apa yang ingin disampaikan bla maksimal 4 baris kebawah
-                      apa yang ingin disampaikan bla bla bla maksimal 4 baris
-                      kebawah
-                    </p>
-                  </div>
-                  <div class="sales-img">
-                    <img src="./../assets/slider5.webp" alt="" srcset="" />
-                  </div>
-                </div>
-                <div
-                  class="sales flex xl:flex-row flex-col space-y-7 xl:space-y-0 py-10 xl:py-0 items-center"
-                >
-                  <div class="sales-text text-center">
+                  <div class="sales-text text-center xl:px-10 2xl:px-12">
                     <h6 class="text-primary text-[20px] font-bold">
                       PENJUALAN TERBAIK
                     </h6>
@@ -778,18 +784,35 @@
                     </p>
                   </div>
                   <div class="sales-img">
-                    <iframe
-                      class="w-full aspect-video"
-                      src="https://www.youtube.com/..."
-                    ></iframe>
+                    <img src="./../assets/slider5.webp" alt="" srcset="" />
                   </div>
                 </div>
                 <div
                   class="sales flex xl:flex-row flex-col space-y-7 xl:space-y-0 py-10 xl:py-0 items-center"
                 >
-                  <div class="sales-text text-center">
+                  <div class="sales-text text-center xl:px-10 2xl:px-12">
                     <h6 class="text-primary text-[20px] font-bold">
-                      NAMA SALES
+                      PENJUALAN TERBAIK
+                    </h6>
+                    <p class="text-[#4A4E5A] text-[16px]">
+                      apa yang ingin disampaikan bla maksimal 4 baris kebawah
+                      apa yang ingin disampaikan bla bla bla maksimal 4 baris
+                      kebawah
+                    </p>
+                  </div>
+                  <div class="sales-img">
+                    <video class="w-full aspect-video" controls>
+                      <source src="./../assets/movie" type="video/mp4" />
+                      Your browser does not support the video tag.
+                    </video>
+                  </div>
+                </div>
+                <div
+                  class="sales flex xl:flex-row flex-col space-y-7 xl:space-y-0 py-10 xl:py-0 items-center"
+                >
+                  <div class="sales-text text-center xl:px-10 2xl:px-12">
+                    <h6 class="text-primary text-[20px] font-bold">
+                      PENJUALAN TERBAIK
                     </h6>
                     <p class="text-[#4A4E5A] text-[16px]">
                       apa yang ingin disampaikan bla maksimal 4 baris kebawah
@@ -1463,7 +1486,7 @@
         margin: 10,
         nav: true,
         lazyLoad: true,
-        autoplay: true,
+        // autoplay: true,
         autoplayTimeout: 5000,
         autoplayHoverPause: true,
         responsive: {
@@ -1483,7 +1506,7 @@
         margin: 10,
         nav: true,
         lazyLoad: true,
-        autoplay: true,
+        // autoplay: true,
         autoplayTimeout: 5000,
         autoplayHoverPause: true,
         responsive: {
